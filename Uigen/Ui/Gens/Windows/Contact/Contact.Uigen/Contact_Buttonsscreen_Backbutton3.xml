@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Contact_Buttonsscreen_Backbutton3</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Contact_Buttonsscreen_Backbuttontemplate</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Button</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Buttonbox</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Button</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Button</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Contact_Buttonsscreen_Buttontemplate</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Contact_Buttonsscreen_Backbuttontemplate</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Button</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Updategendata</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Contact/Contact.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Button</GlobName>
+      <State>April1</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

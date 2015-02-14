@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Mtconfirm</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Dialogcancel</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Dialogok</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Player
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  objpath ".Var[category].String"
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  objpath ".Var[id].Int"
+  str ""
+)
+call "Purchasemicrotransaction"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> PurchaseMicroTransaction(Player, Gen("MTConfirm").Var[Category].String, Gen("MTConfirm").Var[ID].Int, ""); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mtconfirm.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Show</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[id].Int"
+int 0
+greater
+retifzero
+(
+  (
+    str "Mtconfirm_Title"
+  )
+  call "Translate"
+  (
+    str "Mtconfirm_Label"
+  )
+  call "Translate"
+  static Self
+)
+call "Genaddconfirmdialog"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if(Self.Var[ID].Int &gt; 0)
+				GenAddConfirmDialog(Translate("MTConfirm_Title"), Translate("MTConfirm_Label"), Self);
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mtconfirm.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Mtconfirm.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Abbrev</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Category</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Cost</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ID</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Name</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

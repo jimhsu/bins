@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Charactereditor_Bodyeditor_Custom_Muscleslider</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Slider</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Charactereditor_Behavior_Undoableslider</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Slider</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Slider</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Slider</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Charactereditor_Behavior_Undoableslider</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Slider</Type>
+  <Base i:type="UIGenSlider">
+    <Type>Slider</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>LeftMargin</c:Field>
+      <c:Field>RightMargin</c:Field>
+      <c:Field>TopMargin</c:Field>
+      <c:Field>NotchBlock</c:Field>
+      <c:Field>OnChanged</c:Field>
+      <c:Field>MaxBlock</c:Field>
+      <c:Field>NotchInteractive</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>15</LeftMargin>
+    <RightMargin>15</RightMargin>
+    <TopMargin>20</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Charactereditor_Bodyeditor_Custom_Muscleslider_Leftarrow</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Sliderleftarrow</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Sliderleftarrow</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Sliderleftarrow</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Sliderleftarrow</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Button</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>Charactereditor_Bodyeditor_Custom_Muscleslider_Rightarrow</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Sliderrightarrow</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Sliderrightarrow</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Sliderrightarrow</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Sliderrightarrow</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Button</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <ValueBlock i:nil="true" />
+    <NotchBlock>
+      <_><![CDATA[
+(
+)
+call "Costumecreator_Geteditcostume"
+objpath ".Muscle"
+(
+)
+call "Costumecreator_Geteditcostume"
+objpath ".Skeleton.Playerminmuscle"
+sub
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> CostumeCreator_GetEditCostume().Muscle - CostumeCreator_GetEditCostume().Skeleton.PlayerMinMuscle </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+      <Cost>0</Cost>
+    </NotchBlock>
+    <OnChanged>
+      <Command>
+        <a:string>CostumeCreator.SetMuscle {Self.State.Notch}</a:string>
+      </Command>
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </OnChanged>
+    <OnStoppedDragging i:nil="true" />
+    <MaxBlock>
+      <_><![CDATA[
+(
+)
+call "Costumecreator_Geteditcostume"
+objpath ".Skeleton.Playermaxmuscle"
+(
+)
+call "Costumecreator_Geteditcostume"
+objpath ".Skeleton.Playerminmuscle"
+sub
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> CostumeCreator_GetEditCostume().Skeleton.PlayerMaxMuscle - CostumeCreator_GetEditCostume().Skeleton.PlayerMinMuscle </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+      <Cost>0</Cost>
+    </MaxBlock>
+    <Bar></Bar>
+    <BarBlock i:nil="true" />
+    <InlineBar i:nil="true" />
+    <SliderTween i:nil="true" />
+    <RowHorizontalOffset>0</RowHorizontalOffset>
+    <TickCount>-1</TickCount>
+    <TickCountBlock i:nil="true" />
+    <Rows>1</Rows>
+    <ValueInteractive>0</ValueInteractive>
+    <NotchInteractive>1</NotchInteractive>
+    <Snap>0</Snap>
+    <DragMoveMode>0</DragMoveMode>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Decrement</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  float 0.45
+  neg
+)
+call "Genslideradjustnotch"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSliderAdjustNotch(Self, -0.45); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Increment</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  float 0.45
+)
+call "Genslideradjustnotch"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSliderAdjustNotch(Self, 0.45); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Slidertick</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+ident "LeftStickSnapX"
+int 0
+equals
+not
+jz label_22
+(
+  static Self
+  int 50
+  ident "LeftStickSnapX"
+  mul
+  ident "ElapsedTime"
+  mul
+)
+call "Genslideradjustnotch"
+;
+(
+  static Self
+  str "Tickadjusting"
+  int 1
+)
+call "Gensetvalue"
+return
+label_22:
+static Self
+objpath ".Var[tickadjusting].Int"
+retifzero
+(
+    static Self
+    str "Tickadjusting"
+    int 0
+)
+call "Gensetvalue"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (not LeftStickSnapX = 0)
+				GenSliderAdjustNotch(Self, 50 * LeftStickSnapX * ElapsedTime);
+				GenSetValue(Self, "TickAdjusting", 1);
+			elif (Self.Var[TickAdjusting].Int)
+				GenSetValue(Self, "TickAdjusting", 0);
+			endif
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Bodyeditor_Custom.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

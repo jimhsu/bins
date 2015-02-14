@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Guildsearch_Currentfilter</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>SMF</Type>
+  <Base i:type="UIGenSMF">
+    <Type>SMF</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Relative</c:Field>
+      <c:Field>ToolTip</c:Field>
+      <c:Field>Clip</c:Field>
+      <c:Field>TextBlock</c:Field>
+      <c:Field>Font</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>31</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative>
+      <TopFrom>
+        <Name>Guildsearch_Tagbox</Name>
+        <Offset>Bottom</Offset>
+        <Spacing>CodeStep</Spacing>
+      </TopFrom>
+      <BottomFrom>
+        <Name></Name>
+        <Offset>Center</Offset>
+        <Spacing>CodeHalfStep</Spacing>
+      </BottomFrom>
+      <LeftFrom>
+        <Name>_Parent</Name>
+        <Offset>Left</Offset>
+        <Spacing>CodeStep</Spacing>
+      </LeftFrom>
+      <RightFrom>
+        <Name>Guildsearch_Clearbutton</Name>
+        <Offset>Left</Offset>
+        <Spacing>CodeStep</Spacing>
+      </RightFrom>
+    </Relative>
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip>
+      <hTooltip></hTooltip>
+      <TooltipBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "ToolTip"
+  str ""
+)
+call "Gensetstring"
+;
+static Self
+objpath ".Var[textstr].String"
+str ""
+equals
+not
+jz label_45
+(
+  static Self
+  str "ToolTip"
+  str "<font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "ToolTip"
+  (
+    str "Guildsearch_Searchtext"
+  )
+  call "Translate"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "ToolTip"
+  str ":</Font><br>"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "ToolTip"
+  static Self
+  objpath ".Var[textstr].String"
+)
+call "Genappendstring"
+;
+label_45:
+static Self
+objpath ".Var[tooltip].String"
+str ""
+equals
+not
+static Self
+objpath ".Var[inctagstr].String"
+str ""
+equals
+not
+and
+jz label_64
+(
+    static Self
+    str "ToolTip"
+    str "<br>"
+)
+call "Genappendstring"
+;
+label_64:
+static Self
+objpath ".Var[inctagstr].String"
+str ""
+equals
+not
+jz label_102
+(
+    static Self
+    str "ToolTip"
+    str "<font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    (
+      str "Guildsearch_Include"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    str ":</Font><br>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    static Self
+    objpath ".Var[inctagstr].String"
+)
+call "Genappendstring"
+;
+label_102:
+static Self
+objpath ".Var[tooltip].String"
+str ""
+equals
+not
+static Self
+objpath ".Var[exctagstr].String"
+str ""
+equals
+not
+and
+jz label_121
+(
+    static Self
+    str "ToolTip"
+    str "<br>"
+)
+call "Genappendstring"
+;
+label_121:
+static Self
+objpath ".Var[exctagstr].String"
+str ""
+equals
+not
+jz label_159
+(
+    static Self
+    str "ToolTip"
+    str "<font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    (
+      str "Guildsearch_Exclude"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    str ":</Font><br>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "ToolTip"
+    static Self
+    objpath ".Var[exctagstr].String"
+)
+call "Genappendstring"
+;
+label_159:
+static Self
+objpath ".Var[tooltip].String"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+				GenSetString(Self, "Tooltip", "");
+				if (not Self.Var[TextStr].String = "")
+					GenAppendString(Self, "Tooltip", "&lt;font style=Game_Header&gt;");
+					GenAppendString(Self, "Tooltip", Translate("GuildSearch_SearchText"));
+					GenAppendString(Self, "Tooltip", ":&lt;/font&gt;&lt;br&gt;");
+					GenAppendString(Self, "Tooltip", Self.Var[TextStr].String);
+				endif
+				if (not Self.Var[Tooltip].String = "" and not Self.Var[IncTagStr].String = "")
+					GenAppendString(Self, "Tooltip", "&lt;br&gt;");
+				endif
+				if (not Self.Var[IncTagStr].String = "")
+					GenAppendString(Self, "Tooltip", "&lt;font style=Game_Header&gt;");
+					GenAppendString(Self, "Tooltip", Translate("GuildSearch_Include"));
+					GenAppendString(Self, "Tooltip", ":&lt;/font&gt;&lt;br&gt;");
+					GenAppendString(Self, "Tooltip", Self.Var[IncTagStr].String);
+				endif
+				if (not Self.Var[Tooltip].String = "" and not Self.Var[ExcTagStr].String = "")
+					GenAppendString(Self, "Tooltip", "&lt;br&gt;");
+				endif
+				if (not Self.Var[ExcTagStr].String = "")
+					GenAppendString(Self, "Tooltip", "&lt;font style=Game_Header&gt;");
+					GenAppendString(Self, "Tooltip", Translate("GuildSearch_Exclude"));
+					GenAppendString(Self, "Tooltip", ":&lt;/font&gt;&lt;br&gt;");
+					GenAppendString(Self, "Tooltip", Self.Var[ExcTagStr].String);
+				endif
+				Self.Var[Tooltip].String;
+				</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Social/Guildsearch.Uigen</FileName>
+        <Cost>0</Cost>
+      </TooltipBlock>
+      <Delay>-1</Delay>
+      <Assembly>ToolTip</Assembly>
+      <Relative>
+        <TopFrom>
+          <Name>Guildsearch_Tagbox</Name>
+          <Offset>Bottom</Offset>
+          <Spacing>CodeStep</Spacing>
+        </TopFrom>
+        <BottomFrom>
+          <Name></Name>
+          <Offset>Center</Offset>
+          <Spacing>CodeHalfStep</Spacing>
+        </BottomFrom>
+        <LeftFrom>
+          <Name>_Parent</Name>
+          <Offset>Left</Offset>
+          <Spacing>CodeStep</Spacing>
+        </LeftFrom>
+        <RightFrom>
+          <Name>Guildsearch_Clearbutton</Name>
+          <Offset>Left</Offset>
+          <Spacing>CodeStep</Spacing>
+        </RightFrom>
+      </Relative>
+      <SecondaryToolTip />
+      <Orientation>CenterHorizontal</Orientation>
+      <StackDirection>CenterVertical</StackDirection>
+      <Alignment>Center</Alignment>
+      <StackAlignment>Center</StackAlignment>
+      <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+      <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+      <MaxWidth>560</MaxWidth>
+      <InheritAlpha>0</InheritAlpha>
+      <InheritScale>0</InheritScale>
+      <IgnoreParent>0</IgnoreParent>
+      <MouseAnchor>0</MouseAnchor>
+      <SafeMode>0</SafeMode>
+      <FilterProfanity>0</FilterProfanity>
+      <ForceTooltipOwnership>0</ForceTooltipOwnership>
+    </ToolTip>
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>1</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Text></Text>
+    <ScrollbarDef></ScrollbarDef>
+    <DisabledScrollbarDef></DisabledScrollbarDef>
+    <ScrollbarTopMargin>None</ScrollbarTopMargin>
+    <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+    <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+    <ScrollbarRightMargin>None</ScrollbarRightMargin>
+    <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+    <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+    <ScrollbarUseWheel>1</ScrollbarUseWheel>
+    <ScrollbarUseStick>1</ScrollbarUseStick>
+    <TextBlock>
+      <_><![CDATA[
+static Self
+objpath ".Var[currstr].String"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> Self.Var[CurrStr].String </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Social/Guildsearch.Uigen</FileName>
+      <Cost>0</Cost>
+    </TextBlock>
+    <Defaults>
+      <Font></Font>
+      <Color>0</Color>
+      <Shadow>0</Shadow>
+    </Defaults>
+    <Font>Description_Text</Font>
+    <Alignment>TopLeft</Alignment>
+    <FilterProfanity>0</FilterProfanity>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <SafeMode>0</SafeMode>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  static Self
+  str "Currstr"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Textstr"
+  (
+    (
+      str "Guildsearch_Textsearch"
+    )
+    call "Gen"
+  )
+  call "Gengettextentrytext"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Inctagstr"
+  (
+    static Self
+    static Player
+    int 0
+    int 0
+  )
+  call "Guild_Getcatforsearchlist"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Exctagstr"
+  (
+    static Self
+    static Player
+    int 0
+    int 1
+  )
+  call "Guild_Getcatforsearchlist"
+)
+call "Gensetstring"
+;
+static Self
+objpath ".Var[textstr].String"
+str ""
+equals
+not
+jz label_64
+(
+  static Self
+  str "Currstr"
+  str "'"
+  static Self
+  objpath ".Var[textstr].String"
+  add
+  str "' "
+  add
+)
+call "Gensetstring"
+;
+label_64:
+static Self
+objpath ".Var[inctagstr].String"
+str ""
+equals
+not
+jz label_82
+(
+    static Self
+    str "Currstr"
+    str "Include: "
+    static Self
+    objpath ".Var[inctagstr].String"
+    add
+    str " "
+    add
+)
+call "Genappendstring"
+;
+label_82:
+static Self
+objpath ".Var[exctagstr].String"
+str ""
+equals
+not
+retifzero
+(
+    static Self
+    str "Currstr"
+    str "Exclude: "
+    static Self
+    objpath ".Var[exctagstr].String"
+    add
+)
+call "Genappendstring"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			GenSetString(Self, "CurrStr", "");
+			GenSetString(Self, "TextStr", GenGetTextEntryText(Gen("GuildSearch_TextSearch")));
+			GenSetString(Self, "IncTagStr", guild_getcatforsearchlist(Self, Player, 0, 0));
+			GenSetString(Self, "ExcTagStr", guild_getcatforsearchlist(Self, Player, 0, 1));
+
+			if (not Self.Var[TextStr].string = "")
+				GenSetString(Self, "CurrStr", "'" + Self.Var[TextStr].string + "' ");
+			endif
+
+			if (not Self.Var[IncTagStr].string = "")
+				GenAppendString(Self, "CurrStr", "Include: " + Self.Var[IncTagStr].string + " ");
+			endif
+
+			if (not Self.Var[ExcTagStr].string = "")
+				GenAppendString(Self, "CurrStr", "Exclude: " + Self.Var[ExcTagStr].string);
+			endif
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Social/Guildsearch.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Social/Guildsearch.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Currstr</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Exctagstr</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Inctagstr</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Textstr</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ToolTip</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

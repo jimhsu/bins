@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Build_Bindconfirmdialog</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Dialogok</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[destinventorybag].String"
+str "Head"
+equals
+jz label_35
+static Self
+objpath ".Var[primary].Int"
+jz label_21
+(
+  (
+    (
+      str "Buildselection_Equipmenttray_Utility"
+    )
+    call "Gen"
+    int 0
+  )
+  call "Genlayoutboxgetinstance"
+  str "Equip"
+)
+call "Gensendmessage"
+return
+label_21:
+(
+    (
+      (
+        str "Buildselection_Secondaryutilityequipmenttray"
+      )
+      call "Gen"
+      static Self
+      objpath ".Var[destinventoryslot].Int"
+    )
+    call "Genlayoutboxgetinstance"
+    str "Equip"
+)
+call "Gensendmessage"
+return
+label_35:
+static Self
+objpath ".Var[destinventorybag].String"
+str "Body"
+equals
+jz label_70
+static Self
+objpath ".Var[primary].Int"
+jz label_56
+(
+    (
+      (
+        str "Buildselection_Equipmenttray_Defense"
+      )
+      call "Gen"
+      int 0
+    )
+    call "Genlayoutboxgetinstance"
+    str "Equip"
+)
+call "Gensendmessage"
+return
+label_56:
+(
+    (
+      (
+        str "Buildselection_Secondarydefenseequipmenttray"
+      )
+      call "Gen"
+      static Self
+      objpath ".Var[destinventoryslot].Int"
+    )
+    call "Genlayoutboxgetinstance"
+    str "Equip"
+)
+call "Gensendmessage"
+return
+label_70:
+static Self
+objpath ".Var[destinventorybag].String"
+str "Offense"
+equals
+retifzero
+static Self
+objpath ".Var[primary].Int"
+jz label_91
+(
+    (
+      (
+        str "Buildselection_Equipmenttray_Offense"
+      )
+      call "Gen"
+      int 0
+    )
+    call "Genlayoutboxgetinstance"
+    str "Equip"
+)
+call "Gensendmessage"
+return
+label_91:
+(
+    (
+      (
+        str "Buildselection_Secondaryoffenseequipmenttray"
+      )
+      call "Gen"
+      static Self
+      objpath ".Var[destinventoryslot].Int"
+    )
+    call "Genlayoutboxgetinstance"
+    str "Equip"
+)
+call "Gensendmessage"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			# This is pretty hacky but it works for now
+			if (Self.Var[DestInventoryBag].String = "Head")
+				if (Self.Var[Primary].int)
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_EquipmentTray_Utility"), 0), "Equip")
+				else
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_SecondaryUtilityEquipmentTray"), Self.Var[DestInventorySlot].Int), "Equip")
+				endif
+			elif (Self.Var[DestInventoryBag].String = "Body")
+				if (Self.Var[Primary].int)
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_EquipmentTray_Defense"), 0), "Equip")
+				else
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_SecondaryDefenseEquipmentTray"), Self.Var[DestInventorySlot].Int), "Equip")
+				endif
+			elif (Self.Var[DestInventoryBag].String = "Offense")
+				if (Self.Var[Primary].int)
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_EquipmentTray_Offense"), 0), "Equip")
+				else
+					GenSendMessage(GenLayoutBoxGetInstance(Gen("BuildSelection_SecondaryOffenseEquipmentTray"), Self.Var[DestInventorySlot].Int), "Equip")
+				endif
+			endif
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Buildselection.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Show</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Inventory_Bind_Title"
+  )
+  call "Translate"
+  (
+    str "Inventory_Bind_Prompt"
+    (
+      static Self
+      objpath ".Var[sourceinventorykey].String"
+    )
+    call "Inventorykeygetitem"
+  )
+  call "Messageformatitem"
+  static Self
+)
+call "Genaddconfirmdialog"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenAddConfirmDialog(
+				Translate("Inventory_Bind_Title"), 
+				MessageFormatItem("Inventory_Bind_Prompt", InventoryKeyGetItem(Self.Var[SourceInventoryKey].String)),
+				Self);
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Buildselection.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Buildselection.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Destinventorybag</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Destinventoryslot</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Primary</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Sourceinventorykey</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Teamsearch_List_Row_Template</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>ListRow</Type>
+  <Base i:type="UIGenListRow">
+    <Type>ListRow</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>ToolTip</c:Field>
+      <c:Field>SMFExpr</c:Field>
+      <c:Field>Alignment</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>64</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip>
+      <hTooltip></hTooltip>
+      <TooltipBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[text].String"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Self.Var[Text].String </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Social/Teamsearch.Uigen</FileName>
+        <Cost>0</Cost>
+      </TooltipBlock>
+      <Delay>-1</Delay>
+      <Assembly>ToolTip</Assembly>
+      <Relative i:nil="true" />
+      <SecondaryToolTip />
+      <Orientation>CenterHorizontal</Orientation>
+      <StackDirection>CenterVertical</StackDirection>
+      <Alignment>Center</Alignment>
+      <StackAlignment>Center</StackAlignment>
+      <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+      <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+      <MaxWidth>350</MaxWidth>
+      <InheritAlpha>0</InheritAlpha>
+      <InheritScale>0</InheritScale>
+      <IgnoreParent>0</IgnoreParent>
+      <MouseAnchor>0</MouseAnchor>
+      <SafeMode>0</SafeMode>
+      <FilterProfanity>0</FilterProfanity>
+      <ForceTooltipOwnership>0</ForceTooltipOwnership>
+    </ToolTip>
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <SMF></SMF>
+    <SMFExpr>
+      <_><![CDATA[
+(
+  str "Rowdata"
+  str "ClientPlayerStruct"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Friend"
+jz label_16
+str "<font Style=description_Text>"
+static Self
+objpath ".Var[text].String"
+add
+str "</Font>"
+add
+return
+label_16:
+str "<font Style=description_Text Color=lightgrey>"
+static Self
+objpath ".Var[text].String"
+add
+str "</Font>"
+add
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType("RowData", "ClientPlayerStruct");
+			if (RowData.Friend)
+				"&lt;font style=Description_Text&gt;" + Self.Var[Text].String +"&lt;/font&gt;"
+			else
+				"&lt;font style=Description_Text color=lightgrey&gt;" + Self.Var[Text].String +"&lt;/font&gt;"
+			endif
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Social/Teamsearch.Uigen</FileName>
+      <Cost>0</Cost>
+    </SMFExpr>
+    <Truncate></Truncate>
+    <Font></Font>
+    <OnActivated i:nil="true" />
+    <OnSelected i:nil="true" />
+    <Alignment>TopLeft</Alignment>
+    <AllowSelect>1</AllowSelect>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <PlainText>0</PlainText>
+    <SafeMode>0</SafeMode>
+    <FilterProfanity>0</FilterProfanity>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>RightMouseClick</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "Rowdata"
+  str "ClientPlayerStruct"
+)
+call "Declaretype"
+;
+(
+  (
+    str "Entitycontextmenu"
+  )
+  call "Gen"
+  str "Name"
+  static RowData
+  objpath ".Name"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Entitycontextmenu"
+  )
+  call "Gen"
+  str "AtName"
+  static RowData
+  objpath ".Handle"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Entitycontextmenu"
+  )
+  call "Gen"
+  str "EntContainerID"
+  static RowData
+  objpath ".Onlinecharacterid"
+)
+call "Gensetvalue"
+;
+(
+  rootpath "Uigen[entitycontextmenu]"
+  str "FullName"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Entitycontextmenu"
+  )
+  call "Gen"
+  str "Popup"
+)
+call "Gensendmessage"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				DeclareType("RowData", "ClientPlayerStruct");
+
+				GenSetString(Gen("EntityContextMenu"), "Name", RowData.Name);
+				GenSetString(Gen("EntityContextMenu"), "AtName", RowData.Handle);
+				GenSetValue(Gen("EntityContextMenu"), "EntContainerID", RowData.onlineCharacterID);
+#				GenSetValue(Gen("EntityContextMenu"), "EntType", EntGetType(Player));
+				GenSetString(UIGen[EntityContextMenu], "FullName", "");
+				GenSendMessage(Gen("EntityContextMenu"), "Popup");
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Social/Teamsearch.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>Selected</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "Rowdata"
+  str "ClientPlayerStruct"
+)
+call "Declaretype"
+;
+(
+  (
+    str "Teamsearch_List"
+  )
+  call "Gen"
+  str "Selectedaccount"
+  static RowData
+  objpath ".Accountid"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Teamsearch_List"
+  )
+  call "Gen"
+  str "Selectedname"
+  static RowData
+  objpath ".Name"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Teamsearch_List"
+  )
+  call "Gen"
+  str "Selectedatname"
+  static RowData
+  objpath ".Handle"
+)
+call "Gensetstring"
+;
+static RowData
+objpath ".Playerteam"
+jz label_52
+(
+  (
+    str "Teamsearch_Commands_Invitebutton"
+  )
+  call "Gen"
+  ident "User"
+  int 1
+)
+call "Gensetstate"
+return
+label_52:
+(
+    (
+      str "Teamsearch_Commands_Invitebutton"
+    )
+    call "Gen"
+    ident "User"
+    int 0
+)
+call "Gensetstate"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				DeclareType("RowData", "ClientPlayerStruct");
+				GenSetValue(Gen("TeamSearch_List"), "selectedAccount", RowData.accountID);
+				GenSetString(Gen("TeamSearch_List"), "selectedName", RowData.Name);
+				GenSetString(Gen("TeamSearch_List"), "selectedAtName", RowData.Handle);
+				if (RowData.PlayerTeam)
+					GenSetState(Gen("TeamSearch_Commands_InviteButton"), User, 1);
+				else
+					GenSetState(Gen("TeamSearch_Commands_InviteButton"), User, 0);
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Social/Teamsearch.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Social/Teamsearch.Uigen</FileName>
+  <Var />
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Text</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

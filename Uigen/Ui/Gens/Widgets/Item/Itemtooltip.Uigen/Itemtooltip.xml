@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Itemtooltip</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow>
+    <UIGenRequiredBorrow>
+      <hGen>Item</hGen>
+    </UIGenRequiredBorrow>
+    <UIGenRequiredBorrow>
+      <hGen>Inneritem</hGen>
+    </UIGenRequiredBorrow>
+  </RequiresBorrow>
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>ToolTip</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip>
+      <hTooltip></hTooltip>
+      <TooltipBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[prependtext].String"
+(
+  str "Itemtooltip"
+)
+call "Gen"
+objpath ".Var[primarytooltip].String"
+add
+static Self
+objpath ".Var[appendtext].String"
+add
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Self.Var[PrependText].String + Gen("ItemTooltip").Var[PrimaryTooltip].String + Self.Var[AppendText].String  </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Item/Itemtooltip.Uigen</FileName>
+        <Cost>0</Cost>
+      </TooltipBlock>
+      <Delay>0</Delay>
+      <Assembly>ToolTip</Assembly>
+      <Relative>
+        <TopFrom>
+          <Name>_Parent</Name>
+          <Offset>Top</Offset>
+          <Spacing>None</Spacing>
+        </TopFrom>
+        <BottomFrom>
+          <Name></Name>
+          <Offset>Center</Offset>
+          <Spacing>CodeHalfStep</Spacing>
+        </BottomFrom>
+        <LeftFrom>
+          <Name>_Parent</Name>
+          <Offset>Right</Offset>
+          <Spacing>12</Spacing>
+        </LeftFrom>
+        <RightFrom>
+          <Name></Name>
+          <Offset>Center</Offset>
+          <Spacing>CodeHalfStep</Spacing>
+        </RightFrom>
+      </Relative>
+      <SecondaryToolTip>
+        <UIGenSecondaryTooltip>
+          <hTooltip></hTooltip>
+          <TooltipBlock>
+            <_><![CDATA[
+(
+  str "Itemtooltip"
+)
+call "Gen"
+objpath ".Var[secondarytooltip].String"
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr> Gen("ItemTooltip").Var[SecondaryTooltip].String </OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Widgets/Item/Itemtooltip.Uigen</FileName>
+            <Cost>0</Cost>
+          </TooltipBlock>
+          <Assembly>ToolTip</Assembly>
+          <MaxWidth>350</MaxWidth>
+          <SafeMode>0</SafeMode>
+          <FilterProfanity>0</FilterProfanity>
+        </UIGenSecondaryTooltip>
+      </SecondaryToolTip>
+      <Orientation>CenterHorizontal</Orientation>
+      <StackDirection>CenterVertical</StackDirection>
+      <Alignment>Center</Alignment>
+      <StackAlignment>Center</StackAlignment>
+      <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+      <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+      <MaxWidth>350</MaxWidth>
+      <InheritAlpha>0</InheritAlpha>
+      <InheritScale>0</InheritScale>
+      <IgnoreParent>0</IgnoreParent>
+      <MouseAnchor>0</MouseAnchor>
+      <SafeMode>0</SafeMode>
+      <FilterProfanity>0</FilterProfanity>
+      <ForceTooltipOwnership>0</ForceTooltipOwnership>
+    </ToolTip>
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  ident "MouseOver"
+)
+call "InState"
+retifzero
+(
+  str "GenData"
+  str "Item"
+)
+call "Declaretype"
+;
+(
+  static Self
+  static GenData
+  static Player
+  str "Comparekey"
+  str ""
+)
+call "Gensetstringsforitemcompare"
+;
+(
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  str "Superstat1"
+  (
+    static Player
+    str "Superstats"
+    str "Innate"
+    int 0
+  )
+  call "Entgetattribfrompowerdefintree"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  str "Superstat2"
+  (
+    static Player
+    str "Superstats_Secondary"
+    str "Innate"
+    int 0
+  )
+  call "Entgetattribfrompowerdefintree"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  str "Superstat3"
+  (
+    static Player
+    str "Superstats_Secondary"
+    str "Innate"
+    int 1
+  )
+  call "Entgetattribfrompowerdefintree"
+)
+call "Gensetstring"
+;
+(
+  str "Itemtooltip"
+)
+call "Gen"
+objpath ".Var[superstat1].String"
+str ""
+equals
+not
+jz label_173
+(
+  str "Itemtooltip"
+)
+call "Gen"
+objpath ".Var[superstat2].String"
+str ""
+equals
+not
+jz label_155
+(
+  str "Itemtooltip"
+)
+call "Gen"
+objpath ".Var[superstat3].String"
+str ""
+equals
+not
+jz label_129
+(
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  str "Statfont"
+  str "{stat.Attrib="
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  objpath ".Var[superstat1].String"
+  add
+  str "?game_Hud_Superstat|{stat.Attrib="
+  add
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  objpath ".Var[superstat2].String"
+  add
+  str "?game_Hud_Superstat|{stat.Attrib="
+  add
+  (
+    str "Itemtooltip"
+  )
+  call "Gen"
+  objpath ".Var[superstat3].String"
+  add
+  str "?game_Hud_Superstat|game_Hud}}}"
+  add
+)
+call "Gensetstring"
+j label_154
+label_129:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Statfont"
+    str "{stat.Attrib="
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[superstat1].String"
+    add
+    str "?game_Hud_Superstat|{stat.Attrib="
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[superstat2].String"
+    add
+    str "?game_Hud_Superstat|game_Hud}}"
+    add
+)
+call "Gensetstring"
+label_154:
+j label_172
+label_155:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Statfont"
+    str "{stat.Attrib="
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[superstat1].String"
+    add
+    str "?game_Hud_Superstat|game_Hud}"
+    add
+)
+call "Gensetstring"
+label_172:
+j label_183
+label_173:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Statfont"
+    str "Game_Hud"
+)
+call "Gensetstring"
+;
+label_183:
+(
+    static Self
+    objpath ".Parent"
+    str "Showupto"
+)
+call "Genhasvar"
+(
+    static GenData
+)
+call "ItemType"
+ident "Itemtypegem"
+equals
+and
+jz label_235
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Statcompare"
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare100upto].String"
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statfont].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare150upto].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statfont].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare200].String"
+    add
+)
+call "Gensetstring"
+j label_273
+label_235:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Statcompare"
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare100].String"
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statfont].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare150].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statfont].String"
+    add
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    objpath ".Var[statcompare200].String"
+    add
+)
+call "Gensetstring"
+;
+label_273:
+static GenData
+jz label_649
+(
+    static GenData
+)
+call "Itemgetdeftype"
+str "Numeric"
+equals
+jz label_311
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      (
+        str "Inventory_Numeric_Nonresources_Right"
+        static GenData
+        objpath ".Count"
+      )
+      call "Messageformatint"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Iteminfo_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Gensetstring"
+j label_495
+label_311:
+(
+    static GenData
+    ident "Itemcategoryvehicle"
+)
+call "Itemhascategory"
+jz label_351
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      (
+        (
+          static GenData
+          str "Resources"
+        )
+        call "Gengetitemvalue"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Iteminfo_Vehicle_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Gensetstring"
+j label_495
+label_351:
+(
+    static GenData
+    ident "Itemcategorylockbox"
+)
+call "Itemhascategory"
+jz label_420
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "<table><tr><td Valign=top Align=left Width=100%><font Style=game_Header_Superstat><scale 1.3> "
+    (
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      objpath ".Displaynamemsg"
+    )
+    call "Translatedisplaymessage"
+    add
+    str "</Scale></Font><br><img Src=lockbox_Icon_"
+    add
+    (
+      static GenData
+    )
+    call "Gengetitemdef"
+    objpath ".Name"
+    add
+    str "></Td></Tr></Table><br>"
+    add
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      (
+        (
+          static GenData
+          str "Resources"
+        )
+        call "Gengetitemvalue"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Lockboxinfo_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Genappendstring"
+j label_495
+label_420:
+(
+    static GenData
+)
+call "Itemgetdefflags"
+ident "Itemdefflagunique"
+binary and
+jz label_461
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      (
+        (
+          static GenData
+          str "Resources"
+        )
+        call "Gengetitemvalue"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Iteminfo_Format_Unique"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Gensetstring"
+j label_495
+label_461:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        static GenData
+      )
+      call "Gengetitemdef"
+      (
+        (
+          static GenData
+          str "Resources"
+        )
+        call "Gengetitemvalue"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Iteminfo_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Gensetstring"
+;
+label_495:
+(
+    static GenData
+    ident "Itemcategoryvehicle"
+)
+call "Itemhascategory"
+jz label_501
+label_501:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+    )
+    call "Entitemgetpowerdesc"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "<table>"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static Player
+      static GenData
+      (
+        str "Itemtooltip"
+      )
+      call "Gen"
+      objpath ".Var[statcompare].String"
+    )
+    call "Stringformatentiteminnatepowerdesc"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "</Table>"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    (
+      static GenData
+    )
+    call "Itemadvancedinfo"
+)
+call "Genappendstring"
+;
+(
+    static GenData
+)
+call "Gemslotui_Getnumberofgemslots"
+jz label_589
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "<br><br>"
+    (
+      str "Item_Gemslotting_Howto"
+    )
+    call "Translate"
+    add
+)
+call "Genappendstring"
+;
+label_589:
+(
+    static GenData
+)
+call "Itemgetdeftype"
+str "Component"
+equals
+jz label_611
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "<br>"
+    (
+      str "Item_Gemslotting_Converttogem"
+    )
+    call "Translate"
+    add
+)
+call "Genappendstring"
+;
+label_611:
+(
+    (
+      str "Gemslot_Window"
+    )
+    call "Gen"
+    static GenData
+)
+call "Gemslotui_Iteminuse"
+jz label_620
+label_620:
+(
+    static GenData
+)
+call "ItemType"
+ident "Itemtypegem"
+equals
+(
+    static GenData
+)
+call "Itemupgradeui_Getupgraderankint"
+int 9
+less
+and
+jz label_648
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str "<br><br>"
+    (
+      str "Item_Itemsmash_Howto"
+    )
+    call "Translate"
+    add
+)
+call "Genappendstring"
+label_648:
+j label_659
+label_649:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "Primarytooltip"
+    str ""
+)
+call "Gensetstring"
+;
+label_659:
+(
+    static Self
+    objpath ".Var[comparekey].String"
+)
+call "Inventorykeygetitem"
+jz label_894
+(
+    static Self
+    objpath ".Var[comparekey].String"
+)
+call "Inventorykeygetslotnumber"
+int 0
+equals
+jz label_695
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      str "Inventory_Itemtooltip_Currentlyequipped_Primary"
+      (
+        str "InvBagIDs"
+        (
+          static Self
+          objpath ".Var[comparekey].String"
+        )
+        call "Inventorykeygetbagnumber"
+      )
+      call "Translatestaticdefineint"
+    )
+    call "Messageformatstring"
+)
+call "Gensetstring"
+j label_717
+label_695:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      str "Inventory_Itemtooltip_Currentlyequipped_Top"
+      (
+        str "InvBagIDs"
+        (
+          static Self
+          objpath ".Var[comparekey].String"
+        )
+        call "Inventorykeygetbagnumber"
+      )
+      call "Translatestaticdefineint"
+    )
+    call "Messageformatstring"
+)
+call "Gensetstring"
+;
+label_717:
+(
+    static GenData
+)
+call "Itemgetdeftype"
+str "Numeric"
+equals
+jz label_767
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[comparekey].String"
+      )
+      call "Inventorykeygetitem"
+      (
+        (
+          static Self
+          objpath ".Var[comparekey].String"
+        )
+        call "Inventorykeygetitem"
+      )
+      call "Gengetitemdef"
+      (
+        (
+          static Self
+          objpath ".Var[comparekey].String"
+        )
+        call "Inventorykeygetitem"
+        objpath ".Count"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Itemtooltip_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Genappendstring"
+j label_813
+label_767:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[comparekey].String"
+      )
+      call "Inventorykeygetitem"
+      (
+        (
+          static Self
+          objpath ".Var[comparekey].String"
+        )
+        call "Inventorykeygetitem"
+      )
+      call "Gengetitemdef"
+      (
+        (
+          (
+            static Self
+            objpath ".Var[comparekey].String"
+          )
+          call "Inventorykeygetitem"
+          str "Resources"
+        )
+        call "Gengetitemvalue"
+        str "Inventory_Numeric3_Resources_Right"
+        int 100
+        int 100
+      )
+      call "Inventorygetnumericstring3"
+      str "Science=crafting_Science, Mysticism=crafting_Mysticism, Arms=crafting_Arms"
+      str "Inventory_Itemtooltip_Format"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+      str "Inventory_Recipeiteminfo_Format"
+    )
+    call "Gengetitemdescriptioncustom"
+)
+call "Genappendstring"
+;
+label_813:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[comparekey].String"
+      )
+      call "Inventorykeygetitem"
+      str "Itempowermessagekey"
+      str "Itemattribmodmessagekey"
+    )
+    call "Entitemgetpowerdesc"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    str "<table>"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[comparekey].String"
+      )
+      call "Inventorykeygetitem"
+      static GenData
+      (
+        str "Itemtooltip"
+      )
+      call "Gen"
+      objpath ".Var[statcompare].String"
+    )
+    call "Stringformatentiteminnatepowercomparedesc"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    str "</Table>"
+)
+call "Genappendstring"
+;
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    (
+      (
+        static Self
+        objpath ".Var[comparekey].String"
+      )
+      call "Inventorykeygetitem"
+    )
+    call "Itemadvancedinfo"
+)
+call "Genappendstring"
+return
+label_894:
+(
+    (
+      str "Itemtooltip"
+    )
+    call "Gen"
+    str "SecondaryToolTip"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			if (InState(MouseOver))
+				DeclareType("GenData", "Item");
+
+				GenSetStringsForItemCompare(Self, GenData, Player, "CompareKey", "");
+
+				# Build the SuperStat highlight font
+				GenSetString(Gen("ItemTooltip"), "SuperStat1", EntGetAttribFromPowerDefInTree(Player, "Superstats", "Innate", 0));
+				GenSetString(Gen("ItemTooltip"), "SuperStat2", EntGetAttribFromPowerDefInTree(Player, "Superstats_Secondary", "Innate", 0));
+				GenSetString(Gen("ItemTooltip"), "SuperStat3", EntGetAttribFromPowerDefInTree(Player, "Superstats_Secondary", "Innate", 1));
+				if (not Gen("ItemTooltip").Var[SuperStat1].String = "")
+					if (not Gen("ItemTooltip").Var[SuperStat2].String = "")
+						if (not Gen("ItemTooltip").Var[SuperStat3].String = "")
+							GenSetString(Gen("ItemTooltip"), "StatFont", 
+								"{Stat.Attrib=" 
+								+ Gen("ItemTooltip").Var[SuperStat1].String 
+								+ "?Game_HUD_SuperStat|{Stat.Attrib=" 
+								+ Gen("ItemTooltip").Var[SuperStat2].String 
+								+ "?Game_HUD_SuperStat|{Stat.Attrib=" 
+								+ Gen("ItemTooltip").Var[SuperStat3].String 
+								+ "?Game_HUD_SuperStat|Game_HUD}}}");
+
+						else
+							GenSetString(Gen("ItemTooltip"), "StatFont", 
+								"{Stat.Attrib=" 
+								+ Gen("ItemTooltip").Var[SuperStat1].String 
+								+ "?Game_HUD_SuperStat|{Stat.Attrib=" 
+								+ Gen("ItemTooltip").Var[SuperStat2].String 
+								+ "?Game_HUD_SuperStat|Game_HUD}}");
+						endif
+					else
+						GenSetString(Gen("ItemTooltip"), "StatFont", 
+							"{Stat.Attrib=" 
+							+ Gen("ItemTooltip").Var[SuperStat1].String 
+							+ "?Game_HUD_SuperStat|Game_HUD}");
+					endif
+				else
+					GenSetString(Gen("ItemTooltip"), "StatFont", "Game_HUD");
+				endif
+
+				if (GenHasVar(Self.Parent, "ShowUpTo") and ItemType(GenData) = ItemTypeGem)
+					GenSetString(Gen("ItemTooltip"), "StatCompare", 
+						Gen("ItemTooltip").Var[StatCompare100UpTo].String
+						+ Gen("ItemTooltip").Var[StatFont].String
+						+ Gen("ItemTooltip").Var[StatCompare150UpTo].String
+						+ Gen("ItemTooltip").Var[StatFont].String
+						+ Gen("ItemTooltip").Var[StatCompare200].String);
+				else
+					GenSetString(Gen("ItemTooltip"), "StatCompare", 
+						Gen("ItemTooltip").Var[StatCompare100].String
+						+ Gen("ItemTooltip").Var[StatFont].String
+						+ Gen("ItemTooltip").Var[StatCompare150].String
+						+ Gen("ItemTooltip").Var[StatFont].String
+						+ Gen("ItemTooltip").Var[StatCompare200].String);
+				endif	
+				
+				# Main tooltip
+				if (GenData)
+					if (ItemGetDefType(GenData) = "Numeric")
+						GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", GenGetItemDescriptionCustom(Player, GenData, GenGetItemDef(GenData), MessageFormatInt("Inventory_Numeric_NonResources_Right", Gendata.Count), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemInfo_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));
+					elif(ItemHasCategory(GenData,ItemCategoryVehicle))
+						GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", GenGetItemDescriptionCustom(Player, GenData, GenGetItemDef(GenData), InventoryGetNumericString3(GenGetItemValue(GenData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemInfo_Vehicle_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));					
+					elif(ItemHasCategory(GenData,ItemCategoryLockbox)) 
+						GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;table&gt;&lt;tr&gt;&lt;td valign=top align=left width=100%&gt;&lt;font style=Game_Header_Superstat&gt;&lt;scale 1.3&gt; " + TranslateDisplayMessage(GenGetItemDef(GenData).DisplayNameMsg) + "&lt;/scale&gt;&lt;/font&gt;&lt;br&gt;&lt;img src=Lockbox_Icon_" + GenGetItemDef(GenData).Name + "&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;");
+						GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", GenGetItemDescriptionCustom(Player, GenData, GenGetItemDef(GenData), InventoryGetNumericString3(GenGetItemValue(GenData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_LockboxInfo_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format")); 				
+					elif(ItemGetDefFlags(GenData) &amp; ItemDefFlagUnique)
+						GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", GenGetItemDescriptionCustom(Player, GenData, GenGetItemDef(GenData), InventoryGetNumericString3(GenGetItemValue(GenData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemInfo_Format_Unique", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));
+					else
+						GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", GenGetItemDescriptionCustom(Player, GenData, GenGetItemDef(GenData), InventoryGetNumericString3(GenGetItemValue(GenData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemInfo_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));
+					endif
+
+					If (ItemHasCategory(GenData,ItemCategoryVehicle))
+						#GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;BR&gt;&lt;BR&gt;&lt;Img src=Vehicle_Stats_Icon_Attack&gt; Attack: 8/10&lt;br&gt;&lt;Img Src=Vehicle_Stats_Icon_Defense&gt; Defense: 2/10&lt;BR&gt;&lt;Img Src=Vehicle_Stats_Icon_Speed&gt; Speed: 5/10");
+					endif
+					
+					GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", EntItemGetPowerDesc(Player, GenData, "ItemPowerMessageKey", "ItemAttribModMessageKey"));
+					GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;table&gt;");
+					GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", StringFormatEntItemInnatePowerDesc(Player, GenData, Gen("ItemTooltip").Var[StatCompare].String));
+					GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;/table&gt;");
+					GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", ItemAdvancedInfo(GenData));
+					if (GemSlotUI_GetNumberOfGemSlots(GenData))
+						GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;BR&gt;&lt;BR&gt;" + Translate("Item_GemSlotting_HowTo"));
+					endif
+					if (ItemGetDefType(GenData) = "Component")
+						GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;BR&gt;" + Translate("Item_GemSlotting_ConvertToGem"));
+					endif
+					if (GemSlotUI_ItemInUse(Gen("GemSlot_Window"), GenData))
+						#GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;BR&gt;" + Translate("Item_GemSlotting_Uncommitted"));
+					endif
+					if (ItemType(GenData) = ItemTypeGem and ItemUpgradeUI_GetUpgradeRankInt(GenData) &lt; 9)
+						GenAppendString(Gen("ItemTooltip"), "PrimaryTooltip", "&lt;BR&gt;&lt;BR&gt;" + Translate("Item_ItemSmash_HowTo"));
+					endif
+				else
+					GenSetString(Gen("ItemTooltip"), "PrimaryTooltip", "");
+				endif
+
+				if (InventoryKeyGetItem(Self.Var[CompareKey].String))
+					if (InventoryKeyGetSlotNumber(Self.Var[CompareKey].String) = 0)
+						GenSetString(Gen("ItemTooltip"), "SecondaryTooltip", MessageFormatString("Inventory_ItemTooltip_CurrentlyEquipped_Primary", TranslateStaticDefineInt("InvBagIds", InventoryKeyGetBagNumber(Self.Var[CompareKey].String))));
+					else
+						GenSetString(Gen("ItemTooltip"), "SecondaryTooltip", MessageFormatString("Inventory_ItemTooltip_CurrentlyEquipped_Top", TranslateStaticDefineInt("InvBagIds", InventoryKeyGetBagNumber(Self.Var[CompareKey].String))));
+					endif
+					if (ItemGetDefType(GenData) = "Numeric")
+						GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", GenGetItemDescriptionCustom(Player, InventoryKeyGetItem(Self.Var[CompareKey].String), GenGetItemDef(InventoryKeyGetItem(Self.Var[CompareKey].String)), InventoryGetNumericString3(InventoryKeyGetItem(Self.Var[CompareKey].String).Count, "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemTooltip_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));
+					else
+						GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", GenGetItemDescriptionCustom(Player, InventoryKeyGetItem(Self.Var[CompareKey].String), GenGetItemDef(InventoryKeyGetItem(Self.Var[CompareKey].String)), InventoryGetNumericString3(GenGetItemValue(InventoryKeyGetItem(Self.Var[CompareKey].String), "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100), "Science=Crafting_Science, Mysticism=Crafting_Mysticism, Arms=Crafting_Arms", "Inventory_ItemTooltip_Format", "ItemPowerMessageKey", "ItemAttribModMessageKey", "Inventory_RecipeItemInfo_Format"));
+					endif
+					GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", EntItemGetPowerDesc(Player, InventoryKeyGetItem(Self.Var[CompareKey].String), "ItemPowerMessageKey", "ItemAttribModMessageKey"));
+					GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", "&lt;table&gt;");
+					GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", StringFormatEntItemInnatePowerCompareDesc(Player, InventoryKeyGetItem(Self.Var[CompareKey].String), GenData, Gen("ItemTooltip").Var[StatCompare].String));
+					GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", "&lt;/table&gt;");
+					GenAppendString(Gen("ItemTooltip"), "SecondaryTooltip", ItemAdvancedInfo(InventoryKeyGetItem(Self.Var[CompareKey].String)));
+				else
+					GenSetString(Gen("ItemTooltip"), "SecondaryTooltip", "");
+				endif
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Widgets/Item/Itemtooltip.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Widgets/Item/Itemtooltip.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Primarytooltip</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>SecondaryToolTip</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare100</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>
+		&lt;tr&gt;
+			&lt;td&gt;
+				&lt;font style=</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare100upto</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>
+		&lt;tr&gt;
+			&lt;td width=70&gt;
+				&lt;font style=</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare150</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>
+		&gt;&lt;span align=Right&gt;
+				{Stat.Flags.Percentage
+					? {Stat.Magnitude&gt;=0?+|}{Stat.Magnitude}%
+					| {Stat.Flags.Boolean?|{Stat.Magnitude&gt;=0?+|}{Stat.Magnitude}}
+				}&lt;/span&gt;
+				&lt;/font&gt;
+			&lt;/td&gt;
+			&lt;td&gt;&lt;font style=</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare150upto</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>
+		&gt;&lt;span align=Right&gt;
+				Up to {Stat.Flags.Percentage
+					? {Stat.Magnitude&gt;=0?+|}{Stat.Magnitude}%
+					| {Stat.Flags.Boolean?|{Stat.Magnitude&gt;=0?+|}{Stat.Magnitude}}
+				}&lt;/span&gt;
+				&lt;/font&gt;
+			&lt;/td&gt;
+			&lt;td&gt;&lt;font style=</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statcompare200</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>&gt;&amp;nbsp;{Stat}&lt;/font&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+			&lt;td width=75%&gt;
+			{Stat.Difference=0
+				? &amp;nbsp; 
+				| {Stat.Flags.Percentage 
+					? (&lt;font style=Game_HUD_{Stat.Difference&gt;=0?Success|Failure}&gt;{Stat.Difference&gt;=0?+|}{Stat.Difference}%&lt;/font&gt;)
+					| {Stat.Flags.Boolean
+						? &amp;nbsp; 
+						| (&lt;font style=Game_HUD_{Stat.Difference&gt;=0?Success|Failure}&gt;{Stat.Difference&gt;=0?+|}{Stat.Difference}&lt;/font&gt;)
+					}
+				}
+			}&lt;/td&gt;
+			{Stat.RequiredGemSlot?&lt;td&gt;{Stat.RequiredGemSlot}&lt;/td&gt; | &lt;td&gt;&amp;nbsp;&lt;/td&gt;}
+		&lt;/tr&gt;
+	</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Statfont</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Superstat1</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Superstat2</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Superstat3</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Appendtext</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Comparekey</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Prependtext</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

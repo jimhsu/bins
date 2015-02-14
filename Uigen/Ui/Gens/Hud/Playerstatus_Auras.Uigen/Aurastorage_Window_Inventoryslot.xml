@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Aurastorage_Window_Inventoryslot</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Inventory_Inventoryslot</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Layoutboxinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Activateondoubleclick</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Inventoryslotinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemicon</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemcount</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemcount_Inventoryslotinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Inventoryslot</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>InventorySlot</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Inventory_Inventoryslot</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Sprite</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Action</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Equip"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSendMessage(Self, "Equip"); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Playerstatus_Auras.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Equip</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "InventorySlot"
+)
+call "Declaretype"
+;
+(
+  str "Playerstatus_Auras_Container"
+)
+call "Gen"
+objpath ".Var[\"aurascount\"].Int"
+(
+  str "Playerstatus_Auras_Container"
+)
+call "Gen"
+objpath ".Var[\"aurasslots\"].Int"
+less
+jz label_37
+(
+  (
+    static Player
+    ident "Bagidaurasstorage"
+    (
+      static GenInstanceData
+      objpath ".Pchname"
+    )
+    call "Stringtoint"
+  )
+  call "Inventoryindexgetkey"
+  ident "Bagidauras"
+  int 1
+  neg
+  int 1
+  neg
+)
+call "Inventorykeymove"
+return
+label_37:
+(
+    str "Playerstatus_Auras_Container"
+)
+call "Gen"
+objpath ".Var[\"combataurascount\"].Int"
+int 4
+less
+retifzero
+(
+    (
+      static Player
+      ident "Bagidaurasstorage"
+      (
+        static GenInstanceData
+        objpath ".Pchname"
+      )
+      call "Stringtoint"
+    )
+    call "Inventoryindexgetkey"
+    ident "Bagidaurascombat"
+    int 1
+    neg
+    int 1
+    neg
+)
+call "Inventorykeymove"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("GenInstanceData", "InventorySlot");
+			if ( Gen("PlayerStatus_Auras_Container").Var["AurasCount"].Int &lt; Gen("PlayerStatus_Auras_Container").Var["AurasSlots"].Int )
+				InventoryKeyMove(InventoryIndexGetKey(Player, BagIDAurasStorage, StringToInt(GenInstanceData.pchName)), BagIDAuras, -1, -1);
+			elif ( Gen("PlayerStatus_Auras_Container").Var["CombatAurasCount"].Int &lt; 4 )
+				InventoryKeyMove(InventoryIndexGetKey(Player, BagIDAurasStorage, StringToInt(GenInstanceData.pchName)), BagIDAurasCombat, -1, -1);
+			endif
+
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Playerstatus_Auras.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Playerstatus_Auras.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

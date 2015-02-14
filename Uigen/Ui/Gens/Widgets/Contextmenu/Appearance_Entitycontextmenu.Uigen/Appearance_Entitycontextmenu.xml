@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Appearance_Entitycontextmenu</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Setupvars</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  static Self
+)
+call "Genclearearlyoverridechildren"
+;
+static Self
+objpath ".Var[showdebugentry].Int"
+jz label_17
+(
+  static Self
+  (
+    str "Entitymenu_Debug"
+  )
+  call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_17:
+(
+    (
+      str "Entitycontextmenuextension"
+    )
+    call "Gen"
+    str "Appendmenuitems"
+)
+call "Gensendmessage"
+;
+static Self
+objpath ".Var[isplayer].Int"
+static Self
+objpath ".Var[isme].Int"
+not
+and
+jz label_253
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Chat_Isignored"
+jz label_48
+(
+    static Self
+    (
+      str "Entitymenu_Removeignore"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+j label_66
+label_48:
+(
+    static Self
+    (
+      str "Entitymenu_Addignorespammer"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    (
+      str "Entitymenu_Addignore"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_66:
+(
+    static Player
+)
+call "Guild_Ismember"
+jz label_147
+(
+    static Player
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Guild_Maykick"
+jz label_90
+(
+    static Self
+    (
+      str "Entitymenu_Guildkick"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_90:
+(
+    static Player
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Guild_Maydemote"
+jz label_109
+(
+    static Self
+    (
+      str "Entitymenu_Guilddemote"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_109:
+(
+    static Player
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Guild_Maypromote"
+jz label_128
+(
+    static Self
+    (
+      str "Entitymenu_Guildpromote"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_128:
+(
+    static Player
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Guild_Mayinvite"
+jz label_147
+(
+    static Self
+    (
+      str "Entitymenu_Guildinvite"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_147:
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Chat_Isfriend"
+jz label_162
+(
+    static Self
+    (
+      str "Entitymenu_Removefriend"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+j label_202
+label_162:
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Chat_Friendrequestreceived"
+jz label_186
+(
+    static Self
+    (
+      str "Entitymenu_Declinefriend"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    (
+      str "Entitymenu_Acceptfriend"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+j label_202
+label_186:
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Chat_Friendrequestpending"
+not
+jz label_202
+(
+    static Self
+    (
+      str "Entitymenu_Addfriend"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+j label_202
+label_202:
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Gad_Isrecruit"
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Gad_Isrecruiter"
+or
+jz label_223
+(
+    static Self
+    (
+      str "Entitymenu_Warptorecruit"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_223:
+(
+    static Self
+    objpath ".Var[entref].Int"
+)
+call "Pvp_Canduelref"
+jz label_238
+(
+    static Self
+    (
+      str "Entitymenu_Pvpduel"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_238:
+(
+    static Self
+    objpath ".Var[entref].Int"
+)
+call "Pvp_Canduelref"
+jz label_253
+(
+    static Self
+    (
+      str "Entitymenu_Pvpteamduel"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_253:
+static Self
+objpath ".Var[isme].Int"
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Team_Isonmyteamhandle"
+not
+and
+(
+)
+call "Pd_Showdifficultyui"
+and
+jz label_276
+(
+    static Self
+    (
+      str "Entitymenu_Setdifficulty"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_276:
+static Self
+objpath ".Var[isme].Int"
+jz label_288
+(
+    static Self
+    (
+      str "Entitymenu_Setmood"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_288:
+static Self
+objpath ".Var[isme].Int"
+static Self
+objpath ".Var[hideoutname].String"
+str ""
+equals
+not
+and
+jz label_306
+(
+    static Self
+    (
+      str "Entitymenu_Hideoutgoto"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_306:
+static Self
+objpath ".Var[isme].Int"
+not
+static Self
+objpath ".Var[isplayer].Int"
+and
+(
+)
+call "Iscurrentmapplayersinterior"
+and
+jz label_326
+(
+    static Self
+    (
+      str "Entitymenu_Hideoutinvite"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_326:
+static Self
+objpath ".Var[entref].Int"
+static Self
+objpath ".Var[isme].Int"
+or
+jz label_341
+(
+    static Self
+    (
+      str "Entitymenu_Entityinfo"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_341:
+static Self
+objpath ".Var[entref].Int"
+static Self
+objpath ".Var[isme].Int"
+not
+and
+(
+    static Self
+    objpath ".Var[entref].Int"
+)
+call "Playercanfollowentbyref"
+and
+jz label_363
+(
+    static Self
+    (
+      str "Entitymenu_Follow"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_363:
+static Self
+objpath ".Var[isplayer].Int"
+static Self
+objpath ".Var[isme].Int"
+not
+and
+jz label_482
+(
+    static Player
+    static Self
+    objpath ".Var[entref].Int"
+)
+call "Gencantradewithbyref"
+jz label_386
+(
+    static Self
+    (
+      str "Entitymenu_Trade"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_386:
+(
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Team_Isonmyteamhandle"
+(
+    static Player
+)
+call "Team_Isteamleader"
+and
+jz label_437
+(
+    static Self
+    (
+      str "Entitymenu_Teamkick"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Team_Isteamchampionhandle"
+not
+jz label_428
+(
+    static Self
+    (
+      str "Entitymenu_Teamsetchampion"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_428:
+(
+    static Self
+    (
+      str "Entitymenu_Teampromote"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_437:
+(
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Team_Caninvitehandle"
+jz label_455
+(
+    static Self
+    (
+      str "Entitymenu_Teaminvite"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_455:
+(
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+)
+call "Team_Canrequesthandle"
+jz label_473
+(
+    static Self
+    (
+      str "Entitymenu_Teamrequest"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_473:
+(
+    static Self
+    (
+      str "Entitymenu_Sendtell"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+j label_568
+label_482:
+static Self
+objpath ".Var[isme].Int"
+jz label_568
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Team_Isonmyteamhandle"
+jz label_567
+(
+    static Self
+    (
+      str "Entitymenu_Teamleave"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+)
+call "Pd_Showdifficultyui"
+jz label_513
+(
+    static Self
+    (
+      str "Entitymenu_Teamsetdifficulty"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_513:
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Team_Isteamchampionhandle"
+not
+jz label_529
+(
+    static Self
+    (
+      str "Entitymenu_Teamsidekicking"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_529:
+(
+    static Player
+)
+call "Team_Isteamleader"
+jz label_567
+(
+    static Self
+    objpath ".Var[atname].String"
+)
+call "Team_Isteamchampionhandle"
+not
+jz label_550
+(
+    static Self
+    (
+      str "Entitymenu_Teamsetchampion"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_550:
+(
+    static Self
+    (
+      str "Entitymenu_Teamsetlootmode"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    (
+      str "Entitymenu_Teamsetrequestmode"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+label_567:
+j label_568
+label_568:
+static Self
+objpath ".Var[isinteract].Int"
+jz label_580
+(
+    static Self
+    (
+      str "Entitymenu_Interact"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_580:
+(
+    (
+      str "Entitycontextmenuextension"
+    )
+    call "Gen"
+    str "Prependmenuitems"
+)
+call "Gensendmessage"
+;
+static Self
+objpath ".Var[atname].String"
+str ""
+equals
+not
+jz label_604
+(
+    static Self
+    (
+      str "Entitymenu_Atname"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+label_604:
+(
+    static Self
+    (
+      str "Entitymenu_Name"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			GenClearEarlyOverrideChildren(Self);
+
+			if (Self.Var[ShowDebugEntry].Int)
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_Debug"));
+			endif
+
+			GenSendMessage(Gen("EntityContextMenuExtension"), "AppendMenuItems");
+
+			# Menu items for entities that are players, but not the active player
+			if (Self.Var[IsPlayer].int AND NOT Self.Var[IsMe].int)
+				#
+				# Ignores
+				#
+				if (Chat_IsIgnored(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_RemoveIgnore"));
+				else
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_AddIgnoreSpammer"));
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_AddIgnore"));
+				endif
+
+				#
+				# Guild
+				#
+				if (guild_IsMember(Player))
+					if (guild_MayKick(Player, Self.Var[Name].String + Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_GuildKick"));
+					endif
+					if (guild_MayDemote(Player, Self.Var[Name].String + Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_GuildDemote"));
+					endif
+					if (guild_MayPromote(Player, Self.Var[Name].String + Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_GuildPromote"));
+					endif
+					if (guild_MayInvite(Player, Self.Var[Name].String + Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_GuildInvite"));
+					endif
+				endif
+
+				#
+				# Friends
+				#
+				if (Chat_IsFriend(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_RemoveFriend"));
+				elif (Chat_FriendRequestReceived(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_DeclineFriend"));
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_AcceptFriend"));
+				elif (not Chat_FriendRequestPending(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_AddFriend"));
+				endif
+
+				if(GAD_IsRecruit(Self.Var[AtName].String) or GAD_ISRecruiter(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_WarpToRecruit"));
+				endif
+
+				#
+				# Duel (EntRef Only)
+				#
+				if(pvp_CanDuelRef(Self.Var[entref].Int))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_PVPDuel"));
+				endif
+
+				if(pvp_CanDuelRef(Self.Var[entref].Int))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_PVPTeamDuel"));
+				endif
+			endif
+			
+			#
+			# Difficulty (Me only, NOT on team)
+			#
+			if (Self.Var[IsMe].int AND not team_IsOnMyTeamHandle(Self.Var[AtName].String) AND pd_ShowDifficultyUI())
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_SetDifficulty"));
+			endif
+
+			#
+			# Set Mood (Me only)
+			#
+			if (Self.Var[IsMe].int)
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_SetMood"));
+			endif
+
+			#
+			# Go to Hideout (Must be Self and hideout currently set)
+			#
+			if (Self.Var[IsMe].int and (NOT Self.Var[HideoutName].String = "") )
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_HideoutGoto"));
+			endif
+
+			#
+			# Invite to hideout (Must be not me and isplayer and inside my hideout
+			#
+			if (NOT Self.Var[IsMe].int AND Self.Var[IsPlayer].int AND IsCurrentMapPlayersInterior() )
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_HideoutInvite"));
+			endif
+
+			#
+			# Information (EntRef &amp; Me only)
+			#
+			if (Self.Var[entref].int OR Self.Var[IsMe].int)
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_EntityInfo"));
+			endif
+
+			#
+			# Follow (Entref &amp; NOT Me)
+			#
+			if (Self.Var[entref].int AND not Self.Var[IsMe].int AND PlayerCanFollowEntByRef(Self.Var[entref].int)) 
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_Follow"));
+			endif
+
+			# Menu items for entities that are players, but not the active player
+			if (Self.Var[IsPlayer].int AND NOT Self.Var[IsMe].int)
+				#
+				# Trade (EntRef only)
+				#
+				if (GenCanTradeWithByRef(Player, Self.Var[entref].Int))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_Trade"));
+				endif
+
+				#
+				# Team
+				#
+				if (team_IsOnMyTeamHandle(Self.Var[Name].String + Self.Var[AtName].String) and team_IsTeamLeader(Player))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamKick"));
+					if (NOT team_IsTeamChampionHandle(Self.Var[Name].String + Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSetChampion"));
+					endif
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamPromote"));
+				endif
+				if (team_CanInviteHandle(Self.Var[Name].String + Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamInvite"));
+				endif
+				if (team_CanRequestHandle(Self.Var[Name].String + Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamRequest"));
+				endif
+
+				#
+				# Tells
+				#
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_SendTell"));
+			elif (Self.Var[IsMe].int)
+				# Alternative menus for the above block if it is "me".
+				#
+				# Team
+				#
+				if (team_IsOnMyTeamHandle(Self.Var[AtName].String))
+					GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamLeave"));
+					if (pd_ShowDifficultyUI())
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSetDifficulty"));
+					endif
+					if (NOT team_IsTeamChampionHandle(Self.Var[AtName].String))
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSidekicking"));
+					endif
+					if (team_IsTeamLeader(Player))
+						if (NOT team_IsTeamChampionHandle(Self.Var[AtName].String))
+							GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSetChampion"));
+						endif
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSetLootMode"));
+						GenAddEarlyOverrideChild(Self, Gen("EntityMenu_TeamSetRequestMode"));
+						
+					endif
+				endif
+
+			endif
+
+			#
+			# Interaction (NPC only)
+			#
+			if (Self.Var[IsInteract].int)
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_Interact"));
+			endif
+
+			GenSendMessage(Gen("EntityContextMenuExtension"), "PrependMenuItems");
+
+			#
+			# Name &amp; AtName
+			#
+			# Todo: check whether AtName exists and make it ONLY be the account name
+			if (not Self.Var[AtName].String = "")
+				GenAddEarlyOverrideChild(Self, Gen("EntityMenu_AtName"));
+			endif
+			GenAddEarlyOverrideChild(Self, Gen("EntityMenu_Name"));
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Widgets/Contextmenu/Appearance_Entitycontextmenu.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Setupvars</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Widgets/Contextmenu/Appearance_Entitycontextmenu.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

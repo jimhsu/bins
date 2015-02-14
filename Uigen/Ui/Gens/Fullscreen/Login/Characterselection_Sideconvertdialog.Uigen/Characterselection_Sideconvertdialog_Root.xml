@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Characterselection_Sideconvertdialog_Root</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Windowcontainer</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Audiowindow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Windowcontainer</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Windowcontainer</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>KeyAction</c:Field>
+      <c:Field>CaptureMouse</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>500</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>Center</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Characterselection_Sideconvertdialog_Contentarea</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Characterselection_Sideconvertdialog_Buttonbar</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild>
+      <UIGen>
+        <Name>Characterselection_Sideconvertdialog_Header</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Titlebar</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Titlebar</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Titlebar</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Titlebar</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Text</Type>
+        <Base i:type="UIGenText">
+          <Type>Text</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Text</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Width>
+          <Height>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <Font></Font>
+          <Text>Characterselection_Sideconvertdialogheader</Text>
+          <TextBlock i:nil="true" />
+          <Alignment>Center</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ScaleToFit>0</ScaleToFit>
+          <ShrinkToFit>0</ShrinkToFit>
+          <NoWrap>0</NoWrap>
+          <Truncate></Truncate>
+        </Base>
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>Characterselection_Sideconvertdialog_Closebutton</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Box</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction>
+      <UIGenKeyAction>
+        <Key>Ab</Key>
+        <Command>
+          <a:string>GenButtonClick CharacterSelection_SideConvertDialogOKButton</a:string>
+        </Command>
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Bb</Key>
+        <Command>
+          <a:string>GenButtonClick CharacterSelection_SideConvertDialogCancelButton</a:string>
+        </Command>
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+    </KeyAction>
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>1</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>0</Version>
+  </Base>
+  <StateDef />
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Modaldialog_Root"
+  )
+  call "Gen"
+  ident "Visible"
+)
+call "Geninstate"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenInState(Gen("ModalDialog_Root"), Visible) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenMovableBox">
+        <Type>MovableBox</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Width</c:Field>
+          <c:Field>Height</c:Field>
+          <c:Field>Clip</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Percentage</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Percentage</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>1</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Movable>MouseNone</Movable>
+        <ResizableHorizontal>MouseNone</ResizableHorizontal>
+        <ResizableVertical>MouseNone</ResizableVertical>
+        <MovableWidth i:nil="true" />
+        <MovableHeight i:nil="true" />
+        <Raise>0</Raise>
+        <ResizeBorder>0</ResizeBorder>
+        <Version>0</Version>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Init</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypepremium"
+equals
+jz label_19
+(
+  static Self
+  str "PlayerType"
+  (
+    str "PlayerType"
+    ident "Playertypepremium"
+  )
+  call "Translatestaticdefineint"
+)
+call "Gensetstring"
+return
+label_19:
+(
+    str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypestandard"
+equals
+jz label_38
+(
+    static Self
+    str "PlayerType"
+    (
+      str "PlayerType"
+      ident "Playertypestandard"
+    )
+    call "Translatestaticdefineint"
+)
+call "Gensetstring"
+return
+label_38:
+(
+    static Self
+    str "PlayerType"
+    str "Unknown"
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if( Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypePremium )
+				GenSetString(Self, "PlayerType", TranslateStaticDefineInt("PlayerType", PlayerTypePremium));
+			elif( Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypeStandard )
+				GenSetString(Self, "PlayerType", TranslateStaticDefineInt("PlayerType", PlayerTypeStandard));
+			else
+				GenSetString(Self, "PlayerType", "Unknown");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>reset</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>reset</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+)
+call "Login_Resetconvertcharacterplayertype"
+;
+(
+  ident "True"
+)
+call "Login_Setconvertcharactersideconvert"
+;
+(
+  str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypepremium"
+equals
+jz label_22
+(
+  str "Premium"
+)
+call "Login_Setconvertcharacterplayertype"
+j label_40
+label_22:
+(
+    str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypesuperpremium"
+equals
+jz label_35
+(
+    str "SuperPremium"
+)
+call "Login_Setconvertcharacterplayertype"
+j label_40
+label_35:
+(
+    str "Standard"
+)
+call "Login_Setconvertcharacterplayertype"
+;
+label_40:
+(
+)
+call "Logingetplayertype"
+ident "Playertypepremium"
+equals
+jz label_81
+(
+    (
+      str "Characterselection_List"
+    )
+    call "Gen"
+    objpath ".Var[selectedcontainerid].Int"
+)
+call "Login_Getremainingrespecconversionsbyid"
+int 0
+greater
+jz label_69
+(
+    ident "False"
+)
+call "Login_Setconvertcharacterpaymentgad"
+;
+(
+    static Self
+    str "Paymentwithgad"
+    int 0
+)
+call "Gensetvalue"
+return
+label_69:
+(
+    ident "True"
+)
+call "Login_Setconvertcharacterpaymentgad"
+;
+(
+    static Self
+    str "Paymentwithgad"
+    int 1
+)
+call "Gensetvalue"
+return
+label_81:
+(
+)
+call "Logingetplayertype"
+ident "Playertypestandard"
+equals
+retifzero
+(
+    ident "True"
+)
+call "Login_Setconvertcharacterpaymentgad"
+;
+(
+    static Self
+    str "Paymentwithgad"
+    int 1
+)
+call "Gensetvalue"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			Login_ResetConvertCharacterPlayerType();
+			Login_SetConvertCharacterSideConvert(True);
+			if (Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypePremium)
+				Login_SetConvertCharacterPlayerType("Premium");
+			elif (Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypeSuperPremium)						
+				Login_SetConvertCharacterPlayerType("SuperPremium");
+			else
+				Login_SetConvertCharacterPlayerType("Standard");
+			endif
+			if( LoginGetPlayerType() = PlayerTypePremium )
+				if( Login_GetRemainingRespecConversionsByID(Gen("CharacterSelection_List").Var[SelectedContainerID].Int) &gt; 0)
+					Login_SetConvertCharacterPaymentGAD(False);
+					GenSetValue(Self, "PaymentWithGAD", 0);
+				else
+					Login_SetConvertCharacterPaymentGAD(True);
+					GenSetValue(Self, "PaymentWithGAD", 1);
+				endif
+			elif( LoginGetPlayerType() = PlayerTypeStandard )
+				Login_SetConvertCharacterPaymentGAD(True);
+				GenSetValue(Self, "PaymentWithGAD", 1);
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Init</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypepremium"
+equals
+jz label_61
+(
+  str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[characterpath].String"
+str ""
+equals
+jz label_34
+(
+  (
+    str "Characterselection_Sideconvertdialog_Newarchrb"
+  )
+  call "Gen"
+  int 1
+)
+call "Gencheckbuttonsetstate"
+;
+(
+  (
+    str "Characterselection_Sideconvertdialog_Newarchrb"
+  )
+  call "Gen"
+  str "Clicked"
+)
+call "Gensendmessage"
+return
+label_34:
+(
+    (
+      str "Characterselection_Sideconvertdialog_Freeformrb"
+    )
+    call "Gen"
+    int 1
+)
+call "Gencheckbuttonsetstate"
+;
+(
+    (
+      str "Characterselection_Sideconvertdialog_Freeformrb"
+    )
+    call "Gen"
+    str "Clicked"
+)
+call "Gensendmessage"
+;
+(
+    (
+      str "Characterselection_Sideconvertdialog_Newarchrb"
+    )
+    call "Gen"
+    int 0
+)
+call "Gencheckbuttonsetstate"
+return
+label_61:
+(
+    str "Characterselection_List"
+)
+call "Gen"
+objpath ".Var[selectedplayertype].Int"
+ident "Playertypestandard"
+equals
+retifzero
+(
+    (
+      str "Characterselection_Sideconvertdialog_Newarchrb"
+    )
+    call "Gen"
+    int 1
+)
+call "Gencheckbuttonsetstate"
+;
+(
+    (
+      str "Characterselection_Sideconvertdialog_Newarchrb"
+    )
+    call "Gen"
+    str "Clicked"
+)
+call "Gensendmessage"
+return
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			if( Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypePremium )
+				if(Gen("CharacterSelection_List").Var[CharacterPath].String = "")
+					GenCheckButtonSetState(Gen("CharacterSelection_SideConvertDialog_NewArchRB"),1);
+					GenSendMessage(Gen("CharacterSelection_SideConvertDialog_NewArchRB"), "Clicked");
+				else
+					GenCheckButtonSetState(Gen("CharacterSelection_SideConvertDialog_FreeformRB"),1);
+					GenSendMessage(Gen("CharacterSelection_SideConvertDialog_FreeformRB"), "Clicked");
+					GenCheckButtonSetState(Gen("CharacterSelection_SideConvertDialog_NewArchRB"),0);
+				endif
+			elif( Gen("CharacterSelection_List").Var[SelectedPlayerType].Int = PlayerTypeStandard )
+				GenCheckButtonSetState(Gen("CharacterSelection_SideConvertDialog_NewArchRB"),1);
+				GenSendMessage(Gen("CharacterSelection_SideConvertDialog_NewArchRB"), "Clicked");
+			endif
+
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </AfterCreate>
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Fullscreen/Login/Characterselection_Sideconvertdialog.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Modal</GlobName>
+      <State>Visible</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Paymentwithgad</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>PlayerType</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>Unknown</String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

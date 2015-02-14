@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Team_Status_Missiondisplay_Listrow</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>ListRow</Type>
+  <Base i:type="UIGenListRow">
+    <Type>ListRow</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>SMFExpr</c:Field>
+      <c:Field>Alignment</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <SMF></SMF>
+    <SMFExpr>
+      <_><![CDATA[
+(
+  str "Rowdata"
+  str "MissionListNode"
+)
+call "Declaretype"
+;
+(
+  static Self
+  str "MapName"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Count"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Timervalue"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static RowData
+)
+call "Getmissionlistnodetype"
+str "Returnstring"
+equals
+jz label_64
+(
+  static Self
+  str "Description"
+  (
+    static RowData
+    objpath ".Ent"
+    static RowData
+    objpath ".Mission"
+  )
+  call "Getmissionreturnstring"
+)
+call "Gensetstring"
+;
+static RowData
+objpath ".Shadowmission"
+jz label_57
+(
+  static Self
+  str "Colorstringbody"
+  str "Color=secondary_Mission_Success"
+)
+call "Gensetstring"
+j label_63
+label_57:
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=success"
+)
+call "Gensetstring"
+label_63:
+j label_263
+label_64:
+(
+    static RowData
+)
+call "Getmissionlistnodetype"
+str "Failedreturnstring"
+equals
+jz label_91
+(
+    static Self
+    str "Description"
+    (
+      static RowData
+      objpath ".Ent"
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissionfailedreturnstring"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=#ffffff"
+)
+call "Gensetstring"
+j label_263
+label_91:
+(
+    static RowData
+)
+call "Getmissionlistnodetype"
+str "Mapstring"
+equals
+jz label_137
+(
+    static Self
+    str "MapName"
+    (
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmapnamefrommission"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Description"
+    (
+      str "Hud_Missionhelper_Gotomap"
+    )
+    call "Translate"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Timervalue"
+    (
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissiontimerstring"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=#ffffff"
+)
+call "Gensetstring"
+j label_263
+label_137:
+(
+    static RowData
+)
+call "Getmissionlistnodetype"
+str "UIString"
+equals
+jz label_243
+(
+    static Self
+    str "Description"
+    (
+      static RowData
+      objpath ".Ent"
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissionuistring"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Count"
+    (
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissioncountstring"
+)
+call "Gensetstring"
+;
+(
+    static RowData
+    objpath ".Mission"
+)
+call "Getmissiondisplaystate"
+str "InProgress"
+equals
+jz label_201
+(
+    static RowData
+    objpath ".Mission"
+)
+call "Missionhasdisplayname"
+not
+jz label_194
+(
+    static Self
+    str "Timervalue"
+    (
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissiontimerstring"
+)
+call "Gensetstring"
+;
+label_194:
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=#ffffff"
+)
+call "Gensetstring"
+j label_242
+label_201:
+(
+    static RowData
+    objpath ".Mission"
+)
+call "Getmissiondisplaystate"
+str "Succeeded"
+equals
+jz label_226
+static RowData
+objpath ".Shadowmission"
+jz label_219
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=secondary_Mission_Success"
+)
+call "Gensetstring"
+j label_225
+label_219:
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=success"
+)
+call "Gensetstring"
+label_225:
+j label_242
+label_226:
+static RowData
+objpath ".Shadowmission"
+jz label_236
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=secondary_Mission_Failure"
+)
+call "Gensetstring"
+j label_242
+label_236:
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=failure"
+)
+call "Gensetstring"
+label_242:
+j label_263
+label_243:
+(
+    static Self
+    str "Description"
+    (
+      static RowData
+      objpath ".Ent"
+      static RowData
+      objpath ".Mission"
+    )
+    call "Getmissionuistring"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Colorstringbody"
+    str "Color=#ffffff"
+)
+call "Gensetstring"
+;
+label_263:
+static Self
+objpath ".Var[timervalue].String"
+str ""
+equals
+jz label_275
+(
+    static Self
+    str "Timerstring"
+    str ""
+)
+call "Gensetstring"
+j label_287
+label_275:
+(
+    static Self
+    str "Timerstring"
+    str "<font Style=game_Highlight_Small>"
+    static Self
+    objpath ".Var[timervalue].String"
+    add
+    str "&nbsp;-&nbsp;</Font>"
+    add
+)
+call "Gensetstring"
+;
+label_287:
+str "<table><tr Border=0><td>&nbsp;&nbsp;&nbsp;</Td><td Border=0 Width=100%><font Style=game_Hud_Small "
+static Self
+objpath ".Var[colorstringbody].String"
+add
+str "><span Align=left>"
+add
+static Self
+objpath ".Var[timerstring].String"
+add
+static Self
+objpath ".Var[description].String"
+add
+str " "
+add
+static Self
+objpath ".Var[count].String"
+add
+str "</Span></Font></Td></Tr></Table>"
+add
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType("RowData", "MissionListNode");
+			GenSetString(Self, "MapName", "");
+			GenSetString(Self, "Count", "");
+			GenSetString(Self, "TimerValue", "");
+
+			if (GetMissionListNodeType(RowData) = "ReturnString")
+				GenSetString(Self, "Description", GetMissionReturnString(RowData.Ent, RowData.Mission));
+				if (RowData.ShadowMission)
+					GenSetString(Self, "ColorStringBody", "color=Secondary_Mission_Success");
+				else
+					GenSetString(Self, "ColorStringBody", "color=success");
+				endif
+			elif (GetMissionListNodeType(RowData) = "FailedReturnString")
+				GenSetString(Self, "Description", GetMissionFailedReturnString(RowData.Ent, RowData.Mission));
+				GenSetString(Self, "ColorStringBody", "color=#ffffff");
+			elif (GetMissionListNodeType(RowData) = "MapString")
+				GenSetString(Self, "MapName", GetMapNameFromMission(RowData.Mission));
+				GenSetString(Self, "Description", Translate("HUD_MissionHelper_GoToMap"));
+				GenSetString(Self, "TimerValue", GetMissionTimerString(RowData.Mission));
+				GenSetString(Self, "ColorStringBody", "color=#ffffff");
+			elif (GetMissionListNodeType(RowData) = "UIString")
+				GenSetString(Self, "Description", GetMissionUIString(RowData.Ent, RowData.Mission));
+				GenSetString(Self, "Count", GetMissionCountString(RowData.Mission));
+
+				if (GetMissionDisplayState(RowData.Mission) = "InProgress")
+					if (NOT MissionHasDisplayName(RowData.Mission))
+						GenSetString(Self, "TimerValue", GetMissionTimerString(RowData.Mission));
+					endif
+					GenSetString(Self, "ColorStringBody", "color=#ffffff");
+				elif (GetMissionDisplayState(RowData.Mission) = "Succeeded")
+					if (RowData.ShadowMission)
+						GenSetString(Self, "ColorStringBody", "color=Secondary_Mission_Success");
+					else
+						GenSetString(Self, "ColorStringBody", "color=success");
+					endif
+				else
+					if (RowData.ShadowMission)
+						GenSetString(Self, "ColorStringBody", "color=Secondary_Mission_Failure");
+					else
+						GenSetString(Self, "ColorStringBody", "color=failure");
+					endif
+				endif
+			else
+				GenSetString(Self, "Description", GetMissionUIString(RowData.Ent, RowData.Mission));
+				GenSetString(Self, "ColorStringBody", "color=#ffffff");
+			endif
+
+			if (Self.Var[TimerValue].String = "")
+				GenSetString(Self, "TimerString", "");
+			else
+				GenSetString(Self, "TimerString", "&lt;font style=Game_Highlight_Small&gt;" + Self.Var[TimerValue].String + "&amp;nbsp;-&amp;nbsp;&lt;/font&gt;");
+			endif
+
+			"&lt;table&gt;&lt;tr border=0&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td border=0 width=100%&gt;&lt;font style=Game_HUD_Small "
+			+ Self.Var[ColorStringBody].String
+			+ "&gt;&lt;span align=left&gt;"
+			+ Self.Var[TimerString].String
+			+ Self.Var[Description].String
+			+ " " + Self.Var[Count].String
+			+ "&lt;/span&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Teamstatus.Uigen</FileName>
+      <Cost>0</Cost>
+    </SMFExpr>
+    <Truncate></Truncate>
+    <Font></Font>
+    <OnActivated i:nil="true" />
+    <OnSelected i:nil="true" />
+    <Alignment>TopLeft</Alignment>
+    <AllowSelect>1</AllowSelect>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <PlainText>0</PlainText>
+    <SafeMode>0</SafeMode>
+    <FilterProfanity>0</FilterProfanity>
+  </Base>
+  <StateDef />
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "MissionListNode"
+)
+call "Declaretype"
+;
+(
+  static RowData
+)
+call "Getmissionlistnodetype"
+str "DisplayName"
+equals
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("RowData", "MissionListNode");
+			GetMissionListNodeType(RowData) = "DisplayName"
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Teamstatus.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenListRow">
+        <Type>ListRow</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>SMFExpr</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <SMF></SMF>
+        <SMFExpr>
+          <_><![CDATA[
+(
+  static Self
+  str "Missiontitle"
+  (
+    static RowData
+    objpath ".Ent"
+    static RowData
+    objpath ".Mission"
+  )
+  call "Getmissiondisplayname"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Timerstring"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Timervalue"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static RowData
+  objpath ".Mission"
+)
+call "Getmissiondisplaystate"
+str "InProgress"
+equals
+jz label_53
+(
+  static Self
+  str "Colorstringheader"
+  str "Color=#ffee00"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Timervalue"
+  (
+    static RowData
+    objpath ".Mission"
+  )
+  call "Getmissiontimerstring"
+)
+call "Gensetstring"
+;
+label_53:
+static Self
+objpath ".Var[timervalue].String"
+str ""
+equals
+not
+jz label_71
+(
+    static Self
+    str "Timerstring"
+    str "&nbsp;-&nbsp;<font Style=game_Header>"
+    static Self
+    objpath ".Var[timervalue].String"
+    add
+    str "</Font>"
+    add
+)
+call "Gensetstring"
+;
+label_71:
+static RowData
+objpath ".Shadowmission"
+jz label_81
+(
+    static Self
+    str "Colorstringheader"
+    str "Color=secondary_Mission_Title"
+)
+call "Gensetstring"
+j label_111
+label_81:
+(
+    static RowData
+    objpath ".Mission"
+)
+call "Getmissiondisplaystate"
+str "Succeeded"
+equals
+jz label_96
+(
+    static Self
+    str "Colorstringheader"
+    str "Color=success"
+)
+call "Gensetstring"
+j label_111
+label_96:
+(
+    static RowData
+    objpath ".Mission"
+)
+call "Getmissiondisplaystate"
+str "failed"
+equals
+jz label_111
+(
+    static Self
+    str "Colorstringheader"
+    str "Color=failure"
+)
+call "Gensetstring"
+j label_111
+label_111:
+str "<font Style=game_Header "
+static Self
+objpath ".Var[colorstringheader].String"
+add
+str "><span Align=left>"
+add
+static Self
+objpath ".Var[missiontitle].String"
+add
+static Self
+objpath ".Var[timerstring].String"
+add
+str "</Span></Font>"
+add
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				GenSetString(Self, "MissionTitle", GetMissionDisplayName(RowData.Ent, RowData.Mission));
+				GenSetString(Self, "TimerString", "");
+				GenSetString(Self, "TimerValue", "");
+
+				if (GetMissionDisplayState(RowData.Mission) = "InProgress")
+					GenSetString(Self, "ColorStringHeader", "color=#ffee00");
+					GenSetString(Self, "TimerValue", GetMissionTimerString(RowData.Mission));
+				endif
+
+				if (NOT(Self.Var[TimerValue].String = ""))
+					GenSetString(Self, "TimerString", "&amp;nbsp;-&amp;nbsp;&lt;font style=Game_Header&gt;" + Self.Var[TimerValue].String + "&lt;/font&gt;");
+				endif
+
+				if (RowData.ShadowMission)
+					GenSetString(Self, "ColorStringHeader", "color=Secondary_Mission_Title");
+				elif (GetMissionDisplayState(RowData.Mission) = "Succeeded")
+					GenSetString(Self, "ColorStringHeader", "color=success");
+				elif (GetMissionDisplayState(RowData.Mission) = "Failed")
+					GenSetString(Self, "ColorStringHeader", "color=failure");
+				endif
+
+				"&lt;font style=Game_Header "
+				+ Self.Var[ColorStringHeader].String
+				+ "&gt;&lt;span align=left&gt;"
+				+ Self.Var[MissionTitle].String
+				+ Self.Var[TimerString].String
+				+ "&lt;/span&gt;&lt;/font&gt;"
+
+			</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Teamstatus.Uigen</FileName>
+          <Cost>0</Cost>
+        </SMFExpr>
+        <Truncate></Truncate>
+        <Font></Font>
+        <OnActivated i:nil="true" />
+        <OnSelected i:nil="true" />
+        <Alignment>TopLeft</Alignment>
+        <AllowSelect>1</AllowSelect>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <PlainText>0</PlainText>
+        <SafeMode>0</SafeMode>
+        <FilterProfanity>0</FilterProfanity>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Teamstatus.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Colorstringbody</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Colorstringheader</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Count</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Description</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>MapName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Missiontitle</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Notification</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Timerstring</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Timervalue</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Mailcompose_Root</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>KeyAction</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Mailcompose_Bodybox</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Mailcompose_Subjectlabel</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Mailcompose_Subjectentry</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Mailcompose_Tolabel</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Mailcompose_Toentry</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Mailcompose_Send_Attacheditems_Itemlist</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction>
+      <UIGenKeyAction>
+        <Key>Shift+tab</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Focusprevious</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Tab</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Focusnext</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+    </KeyAction>
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>Visible</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  (
+    str "Mailcompose_Toentry"
+  )
+  call "Gen"
+)
+call "Gengettextentrytext"
+str ""
+equals
+jz label_18
+(
+  (
+    str "Mailcompose_Toentry"
+  )
+  call "Gen"
+)
+call "Gensetfocus"
+return
+label_18:
+(
+    (
+      str "Mailcompose_Body"
+    )
+    call "Gen"
+)
+call "Gensetfocus"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				if (GenGetTextEntryText(Gen("MailCompose_ToEntry")) = "")
+					GenSetFocus(Gen("MailCompose_ToEntry"));
+				else
+					GenSetFocus(Gen("MailCompose_Body"));
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>User</State>
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>HideChild</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild>
+          <a:string>Mailcompose_Tolabel</a:string>
+          <a:string>Mailcompose_Toentry</a:string>
+          <a:string>Mailcompose_Send_Attacheditems_Itemlist</a:string>
+        </HideChild>
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Mailsendispending"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> MailSendIsPending() </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Child</c:Field>
+          <c:Field>HideChild</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child>
+          <UIGenChild>
+            <hChild>Mailcompose_Sendingwait</hChild>
+          </UIGenChild>
+        </Child>
+        <InlineChild />
+        <HideChild>
+          <a:string>Mailcompose_Bodybox</a:string>
+          <a:string>Mailcompose_Subjectentry</a:string>
+          <a:string>Mailcompose_Subjectlabel</a:string>
+          <a:string>Mailcompose_Toentry</a:string>
+          <a:string>Mailcompose_Tolabel</a:string>
+          <a:string>Mailcompose_Send_Attacheditems_Itemlist</a:string>
+        </HideChild>
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate>
+          <UIGenMutateOther>
+            <hGen>Mail_Send</hGen>
+            <EnterState>
+              <a:string>Disabled</a:string>
+            </EnterState>
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+          </UIGenMutateOther>
+        </Mutate>
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+)
+call "Mailhaserrors"
+not
+retifzero
+(
+  static Self
+  str "Clear"
+)
+call "Gensendmessage"
+;
+(
+  (
+    str "Mail_Root"
+  )
+  call "Gen"
+  str "sent"
+)
+call "Gensendmessage"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+#				GenSetState(Gen("MailCompose_Send"), Disabled, 1);
+				if (not MailHasErrors())
+					GenSendMessage(Self, "Clear");
+#					GenSendMessage(Gen("Mail_Root"), "ShowInbox");
+					GenSendMessage(Gen("Mail_Root"), "Sent");
+			 	endif
+			</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Tempdisable</MessageName>
+            <hGen>Mailcompose_Send</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Mailhaserrors"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> MailHasErrors() </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Child</c:Field>
+          <c:Field>HideChild</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child>
+          <UIGenChild>
+            <hChild>Mailcompose_Errors</hChild>
+          </UIGenChild>
+          <UIGenChild>
+            <hChild>Mailcompose_Clearerrors</hChild>
+          </UIGenChild>
+        </Child>
+        <InlineChild />
+        <HideChild>
+          <a:string>Mailcompose_Bodybox</a:string>
+          <a:string>Mailcompose_Subjectentry</a:string>
+          <a:string>Mailcompose_Subjectlabel</a:string>
+          <a:string>Mailcompose_Toentry</a:string>
+          <a:string>Mailcompose_Tolabel</a:string>
+          <a:string>Mailcompose_Send_Attacheditems_Itemlist</a:string>
+        </HideChild>
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Clear</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Mailcompose_Subjectentry"
+  )
+  call "Gen"
+  str ""
+)
+call "Gensettextentrytext"
+;
+(
+  (
+    str "Mailcompose_Toentry"
+  )
+  call "Gen"
+  str ""
+)
+call "Gensettextentrytext"
+;
+(
+  (
+    str "Mailcompose_Body"
+  )
+  call "Gen"
+  str ""
+)
+call "Gensettextentrytext"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetTextEntryText(Gen("MailCompose_SubjectEntry"), "");
+			GenSetTextEntryText(Gen("MailCompose_ToEntry"), "");
+			GenSetTextEntryText(Gen("MailCompose_Body"), "");
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>send</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Mail_Tabpane"
+  )
+  call "Gen"
+  ident "User2"
+)
+call "Geninstate"
+jz label_78
+(
+  (
+    str "Mailcompose_Send_Attacheditems_Itemlist"
+  )
+  call "Gen"
+  static Player
+)
+call "Genmailgetitemstring"
+str ""
+equals
+jz label_45
+(
+  (
+    (
+      str "Mailcompose_Toentry"
+    )
+    call "Gen"
+  )
+  call "Gengettextentrytext"
+  (
+    (
+      str "Mailcompose_Subjectentry"
+    )
+    call "Gen"
+  )
+  call "Gengettextentrytext"
+  (
+    (
+      str "Mailcompose_Body"
+    )
+    call "Gen"
+  )
+  call "Gengettextentrytext"
+)
+call "Mailsend"
+return
+label_45:
+(
+    (
+      (
+        str "Mailcompose_Toentry"
+      )
+      call "Gen"
+    )
+    call "Gengettextentrytext"
+    (
+      (
+        str "Mailcompose_Subjectentry"
+      )
+      call "Gen"
+    )
+    call "Gengettextentrytext"
+    (
+      (
+        str "Mailcompose_Body"
+      )
+      call "Gen"
+    )
+    call "Gengettextentrytext"
+    (
+      (
+        str "Mailcompose_Send_Attacheditems_Itemlist"
+      )
+      call "Gen"
+      static Player
+    )
+    call "Genmailgetitemstring"
+)
+call "Mailsenditems"
+return
+label_78:
+(
+    (
+      str "Mail_Tabpane"
+    )
+    call "Gen"
+    ident "User3"
+)
+call "Geninstate"
+retifzero
+(
+    (
+      (
+        str "Mailcompose_Subjectentry"
+      )
+      call "Gen"
+    )
+    call "Gengettextentrytext"
+    (
+      (
+        str "Mailcompose_Body"
+      )
+      call "Gen"
+    )
+    call "Gengettextentrytext"
+)
+call "Mailsendguild"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (GenInState(Gen("Mail_TabPane"), User2))
+				if (GenMailGetItemString(Gen("MailCompose_Send_AttachedItems_ItemList"), Player) = "")
+					MailSend(
+						GenGetTextEntryText(Gen("MailCompose_ToEntry")),
+						GenGetTextEntryText(Gen("MailCompose_SubjectEntry")),
+						GenGetTextEntryText(Gen("MailCompose_Body"))
+						);
+				else
+					MailSendItems(
+						GenGetTextEntryText(Gen("MailCompose_ToEntry")),
+						GenGetTextEntryText(Gen("MailCompose_SubjectEntry")),
+						GenGetTextEntryText(Gen("MailCompose_Body")),
+						GenMailGetItemString(Gen("MailCompose_Send_AttachedItems_ItemList"), Player)
+						);
+				endif
+			elif (GenInState(Gen("Mail_TabPane"), User3))
+				MailSendGuild(GenGetTextEntryText(Gen("MailCompose_SubjectEntry")), GenGetTextEntryText(Gen("MailCompose_Body")))
+			endif
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Get</MessageName>
+          <hGen>Mail_Root</hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Mail.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

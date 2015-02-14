@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Entityinfo_Root</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Window_Gameplay</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Movablewindow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Window</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Window_Gameplay</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Movablewindow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Audiowindow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Window</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>MinimumWidth</c:Field>
+      <c:Field>MinimumHeight</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>Version</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>500</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>410</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>500</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>410</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>Center</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Entityinfo_Titlebar</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Titlebar</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Titlebar</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Titlebar</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Titlebar</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Text</Type>
+        <Base i:type="UIGenText">
+          <Type>Text</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Text</c:Field>
+            <c:Field>ShrinkToFit</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Width>
+          <Height>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <Font></Font>
+          <Text>Entityinfo_Name</Text>
+          <TextBlock i:nil="true" />
+          <Alignment>Center</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ScaleToFit>0</ScaleToFit>
+          <ShrinkToFit>1</ShrinkToFit>
+          <NoWrap>0</NoWrap>
+          <Truncate></Truncate>
+        </Base>
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>Entityinfo_Close</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Box</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>Entityinfo_Mainbox</Name>
+        <BorrowFrom />
+        <FlatBorrowFrom />
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Box</Type>
+        <Base i:type="UIGenBox">
+          <Type>Box</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Width</c:Field>
+            <c:Field>Height</c:Field>
+            <c:Field>Child</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>1</Magnitude>
+            <Unit>Percentage</Unit>
+          </Width>
+          <Height>
+            <Magnitude>1</Magnitude>
+            <Unit>Percentage</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child>
+            <UIGenChild>
+              <hChild>Entityinfo_Leftside</hChild>
+            </UIGenChild>
+            <UIGenChild>
+              <hChild>Entityinfo_Rightside</hChild>
+            </UIGenChild>
+            <UIGenChild>
+              <hChild>Entityinfo_Entityaccount</hChild>
+            </UIGenChild>
+            <UIGenChild>
+              <hChild>Entityinfo_Names_Box_Entityinfogroup</hChild>
+            </UIGenChild>
+          </Child>
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+        </Base>
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>1</Version>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>Visible</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Setinfo</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.5</Time>
+      <Name>UpdateEntityInfo</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Entityinfohealth"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgethealthpoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfohealthpercent"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgethealthpercent"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfohealthmax"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgethealthpointsmax"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfoenergy"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgetpowerpoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfoenergypercent"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgetpowerpercent"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfoenergynotch"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgetpowernotch"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Entityinfoenergymax"
+  (
+    (
+      (
+        str "Entityinfo_Root"
+      )
+      call "Gen"
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Entgetpowerpointsmax"
+)
+call "Gensetvalue"
+;
+(
+  (
+    static Self
+    objpath ".Var[entref].Int"
+  )
+  call "Entgetfromref"
+)
+call "Entgetisplayer"
+jz label_138
+(
+  (
+    str "Entityinfo_Entityaccount"
+  )
+  call "Gen"
+  ident "User"
+  int 1
+)
+call "Gensetstate"
+j label_180
+label_138:
+static Self
+objpath ".Var[entityinfodescription].String"
+str ""
+equals
+jz label_154
+(
+    static Self
+    str "Entityinfodescription"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetcritterdescription"
+)
+call "Gensetstring"
+;
+label_154:
+static Self
+objpath ".Var[entityinfogroupdescription].String"
+str ""
+equals
+jz label_170
+(
+    static Self
+    str "Entityinfogroupdescription"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetgroupdescription"
+)
+call "Gensetstring"
+;
+label_170:
+(
+    (
+      str "Entityinfo_Entityaccount"
+    )
+    call "Gen"
+    ident "User"
+    int 0
+)
+call "Gensetstate"
+;
+label_180:
+static Self
+objpath ".Var[entityinfodescription].String"
+str ""
+equals
+not
+static Self
+objpath ".Var[entityinfogroupdescription].String"
+str ""
+equals
+not
+and
+static Self
+objpath ".Var[entityinfogroupdescription].String"
+str ""
+equals
+not
+and
+retifzero
+(
+    static Self
+    str "Entityinfodescription"
+    (
+      (
+        static Self
+        objpath ".Var[entityinfodescription].String"
+        str "<br><br>"
+      )
+      call "Stringconcat"
+      static Self
+      objpath ".Var[entityinfogroupdescription].String"
+    )
+    call "Stringconcat"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfogroupdescription"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+
+			GenSetValue(Self, "EntityInfoHealth", EntGetHealthPoints(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoHealthPercent", EntGetHealthPercent(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoHealthMax", EntGetHealthPointsMax(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoEnergy", EntGetPowerPoints(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoEnergyPercent", EntGetPowerPercent(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoEnergyNotch", EntGetPowerNotch(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoEnergyMax", EntGetPowerPointsMax(EntGetFromRef(Gen("EntityInfo_Root").Var[entref].Int)));
+
+			if (EntGetIsPlayer(EntGetFromRef(Self.Var[entref].Int)))
+				GenSetState(Gen("EntityInfo_EntityAccount"), User, 1);
+			else
+				if (Self.Var[EntityInfoDescription].String = "")
+					GenSetString(Self, "EntityInfoDescription", EntGetCritterDescription(Self.Var[entref].Int));
+				endif
+				if (Self.Var[EntityInfoGroupDescription].String = "")
+					GenSetString(Self, "EntityInfoGroupDescription", EntGetGroupDescription(Self.Var[entref].Int));
+				endif
+
+				GenSetState(Gen("EntityInfo_EntityAccount"), User, 0);
+			endif
+
+			if (not Self.Var[EntityInfoDescription].String = "" and not Self.Var[EntityInfoGroupDescription].String = "" and not Self.Var[EntityInfoGroupDescription].String = "")
+				GenSetString(Self, "EntityInfoDescription", StringConcat(Self.Var[EntityInfoDescription].String, "&lt;br&gt;&lt;br&gt;").StringConcat(Self.Var[EntityInfoGroupDescription].String));
+				GenSetString(Self, "EntityInfoGroupDescription", "");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Setinfo</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    static Self
+    objpath ".Var[entref].Int"
+  )
+  call "Entgetfromref"
+)
+call "Entgetisplayer"
+jz label_115
+(
+  static Self
+  str "Entityinfodescription"
+  static Self
+  objpath ".Var[entref].Int"
+)
+call "Entdescriptionrequest"
+;
+(
+  static Self
+  str "Entityinfolanguage"
+  (
+    str "Language"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetlanguage"
+  )
+  call "Translatestaticdefineint"
+)
+call "Gensetstring"
+;
+(
+  (
+    static Self
+    objpath ".Var[entref].Int"
+  )
+  call "Entgetfromref"
+)
+call "Guild_Getname"
+str "(null)"
+equals
+not
+(
+  (
+    static Self
+    objpath ".Var[entref].Int"
+  )
+  call "Entgetfromref"
+)
+call "Guild_Getname"
+str ""
+equals
+not
+and
+jz label_73
+(
+  static Self
+  str "Entityinfogroup"
+  (
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+  )
+  call "Guild_Getname"
+)
+call "Gensetstring"
+j label_80
+label_73:
+(
+    static Self
+    str "Entityinfogroup"
+    str ""
+)
+call "Gensetstring"
+;
+label_80:
+(
+    static Self
+    str "Entityinfodescription"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfogroupdescription"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfoplayer"
+    int 1
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Entitycharacterpath"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetcharacterpathname"
+)
+call "Gensetstring"
+j label_201
+label_115:
+(
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+)
+call "Entgetgroupname"
+str "(null)"
+equals
+not
+(
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+)
+call "Entgetgroupname"
+str ""
+equals
+not
+and
+jz label_153
+(
+    static Self
+    str "Entityinfogroup"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetgroupname"
+)
+call "Gensetstring"
+j label_160
+label_153:
+(
+    static Self
+    str "Entityinfogroup"
+    str ""
+)
+call "Gensetstring"
+;
+label_160:
+(
+    static Self
+    str "Getcritterdescription {self.Var[entref].Int}"
+)
+call "Genruncommand"
+;
+(
+    static Self
+    str "Getcrittergroupdescription {self.Var[entref].Int}"
+)
+call "Genruncommand"
+;
+(
+    static Self
+    str "Entityinfodescription"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetcritterdescription"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfogroupdescription"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetgroupdescription"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfoplayer"
+    int 0
+)
+call "Gensetvalue"
+;
+label_201:
+(
+    static Self
+    str "Entityinfoname"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetnamebyref"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfoatname"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetdisplaynamebyref"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfolocation"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Genmapgetneighborhoodwithinstance"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Entityinfolevel"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetlevelcombat"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Entityinfoclass"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetclass"
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (EntGetIsPlayer(EntGetFromRef(Self.Var[entref].Int)))
+				EntDescriptionRequest(Self, "EntityInfoDescription", Self.Var[entref].Int);
+				GenSetString(Self, "EntityInfoLanguage", TranslateStaticDefineInt("Language", EntGetLanguage(EntGetFromRef(Self.Var[entref].Int))));
+				if (not guild_getname(EntGetFromRef(Self.Var[entref].Int)) = "(null)" and not guild_getname(EntGetFromRef(Self.Var[entref].Int)) = "")
+					GenSetString(Self, "EntityInfoGroup", guild_getname(EntGetFromRef(Self.Var[entref].Int)));
+				else
+					GenSetString(Self, "EntityInfoGroup", "");
+				endif
+				GenSetString(Self, "EntityInfoDescription", "");
+				GenSetString(Self, "EntityInfoGroupDescription", "");
+				GenSetValue(Self, "EntityInfoPlayer", 1);
+				GenSetString(Self, "EntityCharacterPath", EntGetCharacterPathName(EntGetFromRef(Self.Var[entref].Int)));
+			else
+				if (not EntGetGroupName(EntGetFromRef(Self.Var[entref].Int)) = "(null)" and not EntGetGroupName(EntGetFromRef(Self.Var[entref].Int)) = "")
+					GenSetString(Self, "EntityInfoGroup", EntGetGroupName(EntGetFromRef(Self.Var[entref].Int)));
+				else
+					GenSetString(Self, "EntityInfoGroup", "");
+				endif
+				GenRunCommand(Self, "GetCritterDescription {Self.Var[entref].Int}");
+				GenRunCommand(Self, "GetCritterGroupDescription {Self.Var[entref].Int}");
+				GenSetString(Self, "EntityInfoDescription", EntGetCritterDescription(Self.Var[entref].Int));
+				GenSetString(Self, "EntityInfoGroupDescription", EntGetGroupDescription(Self.Var[entref].Int));
+				GenSetValue(Self, "EntityInfoPlayer", 0);
+			endif
+
+			#if (Self.Var[EntityInfoDescription].String = "")
+			#	GenSetString(Self, "EntityInfoDescription", "");
+			#endif
+			#if (Self.Var[EntityInfoGroupDescription].String = "")
+			#	GenSetString(Self, "EntityInfoGroupDescription", "");
+			#endif
+
+			GenSetString(Self, "EntityInfoName", EntGetNameByRef(Self.Var[entref].Int));
+			GenSetString(Self, "EntityInfoAtName", EntGetDisplayNameByRef(Self.Var[entref].Int));
+			GenSetString(Self, "EntityInfoLocation", GenMapGetNeighborhoodWithInstance(EntGetFromRef(Self.Var[entref].Int)));
+			GenSetValue(Self, "EntityInfoLevel", EntGetLevelCombat(EntGetFromRef(Self.Var[entref].Int)));
+			GenSetString(Self, "EntityInfoClass", EntGetClass(EntGetFromRef(Self.Var[entref].Int)));
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate>
+        <UIGenMutateOther>
+          <hGen>Entityinfo_Headshot</hGen>
+          <EnterState>
+            <a:string>User</a:string>
+          </EnterState>
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+        </UIGenMutateOther>
+      </Mutate>
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Showtarget</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Target
+retifzero
+(
+  static Self
+  str "entRef"
+  (
+    static Target
+  )
+  call "Entgetref"
+)
+call "Gensetvalue"
+;
+(
+  ident "Visible"
+)
+call "InState"
+jz label_23
+(
+  static Self
+  str "Setinfo"
+)
+call "Gensendmessage"
+return
+label_23:
+(
+    static Self
+    str "Show"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (Target)
+				GenSetValue(Self, "entref", EntGetRef(Target));
+				if (InState(Visible))
+					GenSendMessage(Self, "SetInfo");
+				else
+					GenSendMessage(Self, "Show");
+				endif
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Entityinfodescription</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Entityinfogroupdescription</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Entityinfodescription</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+    </Set>
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+)
+call "Entdescriptionrequestcancel"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> EntDescriptionRequestCancel() </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeHide>
+  <FileName>Ui/Gens/Hud/Entities/Entityinfo.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Entitycharacterpath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoatname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoclass</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfodescription</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoenergy</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoenergymax</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoenergynotch</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoenergypercent</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfogroup</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfogroupdescription</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfohealth</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfohealthmax</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfohealthpercent</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfolanguage</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfolevel</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfolocation</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Entityinfoplayer</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>entRef</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

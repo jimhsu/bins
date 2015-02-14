@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Chatpopup</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Tabnavigation</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Tabnavigation</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Anchor</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>FocusOnCreate</c:Field>
+      <c:Field>FocusByDefault</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor>
+      <Name>Chatwindow_Chatpopupbutton</Name>
+      <Orientation>CenterHorizontal</Orientation>
+      <Alignment>TopRight</Alignment>
+      <Offset>0</Offset>
+    </Anchor>
+    <Child>
+      <UIGenChild>
+        <hChild>Chatpopup_Statusbox</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatvoice_Mictest</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatvoice_Togglevoicechat</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatvoice_Micvolume</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatpopup_Rootoption_Chatsettings</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatpopup_Rootoption_Emotes</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Chatpopup_Rootoption_Friends</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>0</Version>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>MouseInside</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Pin</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Unpin</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[parentmenu].String"
+str "Entitycontextmenu"
+equals
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Self.Var[ParentMenu].String = "EntityContextMenu" </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenMovableBox">
+        <Type>MovableBox</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Anchor</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor>
+          <Name>Entitymenu_Socialpopup</Name>
+          <Orientation>CenterHorizontal</Orientation>
+          <Alignment>TopRight</Alignment>
+          <Offset>0</Offset>
+        </Anchor>
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Movable>MouseNone</Movable>
+        <ResizableHorizontal>MouseNone</ResizableHorizontal>
+        <ResizableVertical>MouseNone</ResizableVertical>
+        <MovableWidth i:nil="true" />
+        <MovableHeight i:nil="true" />
+        <Raise>0</Raise>
+        <ResizeBorder>0</ResizeBorder>
+        <Version>0</Version>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Guild_Ismember"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Guild_IsMember(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenMovableBox">
+        <Type>MovableBox</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Child</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child>
+          <UIGenChild>
+            <hChild>Chatpopup_Rootoption_Guild</hChild>
+          </UIGenChild>
+        </Child>
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Movable>MouseNone</Movable>
+        <ResizableHorizontal>MouseNone</ResizableHorizontal>
+        <ResizableVertical>MouseNone</ResizableVertical>
+        <MovableWidth i:nil="true" />
+        <MovableHeight i:nil="true" />
+        <Raise>0</Raise>
+        <ResizeBorder>0</ResizeBorder>
+        <Version>0</Version>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Chatpopup_Rootoption_Teamsearch</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>0</Version>
+  </Last>
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Focusleft</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Forcehide"
+)
+call "Gensendmessage"
+;
+(
+  (
+    str "Chatwindow_Textentry"
+  )
+  call "Gen"
+)
+call "Gensetfocus"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSendMessage(Self, "ForceHide");
+			GenSetFocus(Gen("ChatWindow_TextEntry"));
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Focusright</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Forcehide"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSendMessage(Self, "ForceHide");
+			#GenSetFocus(Gen("ChatWindow_ChannelSelectCombo"));
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Nexttab</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Chatwindow_Tabgroup"
+  )
+  call "Gen"
+)
+call "Gentabgroupincrementselectedtab"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTabGroupIncrementSelectedTab(Gen("ChatWindow_TabGroup")); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Previoustab</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Chatwindow_Tabgroup"
+  )
+  call "Gen"
+)
+call "Gentabgroupdecrementselectedtab"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTabGroupDecrementSelectedTab(Gen("ChatWindow_TabGroup")); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Emotes_Window"
+)
+call "Gen"
+objpath ".Var[emotelistsopen].Int"
+int 0
+equals
+jz label_12
+(
+)
+call "Emote_Getemotelist"
+;
+label_12:
+(
+    (
+      str "Emotes_Window"
+    )
+    call "Gen"
+    str "Emotelistsopen"
+    (
+      str "Emotes_Window"
+    )
+    call "Gen"
+    objpath ".Var[emotelistsopen].Int"
+    int 1
+    add
+)
+call "Gensetvalue"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			if (Gen("Emotes_Window").Var[EmoteListsOpen].Int = 0)
+				Emote_GetEmoteList();
+			endif
+			GenSetValue(Gen("Emotes_Window"), "EmoteListsOpen", Gen("Emotes_Window").Var[EmoteListsOpen].Int + 1);
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  (
+    str "Emotes_Window"
+  )
+  call "Gen"
+  str "Emotelistsopen"
+  (
+    str "Emotes_Window"
+  )
+  call "Gen"
+  objpath ".Var[emotelistsopen].Int"
+  int 1
+  sub
+)
+call "Gensetvalue"
+;
+(
+  str "Emotes_Window"
+)
+call "Gen"
+objpath ".Var[emotelistsopen].Int"
+int 0
+equals
+retifzero
+(
+)
+call "Emote_Resetemotelist"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			GenSetValue(Gen("Emotes_Window"), "EmoteListsOpen", Gen("Emotes_Window").Var[EmoteListsOpen].Int - 1);
+			if (Gen("Emotes_Window").Var[EmoteListsOpen].Int = 0)
+				Emote_ResetEmoteList();
+			endif
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Forcehide</MessageName>
+        <hGen>Chatpopup_Friends</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Forcehide</MessageName>
+        <hGen>Chatpopup_Emotes</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Forcehide</MessageName>
+        <hGen>Chatpopup_Lfg</hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Parentmenu</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+    </Set>
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeHide>
+  <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Focuspath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>Chatpopup_RootOption_ChatSettings Chatpopup_RootOption_Search Chatpopup_RootOption_Guild Chatpopup_RootOption_Friends Chatpopup_RootOption_Emotes Chatpopup_Status_TextEntry</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Parentmenu</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>1</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Missionjournal_Listrowcoloredsmftemplate</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Missionjournal_Listrowsmftemplate</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Missionjournal_Listrowsmftemplate</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>SMF</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>1</Time>
+      <Name>UpdateMissionDifficulty</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Updatemissiondifficulty</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Updatemissiondifficulty</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "MissionJournalRow"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Mission"
+retifzero
+(
+  static Self
+  str "Font"
+  str "Mission_Con_"
+  (
+    static RowData
+    objpath ".Mission"
+    static RowData
+    objpath ".Leveldelta"
+    str ""
+  )
+  call "Getconformissionandleveldeltawithseparator"
+  add
+)
+call "Gensetearlyoverridestring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("RowData", "MissionJournalRow");
+			if (RowData.mission)
+				GenSetEarlyOverrideString(Self, "Font",
+					"Mission_Con_"
+					+ GetConForMissionAndLevelDeltaWithSeparator(RowData.mission, RowData.LevelDelta, ""));
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Updatemissiondifficulty</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </AfterCreate>
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

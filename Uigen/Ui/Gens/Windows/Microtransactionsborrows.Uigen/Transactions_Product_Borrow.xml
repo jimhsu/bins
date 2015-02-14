@@ -1,0 +1,1369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Transactions_Product_Borrow</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Appearance_Layoutboxtemplate_Cstore</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Appearance_Layoutboxtemplate_Cstore</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>MinimumHeight</c:Field>
+      <c:Field>Assembly</c:Field>
+      <c:Field>ToolTip</c:Field>
+      <c:Field>CaptureMouse</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>70</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly>
+      <Assembly>Cstore_Paddle_Button_Idle</Assembly>
+      <Colors>
+        <TopLeftColor>0</TopLeftColor>
+        <TopRightColor>0</TopRightColor>
+        <BottomRightColor>0</BottomRightColor>
+        <BottomLeftColor>0</BottomLeftColor>
+      </Colors>
+      <PaddingTop>0</PaddingTop>
+      <PaddingBottom>0</PaddingBottom>
+      <PaddingLeft>0</PaddingLeft>
+      <PaddingRight>0</PaddingRight>
+    </Assembly>
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip>
+      <hTooltip></hTooltip>
+      <TooltipBlock>
+        <_><![CDATA[
+static Self
+objpath ".Parent.Var[tooltiptext].String"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Self.Parent.Var[TooltipText].String </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </TooltipBlock>
+      <Delay>-1</Delay>
+      <Assembly>ToolTip</Assembly>
+      <Relative i:nil="true" />
+      <SecondaryToolTip />
+      <Orientation>CenterHorizontal</Orientation>
+      <StackDirection>CenterVertical</StackDirection>
+      <Alignment>Center</Alignment>
+      <StackAlignment>Center</StackAlignment>
+      <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+      <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+      <MaxWidth>350</MaxWidth>
+      <InheritAlpha>0</InheritAlpha>
+      <InheritScale>0</InheritScale>
+      <IgnoreParent>0</IgnoreParent>
+      <MouseAnchor>0</MouseAnchor>
+      <SafeMode>0</SafeMode>
+      <FilterProfanity>0</FilterProfanity>
+      <ForceTooltipOwnership>0</ForceTooltipOwnership>
+    </ToolTip>
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>1</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>MouseOver</State>
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Assembly</c:Field>
+          <c:Field>Message</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly>
+          <Assembly>Cstore_Paddle_Button_Mouseover</Assembly>
+          <Colors>
+            <TopLeftColor>0</TopLeftColor>
+            <TopRightColor>0</TopRightColor>
+            <BottomRightColor>0</BottomRightColor>
+            <BottomLeftColor>0</BottomLeftColor>
+          </Colors>
+          <PaddingTop>0</PaddingTop>
+          <PaddingBottom>0</PaddingBottom>
+          <PaddingLeft>0</PaddingLeft>
+          <PaddingRight>0</PaddingRight>
+        </Assembly>
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message>
+          <UIGenMessage>
+            <Name>Updatetooltip</Name>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+(
+  str "GenData"
+  str "MicroTransactionUIProduct"
+)
+call "Declaretype"
+;
+(
+  static Self
+  objpath ".Parent"
+  str "Tooltiptext"
+  static GenData
+  objpath ".Description"
+)
+call "Gensetstring"
+;
+static GenData
+objpath ".Failsexpression"
+jz label_45
+(
+  static Self
+  objpath ".Parent"
+  str "Tooltiptext"
+  str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  objpath ".Parent"
+  str "Tooltiptext"
+  (
+    str "Transactions_Cannotpurchase_Failsexpression"
+  )
+  call "Translate"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  objpath ".Parent"
+  str "Tooltiptext"
+  str "</Font>"
+)
+call "Genappendstring"
+return
+label_45:
+static GenData
+objpath ".Prerequisitesmet"
+not
+jz label_76
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    (
+      str "Transactions_Cannotpurchase_Mtrequirementsnotmet"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "</Font>"
+)
+call "Genappendstring"
+return
+label_76:
+static GenData
+objpath ".Alreadyentitled"
+jz label_106
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    (
+      str "Transactions_Cannotpurchase_Alreadyentitled"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "</Font>"
+)
+call "Genappendstring"
+return
+label_106:
+static GenData
+objpath ".Cannotpurchaseagain"
+jz label_136
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    (
+      str "Transactions_Cannotpurchase_Onetimepurchase"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "</Font>"
+)
+call "Genappendstring"
+return
+label_136:
+static GenData
+objpath ".Uniqueininv"
+jz label_166
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    (
+      str "Transactions_Cannotpurchase_Unique"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "</Font>"
+)
+call "Genappendstring"
+return
+label_166:
+static GenData
+objpath ".Itemrestrictions"
+retifzero
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "<br><br><font Color=red>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    (
+      str "Transactions_Cannotpurchase_Restricted"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Tooltiptext"
+    str "</Font>"
+)
+call "Genappendstring"
+return
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> DeclareType("GenData", "MicroTransactionUIProduct");
+					GenSetString(Self.Parent, "TooltipText", GenData.Description);
+					if( GenData.FailsExpression )
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_FailsExpression"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					elif (NOT GenData.PrerequisitesMet)
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_MTRequirementsNotMet"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					elif (GenData.AlreadyEntitled)
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_AlreadyEntitled"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					elif (GenData.CannotPurchaseAgain)
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_OneTimePurchase"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					elif (GenData.UniqueInInv)
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_Unique"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					elif (GenData.ItemRestrictions)
+						GenAppendString(Self.Parent, "TooltipText", "&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;");
+						GenAppendString(Self.Parent, "TooltipText", Translate("Transactions_CannotPurchase_Restricted"));
+						GenAppendString(Self.Parent, "TooltipText", "&lt;/font&gt;");
+					endif
+
+					</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenMessage>
+        </Message>
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>Selected</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  (
+    str "Transactions_Details_Pane"
+  )
+  call "Gen"
+  str "ItemID"
+  static Self
+  objpath ".Var[itemid].Int"
+)
+call "Gensetvalue"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr> GenSetValue(Gen("Transactions_Details_Pane"), "ItemID", Self.Var[ItemID].Int); </OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  ident "Disabled"
+)
+call "InState"
+(
+  ident "Selected"
+)
+call "InState"
+and
+(
+  ident "MouseOver"
+)
+call "InState"
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> InState(Disabled) and InState(Selected) and not InState(MouseOver) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Assembly</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly>
+          <Assembly>Cstore_Paddle_Button_Selected</Assembly>
+          <Colors>
+            <TopLeftColor>0</TopLeftColor>
+            <TopRightColor>0</TopRightColor>
+            <BottomRightColor>0</BottomRightColor>
+            <BottomLeftColor>0</BottomLeftColor>
+          </Colors>
+          <PaddingTop>0</PaddingTop>
+          <PaddingBottom>0</PaddingBottom>
+          <PaddingLeft>0</PaddingLeft>
+          <PaddingRight>0</PaddingRight>
+        </Assembly>
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  ident "Disabled"
+)
+call "InState"
+(
+  ident "Selected"
+)
+call "InState"
+not
+and
+(
+  ident "MouseOver"
+)
+call "InState"
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> InState(Disabled) and not InState(Selected) and not InState(MouseOver) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Assembly</c:Field>
+          <c:Field>Alpha</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly>
+          <Assembly>Cstore_Paddle_Button_Idle</Assembly>
+          <Colors>
+            <TopLeftColor>0</TopLeftColor>
+            <TopRightColor>0</TopRightColor>
+            <BottomRightColor>0</BottomRightColor>
+            <BottomLeftColor>0</BottomLeftColor>
+          </Colors>
+          <PaddingTop>0</PaddingTop>
+          <PaddingBottom>0</PaddingBottom>
+          <PaddingLeft>0</PaddingLeft>
+          <PaddingRight>0</PaddingRight>
+        </Assembly>
+        <Alpha>0.35</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  ident "Disabled"
+)
+call "InState"
+not
+(
+  ident "Selected"
+)
+call "InState"
+and
+(
+  ident "MouseOver"
+)
+call "InState"
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> not InState(Disabled) and InState(Selected) and not InState(MouseOver) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Assembly</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly>
+          <Assembly>Cstore_Paddle_Button_Selected</Assembly>
+          <Colors>
+            <TopLeftColor>0</TopLeftColor>
+            <TopRightColor>0</TopRightColor>
+            <BottomRightColor>0</BottomRightColor>
+            <BottomLeftColor>0</BottomLeftColor>
+          </Colors>
+          <PaddingTop>0</PaddingTop>
+          <PaddingBottom>0</PaddingBottom>
+          <PaddingLeft>0</PaddingLeft>
+          <PaddingRight>0</PaddingRight>
+        </Assembly>
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "GenData"
+  str "MicroTransactionUIProduct"
+)
+call "Declaretype"
+;
+static GenData
+objpath ".Failsexpression"
+int 1
+equals
+static GenData
+objpath ".Cannotpurchaseagain"
+int 1
+equals
+or
+static GenData
+objpath ".Uniqueininv"
+int 1
+equals
+or
+static GenData
+objpath ".Itemrestrictions"
+int 1
+equals
+or
+static GenData
+objpath ".Prerequisitesmet"
+not
+or
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("GenData", "MicroTransactionUIProduct");
+			GenData.FailsExpression = 1 OR GenData.CannotPurchaseAgain = 1 OR GenData.UniqueInInv = 1 OR GenData.ItemRestrictions = 1 OR NOT GenData.PrerequisitesMet
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState>
+          <a:string>Disabled</a:string>
+        </EnterState>
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState>
+          <a:string>Disabled</a:string>
+        </ExitState>
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Updatetooltip</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate>
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "GenData"
+  str "MicroTransactionUIProduct"
+)
+call "Declaretype"
+;
+(
+  static Self
+  str "IconName"
+  static GenData
+  objpath ".Icon"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "ItemName"
+  static GenData
+  objpath ".Name"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "ItemID"
+  static GenData
+  objpath ".Uid"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Cost"
+  (
+    static GenData
+    objpath ".Price"
+  )
+  call "Gens64tostring"
+)
+call "Gensetstring"
+;
+static GenData
+objpath ".Price"
+int 0
+notgreater
+jz label_53
+(
+  static Self
+  ident "User"
+  int 1
+)
+call "Gensetstate"
+j label_60
+label_53:
+(
+    static Self
+    ident "User"
+    int 0
+)
+call "Gensetstate"
+;
+label_60:
+(
+    static Self
+    str "Updatetooltip"
+)
+call "Gensendmessage"
+;
+(
+    str "Transactions_Details_Pane"
+)
+call "Gen"
+objpath ".Var[itemid].Int"
+int 0
+less
+(
+    ident "Selected"
+)
+call "InState"
+and
+retifzero
+(
+    (
+      str "Transactions_Details_Pane"
+    )
+    call "Gen"
+    str "ItemID"
+    static Self
+    objpath ".Var[itemid].Int"
+)
+call "Gensetvalue"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType( "GenData", "MicroTransactionUIProduct");
+
+			GenSetString(Self, "IconName", GenData.Icon);
+
+			GenSetString(Self, "ItemName", GenData.Name);
+			GenSetValue(Self, "ItemID", GenData.uID);
+			GenSetString(Self, "Cost", GenS64ToString(GenData.Price));
+
+			if ( GenData.Price &lt;= 0 )
+				GenSetState(Self, User, 1 );
+			else
+				GenSetState(Self, User, 0 );
+			endif
+
+			GenSendMessage( Self, "UpdateTooltip");
+
+			if(Gen("Transactions_Details_Pane").Var[ItemID].Int &lt; 0 and InState(Selected))
+				GenSetValue(Gen("Transactions_Details_Pane"), "ItemID", Self.Var[ItemID].Int);
+			endif
+
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+  </PointerUpdate>
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Microtransactionsborrows.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Cost</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>IconName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemID</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

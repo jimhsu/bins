@@ -1,0 +1,2095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Hud_Root</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>DragDrop</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Notificationlist_Levelup</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Notificationlist_Perk</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Hud_Teamup_Openmissiontitle_Box</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop>
+      <UIGenDragDropAction>
+        <TypeMatch>Chattab2</TypeMatch>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  (
+    str "Chat_Root"
+  )
+  call "Gen"
+  str "Openx"
+  static MouseX
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Chat_Root"
+  )
+  call "Gen"
+  str "Openy"
+  static MouseY
+)
+call "Gensetvalue"
+;
+(
+  ident "K_Ctrl"
+)
+call "Inputkeystate"
+jz label_45
+(
+  (
+    str "Chat_Root"
+  )
+  call "Gen"
+  str "Copytab"
+  ident "Dragdropdata"
+  objpath ".Textpayload"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Chat_Root"
+  )
+  call "Gen"
+  str "Createwindowfromtabcopy"
+)
+call "Gensendmessage"
+return
+label_45:
+(
+    (
+      str "Chat_Root"
+    )
+    call "Gen"
+    str "Movetab"
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Chat_Root"
+    )
+    call "Gen"
+    str "Createwindowfromtab"
+)
+call "Gensendmessage"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				GenSetValue(Gen("Chat_Root"), "OpenX", MouseX);
+				GenSetValue(Gen("Chat_Root"), "OpenY", MouseY);
+				if (InputKeyState(K_CTRL))
+					GenSetString(Gen("Chat_Root"), "CopyTab", DragDropData.TextPayload);
+					GenSendMessage(Gen("Chat_Root"), "CreateWindowFromTabCopy");
+				else
+					GenSetString(Gen("Chat_Root"), "MoveTab", DragDropData.TextPayload);
+					GenSendMessage(Gen("Chat_Root"), "CreateWindowFromTab");
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </UIGenDragDropAction>
+    </DragDrop>
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>Visible</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Restorechat</MessageName>
+            <hGen>Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>MouseOver</State>
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>DragDrop</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop>
+          <UIGenDragDropAction>
+            <TypeMatch>InventorySlot</TypeMatch>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+(
+  (
+    str "Inventory_Discard_Window"
+  )
+  call "Gen"
+  str "Inventorykey"
+  ident "Dragdropdata"
+  objpath ".Textpayload"
+)
+call "Gensetstring"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> GenSetString(Gen("Inventory_Discard_Window"), "InventoryKey", DragDropData.TextPayload) </OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message>
+              <UIGenMessagePacket>
+                <MessageName>Show</MessageName>
+                <hGen>Inventory_Discard_Window</hGen>
+              </UIGenMessagePacket>
+            </Message>
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenDragDropAction>
+          <UIGenDragDropAction>
+            <TypeMatch>TradeSlot</TypeMatch>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+(
+  (
+    (
+      str "Loot_List"
+    )
+    call "Gen"
+    (
+      ident "Dragdropdata"
+      objpath ".Textpayload"
+    )
+    call "Stringtoint"
+  )
+  call "Genlistgetrow"
+  str "Discard"
+)
+call "Gensendmessage"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> GenSendMessage(GenListGetRow(Gen("Loot_List"), StringToInt(DragDropData.TextPayload)), "Discard"); </OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenDragDropAction>
+        </DragDrop>
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Entgetisdead"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> EntGetIsDead(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  (
+    str "Defeat_Root"
+  )
+  call "Gen"
+)
+call "Genaddwindow"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr> GenAddWindow(Gen("Defeat_Root")) </OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  (
+    str "Defeat_Root"
+  )
+  call "Gen"
+)
+call "Genremovewindow"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr> GenRemoveWindow(Gen("Defeat_Root")) </OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Team_Isinvitee"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> team_IsInvitee(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Teamjoin_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Teamjoin_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Guild_Isinvitee"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> guild_IsInvitee(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Guildjoin_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Guildjoin_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Team_Gettoprequestid"
+(
+  static Player
+)
+call "Team_Isteamleader"
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> team_GetTopRequestID() and team_IsTeamLeader(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Teamrequest_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Teamrequest_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  (
+    static Player
+  )
+  call "Entgetref"
+)
+call "Pvp_Hasduelinvite"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> pvp_HasDuelInvite(EntGetRef(Player)) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Pvpduel_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Pvpduel_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  (
+    static Player
+  )
+  call "Entgetref"
+)
+call "Pvp_Hasteamduelinvite"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> pvp_HasTeamDuelInvite(EntGetRef(Player)) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Pvpteamduel_Invite</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Pvpteamduel_Invite</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  (
+    static Player
+  )
+  call "Entgetref"
+)
+call "Pvp_Hasactiveteamduel"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> pvp_HasActiveTeamDuel(EntGetRef(Player)) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Pvpteamduel_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Pvpteamduel_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Team_Ismodenew"
+(
+  static Player
+)
+call "Team_Isteamleader"
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> team_IsModeNew() and team_IsTeamLeader(Player) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Teammode_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Teammode_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Social_Hasreceivedfriendrequest"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> social_HasReceivedFriendRequest() </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Friendrequest_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Friendrequest_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+  str ""
+)
+call "Queue_Readyqueuecountbymaptype"
+int 0
+greater
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> queue_ReadyQueueCountByMapType(Player, "") &gt; 0 </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Alertpopup</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Queuealert</hGen>
+          </UIGenMessagePacket>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Alert_Joinalert</hGen>
+          </UIGenMessagePacket>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Alert_Joinprivate</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Logofftime"
+int 0
+greater
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> LogoffTime() &gt; 0 </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Logoff_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Logoff_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Isinteriorinvitee"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> IsInteriorInvitee() </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Show</MessageName>
+            <hGen>Hideoutinvite_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Hideoutinvite_Root</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Queue_Getprivatemaptype"
+ident "Zonemaptype_Qpve"
+equals
+(
+)
+call "Queue_Playerisinprivateinstance"
+and
+(
+  str "Queue_Private"
+  str "Minimized"
+)
+call "Gennameintvar"
+int 0
+equals
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> queue_GetPrivateMapType() = ZoneMapType_QPvE and queue_PlayerIsInPrivateInstance() and ( GenNameIntVar("Queue_Private", "Minimized") = 0 ) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Unhide</MessageName>
+            <hGen>Queue_Private</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Close</MessageName>
+            <hGen>Queue_Private</hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Getmouselooktargeting"
+(
+)
+call "Clienthashardtarget"
+not
+and
+(
+)
+call "Ismouselooktargetingtemporarilydisabled"
+or
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> (GetMouseLookTargeting() and not ClientHasHardTarget()) or IsMouseLookTargetingTemporarilyDisabled() </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Child</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child>
+          <UIGenChild>
+            <hChild>Reticle</hChild>
+          </UIGenChild>
+        </Child>
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+)
+call "Getstasistime"
+int 0
+greater
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GetStasisTime() &gt; 0 </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Child</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child>
+          <UIGenChild>
+            <hChild>Punishmenttext</hChild>
+          </UIGenChild>
+        </Child>
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.5</Time>
+      <Name>ShowLandingPage</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Entgetlevelexp"
+int 5
+greater
+(
+  (
+    str "Root"
+  )
+  call "Gen"
+  str "Showedlandingpage"
+)
+call "Genintvar"
+int 0
+equals
+and
+retifzero
+(
+  (
+    str "Landing_Root"
+  )
+  call "Gen"
+  str "Show"
+)
+call "Gensendmessage"
+;
+(
+  (
+    str "Root"
+  )
+  call "Gen"
+  str "Showedlandingpage"
+  (
+    (
+      str "Root"
+    )
+    call "Gen"
+    str "Showedlandingpage"
+  )
+  call "Genintvar"
+  int 1
+  add
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Showlandingpage"
+  ident "True"
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if ( EntGetLevelExp(Player) &gt; 5 AND GenIntVar(Gen("Root"), "ShowedLandingPage") = 0 )
+				GenSendMessage(Gen("Landing_Root"), "Show");
+				GenSetValue(Gen("Root"), "ShowedLandingPage", GenIntVar(Gen("Root"), "ShowedLandingPage") + 1);
+				GenTimerPause(Self, "ShowLandingPage", True);
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Alertpopup</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Queue_Readyqueuegetmaptype"
+ident "Zonemaptype_Pvp"
+equals
+jz label_16
+(
+  (
+    str "Queuealert"
+  )
+  call "Gen"
+  str "Show"
+)
+call "Gensendmessage"
+return
+label_16:
+(
+    static Player
+)
+call "Queue_Readyqueuegetmaptype"
+ident "Zonemaptype_Qpve"
+equals
+retifzero
+(
+    (
+      static Player
+      str ""
+    )
+    call "Queue_Getreadyname"
+    (
+      static Player
+      str ""
+    )
+    call "Queue_Getreadyinstance"
+)
+call "Queue_Isprivate"
+jz label_46
+(
+    (
+      str "Alert_Joinprivate"
+    )
+    call "Gen"
+    str "Show"
+)
+call "Gensendmessage"
+return
+label_46:
+(
+    (
+      str "Alert_Joinalert"
+    )
+    call "Gen"
+    str "Show"
+)
+call "Gensendmessage"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if ( queue_ReadyQueueGetMapType(Player) = ZoneMapType_PvP )
+				GenSendMessage( Gen("QueueAlert"), "Show");
+			elif ( queue_ReadyQueueGetMapType(Player) = ZoneMapType_QPvE )
+				if ( queue_IsPrivate( queue_GetReadyName(Player,""), queue_GetReadyInstance(Player,"") ) ) 
+					GenSendMessage( Gen("Alert_JoinPrivate"), "Show");
+				else
+					GenSendMessage( Gen("Alert_JoinAlert"), "Show"); 
+				endif
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Hud"
+)
+call "Genjailshow"
+;
+(
+)
+call "Genreopenwindows"
+;
+(
+)
+call "Requestmicrotransactions"
+;
+(
+)
+call "Requestmicrotrans_Motd"
+;
+(
+)
+call "Getmapname"
+str "Mil_Tutorial"
+equals
+retifzero
+(
+  static Self
+  (
+    str "Tutorial_Root"
+  )
+  call "Gen"
+)
+call "Genaddearlyoverridechild"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			GenJailShow("HUD");
+			GenReopenWindows();
+			RequestMicroTransactions();
+			RequestMicroTrans_MOTD();
+			if (GetMapName() = "Mil_Tutorial")
+				GenAddEarlyOverrideChild(Self, Gen("Tutorial_Root"));
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+)
+call "Playergetpathpowertrees"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> PlayerGetPathPowerTrees(); </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Hud"
+)
+call "Genjailhide"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> GenJailHide("HUD") </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Hidechattemporarily</MessageName>
+        <hGen>Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Teamjoin_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Guildjoin_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Teamrequest_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Pvpduel_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Teammode_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Friendrequest_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Queuealert</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Logoff_Root</hGen>
+      </UIGenMessagePacket>
+      <UIGenMessagePacket>
+        <MessageName>Close</MessageName>
+        <hGen>Hideoutinvite_Root</hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeHide>
+  <FileName>Ui/Gens/Hud/Hud.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

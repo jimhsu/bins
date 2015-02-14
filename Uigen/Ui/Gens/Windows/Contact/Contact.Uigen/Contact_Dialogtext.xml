@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Contact_Dialogtext</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>SMF</Type>
+  <Base i:type="UIGenSMF">
+    <Type>SMF</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Y</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>Assembly</c:Field>
+      <c:Field>Clip</c:Field>
+      <c:Field>TextBlock</c:Field>
+      <c:Field>Font</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>CodeHalfStep</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>Top</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly>
+      <Assembly>Flavor_Content_Panel_Round_Mission</Assembly>
+      <Colors>
+        <TopLeftColor>0</TopLeftColor>
+        <TopRightColor>0</TopRightColor>
+        <BottomRightColor>0</BottomRightColor>
+        <BottomLeftColor>0</BottomLeftColor>
+      </Colors>
+      <PaddingTop>0</PaddingTop>
+      <PaddingBottom>0</PaddingBottom>
+      <PaddingLeft>0</PaddingLeft>
+      <PaddingRight>0</PaddingRight>
+    </Assembly>
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>1</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Text></Text>
+    <ScrollbarDef></ScrollbarDef>
+    <DisabledScrollbarDef></DisabledScrollbarDef>
+    <ScrollbarTopMargin>None</ScrollbarTopMargin>
+    <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+    <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+    <ScrollbarRightMargin>None</ScrollbarRightMargin>
+    <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+    <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+    <ScrollbarUseWheel>1</ScrollbarUseWheel>
+    <ScrollbarUseStick>1</ScrollbarUseStick>
+    <TextBlock>
+      <_><![CDATA[
+static Self
+objpath ".Var[text].String"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> Self.Var[Text].String </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Contact/Contact.Uigen</FileName>
+      <Cost>0</Cost>
+    </TextBlock>
+    <Defaults>
+      <Font></Font>
+      <Color>0</Color>
+      <Shadow>0</Shadow>
+    </Defaults>
+    <Font>Contact_Dialog_Medium</Font>
+    <Alignment>TopLeft</Alignment>
+    <FilterProfanity>0</FilterProfanity>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <SafeMode>0</SafeMode>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>UpdateString</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Text"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Player
+)
+call "Contactgetname"
+str ""
+equals
+not
+jz label_37
+(
+  static Self
+  str "Text"
+  str "<font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "Text"
+  static Player
+  objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogheader"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "Text"
+  str "</Font>"
+)
+call "Genappendstring"
+;
+label_37:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogtext1"
+str ""
+equals
+not
+jz label_65
+(
+    static Self
+    str "Text"
+    str "<font Scale=0.2><br><br></Font><font>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    static Player
+    objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogtext1"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font><br>"
+)
+call "Genappendstring"
+;
+label_65:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogtext2"
+str ""
+equals
+not
+jz label_121
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogheader2"
+str ""
+equals
+not
+jz label_99
+(
+    static Self
+    str "Text"
+    str "<br><font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    static Player
+    objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogheader2"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+;
+label_99:
+(
+    static Self
+    str "Text"
+    str "<font Scale=0.2><br><br></Font><i><font>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    static Player
+    objpath ".Pplayer.Pinteractinfo.Contactdialog.Dialogtext2"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font></I>"
+)
+call "Genappendstring"
+;
+label_121:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Teamsize"
+int 0
+greater
+jz label_150
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Teamsizetext"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+j label_177
+label_150:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Scalesforteam"
+jz label_177
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Scalesforteamtext"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+j label_177
+label_177:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Missiontimelimit"
+int 0
+greater
+jz label_210
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Timedmissionwarning"
+      (
+        static Player
+      )
+      call "Contactdialoggetmissiontimer"
+    )
+    call "Formattimer"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+;
+label_210:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Missionlockouttype"
+int 0
+equals
+not
+jz label_240
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Missionlockoutwarning"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+;
+label_240:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Missioncredittype"
+ident "Missioncredittypeineligible"
+equals
+jz label_269
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Shadowmissionineligiblewarning"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+j label_327
+label_269:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Missioncredittype"
+ident "Missioncredittypealreadycompleted"
+equals
+jz label_298
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Shadowmissionalreadycompletedwarning"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+j label_327
+label_298:
+static Player
+objpath ".Pplayer.Pinteractinfo.Contactdialog.Missioncredittype"
+ident "Missioncredittypeflashback"
+equals
+jz label_327
+(
+    static Self
+    str "Text"
+    str "<br><br><font Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    (
+      str "Contactui.Flashbackmissionwarning"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+j label_327
+label_327:
+(
+    static Player
+)
+call "Contactdialoghasnonchoosablereward"
+retifzero
+(
+    static Self
+    str "Text"
+    str "<br><br><font Style=game_Header>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    static Player
+    objpath ".Pplayer.Pinteractinfo.Contactdialog.Rewardsheader"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "</Font>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "<table><font>"
+)
+call "Genappendstring"
+;
+(
+    static Player
+    str "Resources"
+)
+call "Contactdialoggetrewardcount"
+int 0
+greater
+(
+    static Player
+    str "XP"
+)
+call "Contactdialoggetrewardcount"
+int 0
+greater
+and
+jz label_418
+(
+    static Self
+    str "Text"
+    str "<tr><td><font Scale=0.2><br><br></Font>"
+    (
+      static Player
+      static Self
+      objpath ".Var[rewardexpcell].String"
+      static Self
+      objpath ".Var[rewardexpcell].String"
+      str "XP"
+      str ""
+    )
+    call "Contactdialoggetrewardstringfiltered"
+    add
+    str "</Td></Tr>"
+    add
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Text"
+    str "<tr><td><font Scale=0.2><br><br></Font>"
+    (
+      (
+        static Player
+        str "Resources"
+      )
+      call "Contactdialoggetrewardcount"
+      str "Inventory_Numeric3_Resources_Left"
+      int 100
+      int 100
+    )
+    call "Inventorygetnumericstring3"
+    add
+    str "</Td></Tr>"
+    add
+)
+call "Genappendstring"
+j label_475
+label_418:
+(
+    static Player
+    str "XP"
+)
+call "Contactdialoggetrewardcount"
+int 0
+greater
+jz label_446
+(
+    static Self
+    str "Text"
+    str "<tr><td><font Scale=0.2><br><br></Font>"
+    (
+      static Player
+      static Self
+      objpath ".Var[rewardexpcell].String"
+      static Self
+      objpath ".Var[rewardexpcell].String"
+      str "XP"
+      str ""
+    )
+    call "Contactdialoggetrewardstringfiltered"
+    add
+    str "</Td></Tr>"
+    add
+)
+call "Genappendstring"
+j label_475
+label_446:
+(
+    static Player
+    str "Resources"
+)
+call "Contactdialoggetrewardcount"
+int 0
+greater
+jz label_475
+(
+    static Self
+    str "Text"
+    str "<tr><td><font Scale=0.2><br><br></Font>"
+    (
+      (
+        static Player
+        str "Resources"
+      )
+      call "Contactdialoggetrewardcount"
+      str "Inventory_Numeric3_Resources_Left"
+      int 100
+      int 100
+    )
+    call "Inventorygetnumericstring3"
+    add
+    str "</Td></Tr>"
+    add
+)
+call "Genappendstring"
+j label_475
+label_475:
+(
+    static Self
+    str "Text"
+    str "</Font></Table>"
+)
+call "Genappendstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetString(Self, "Text", "");
+
+			if (NOT(ContactGetName(Player) = ""))
+				GenAppendString(Self, "Text", "&lt;font style=Game_Header&gt;");
+				GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.DialogHeader);
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			endif
+
+			if (NOT(Player.pPlayer.pInteractInfo.ContactDialog.DialogText1 = ""))
+				GenAppendString(Self, "Text", "&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;font&gt;");
+				GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.DialogText1);
+				GenAppendString(Self, "Text", "&lt;/font&gt;&lt;br&gt;");
+			endif
+
+			if (NOT(Player.pPlayer.pInteractInfo.ContactDialog.DialogText2 = ""))
+				if (NOT(Player.pPlayer.pInteractInfo.ContactDialog.DialogHeader2 = ""))
+					GenAppendString(Self, "Text", "&lt;br&gt;&lt;font style=Game_Header&gt;");
+					GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.DialogHeader2);
+					GenAppendString(Self, "Text", "&lt;/font&gt;");
+				endif
+
+				GenAppendString(Self, "Text", "&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;i&gt;&lt;font&gt;");
+				GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.DialogText2);
+				GenAppendString(Self, "Text", "&lt;/font&gt;&lt;/i&gt;");
+			endif
+
+			#Show team size info
+			if (Player.pPlayer.pInteractInfo.ContactDialog.TeamSize &gt; 0)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=Yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.TeamSizeText"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			elif (Player.pPlayer.pInteractInfo.ContactDialog.ScalesForTeam)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=Yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.ScalesForTeamText"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			endif
+
+			#Show warning for Timed Missions
+			if (Player.pPlayer.pInteractInfo.ContactDialog.MissionTimeLimit &gt; 0)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=Yellow&gt;");
+				GenAppendString(Self, "Text", FormatTimer("ContactUI.TimedMissionWarning", ContactDialogGetMissionTimer(Player)));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			endif
+
+			#Show warning for Lockout Missions
+			if (NOT(Player.pPlayer.pInteractInfo.ContactDialog.MissionLockoutType = 0))
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=Yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.MissionLockoutWarning"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			endif
+
+			#Show warning for Shadow Missions
+			if (Player.pPlayer.pInteractInfo.ContactDialog.MissionCreditType = MissionCreditTypeIneligible)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.ShadowMissionIneligibleWarning"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			elif (Player.pPlayer.pInteractInfo.ContactDialog.MissionCreditType = MissionCreditTypeAlreadyCompleted)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.ShadowMissionAlreadyCompletedWarning"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			elif (Player.pPlayer.pInteractInfo.ContactDialog.MissionCreditType = MissionCreditTypeFlashback)
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font color=yellow&gt;");
+				GenAppendString(Self, "Text", Translate("ContactUI.FlashbackMissionWarning"));
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+			endif
+
+			if (ContactDialogHasNonChoosableReward(Player))
+				GenAppendString(Self, "Text", "&lt;br&gt;&lt;br&gt;&lt;font style=Game_Header&gt;");
+				GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.RewardsHeader);
+				GenAppendString(Self, "Text", "&lt;/font&gt;");
+
+				GenAppendString(Self, "Text", "&lt;table&gt;&lt;font&gt;");
+				if (ContactDialogGetRewardCount(Player, "Resources") &gt; 0 and ContactDialogGetRewardCount(Player, "Xp") &gt; 0)
+					GenAppendString(Self, "Text", "&lt;tr&gt;&lt;td&gt;&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" + ContactDialogGetRewardStringFiltered(Player, Self.Var[RewardExpCell].String, Self.Var[RewardExpCell].String, "Xp", "") + "&lt;/td&gt;&lt;/tr&gt;");
+					GenAppendString(Self, "Text", "&lt;tr&gt;&lt;td&gt;&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" + InventoryGetNumericString3(ContactDialogGetRewardCount(Player, "Resources"), "Inventory_Numeric3_Resources_Left", 100, 100) + "&lt;/td&gt;&lt;/tr&gt;");
+				elif (ContactDialogGetRewardCount(Player, "Xp") &gt; 0)
+					GenAppendString(Self, "Text", "&lt;tr&gt;&lt;td&gt;&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" + ContactDialogGetRewardStringFiltered(Player, Self.Var[RewardExpCell].String, Self.Var[RewardExpCell].String, "Xp", "") + "&lt;/td&gt;&lt;/tr&gt;");
+				elif (ContactDialogGetRewardCount(Player, "Resources") &gt; 0)
+					GenAppendString(Self, "Text", "&lt;tr&gt;&lt;td&gt;&lt;font scale=0.2&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" + InventoryGetNumericString3(ContactDialogGetRewardCount(Player, "Resources"), "Inventory_Numeric3_Resources_Left", 100, 100) + "&lt;/td&gt;&lt;/tr&gt;");
+				endif
+
+				# Catch all rows
+#				GenAppendString(Self, "Text", ContactDialogGetRewardStringFiltered(Player, Self.Var[RewardRow].String, Self.Var[RewardRowWithValue].String, "", "Resources Xp"));
+
+				GenAppendString(Self, "Text", "&lt;/font&gt;&lt;/table&gt;");
+			endif
+
+#			if (ContactDialogHasChoosableReward(Player))
+#				GenAppendString(Self, "Text", "&lt;br&gt;&lt;p&gt;&lt;font style=Game_Header&gt;");
+#				GenAppendString(Self, "Text", Player.pPlayer.pInteractInfo.ContactDialog.OptionalRewardsHeader);
+#				GenAppendString(Self, "Text", "&lt;/font&gt;");
+#
+#				GenAppendString(Self, "Text", "&lt;table&gt;&lt;font style=Game_HUD&gt;");
+#				GenAppendString(Self, "Text", ContactDialogGetChoosableRewardString(Player, Self.Var[RewardRow].String, Self.Var[RewardRowWithValue].String));
+#				GenAppendString(Self, "Text", "&lt;/font&gt;&lt;/table&gt;&lt;/p&gt;");
+#			endif
+#			GenAppendString(Self, "Text", "&lt;br&gt;");
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Contact.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>UpdateString</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>UpdateString</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Contact/Contact.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Rewardexpcell</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>&lt;td&gt;{Item.NumericValue} {ItemName}&lt;/td&gt;</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Rewardrow</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>&lt;tr margin=1&gt;&lt;td width=1 valign=center&gt;&lt;img src={ItemIcon}&gt;&lt;/td&gt;&lt;td valign=center&gt;{ItemName}&lt;/td&gt;&lt;/tr&gt;</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Rewardrowwithvalue</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>&lt;tr margin=1&gt;&lt;td width=1 valign=center&gt;&lt;img src={ItemIcon}&gt;&lt;/td&gt;&lt;td valign=center&gt;{ItemValue} {ItemName}&lt;/td&gt;&lt;/tr&gt;</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Text</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

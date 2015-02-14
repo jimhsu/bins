@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Behavior_Contextmenu</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>PositionOnScreen</c:Field>
+      <c:Field>Alpha</c:Field>
+      <c:Field>AfterLayout</c:Field>
+      <c:Field>KeyAction</c:Field>
+      <c:Field>CaptureMouse</c:Field>
+      <c:Field>CaptureMouseWheel</c:Field>
+      <c:Field>FocusOnClick</c:Field>
+      <c:Field>FocusOnCreate</c:Field>
+      <c:Field>FocusByDefault</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>1</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  ident "User2"
+)
+call "Geninstate"
+jz label_13
+(
+  static Self
+  ident "User2"
+  int 0
+)
+call "Gensetstate"
+;
+label_13:
+(
+    static Self
+    ident "User"
+    int 0
+)
+call "Gensetstate"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+				if (GenInState(Self, User2))
+					GenSetState(Self, User2, 0);
+				endif
+				GenSetState(Self, User, 0);
+				</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </AfterLayout>
+    <BeforeTick i:nil="true" />
+    <KeyAction>
+      <UIGenKeyAction>
+        <Key>Bb</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Hide</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Escape</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Hide</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Joypad_Down</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Prev</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Joypad_Up</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>next</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Select</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Hide</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+      <UIGenKeyAction>
+        <Key>Start</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Hide</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+    </KeyAction>
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>1</CaptureMouse>
+    <CaptureMouseWheel>1</CaptureMouseWheel>
+    <FocusOnClick>1</FocusOnClick>
+    <FocusOnCreate>1</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>1</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>0</Version>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>MouseDownOutside</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  static Self
+  ident "User2"
+)
+call "Geninstate"
+jz label_13
+(
+  static Self
+  ident "User2"
+  int 0
+)
+call "Gensetstate"
+return
+label_13:
+(
+    static Self
+    str "Closesubmenu"
+)
+call "Genhasvar"
+jz label_48
+static Self
+objpath ".Var[closesubmenu].String"
+str ""
+equals
+not
+jz label_42
+(
+    (
+      static Self
+      objpath ".Var[closesubmenu].String"
+    )
+    call "Gen"
+    ident "Mouseinside"
+)
+call "Geninstate"
+not
+jz label_41
+(
+    static Self
+    str "Hide"
+)
+call "Gensendmessage"
+label_41:
+return
+label_42:
+(
+    static Self
+    str "Hide"
+)
+call "Gensendmessage"
+return
+label_48:
+(
+    static Self
+    str "Hide"
+)
+call "Gensendmessage"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				if (GenInState(Self, User2))
+					GenSetState(Self, User2, 0);
+				else
+					if (GenHasVar(Self, "CloseSubMenu"))
+						if (NOT (Self.Var[CloseSubMenu].string = ""))
+							if (NOT GenInState(Gen(Self.Var[CloseSubMenu].string), MouseInside))
+								GenSendMessage(Self, "Hide");
+							endif
+						else
+							GenSendMessage(Self, "Hide");
+						endif
+					else
+						GenSendMessage(Self, "Hide");
+					endif
+					
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>User</State>
+      <Override i:nil="true" />
+      <OnEnter i:nil="true" />
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState>
+          <a:string>User2</a:string>
+        </EnterState>
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Ensureonscreen</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Ensureonscreen</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[maxanchory].Float"
+(
+  static Self
+)
+call "Gengetheight"
+add
+ident "ScreenHeight"
+greater
+jz label_26
+(
+  static Self
+  str "Y"
+  static Self
+  objpath ".Var[minanchory].Float"
+  (
+    static Self
+  )
+  call "Gengetheight"
+  sub
+  static Self
+  objpath ".Finalscale"
+  div
+)
+call "Gensetearlyoverridefloat"
+j label_37
+label_26:
+(
+    static Self
+    str "Y"
+    static Self
+    objpath ".Var[maxanchory].Float"
+    static Self
+    objpath ".Finalscale"
+    div
+)
+call "Gensetearlyoverridefloat"
+;
+label_37:
+static Self
+objpath ".Var[minanchorx].Float"
+(
+    static Self
+)
+call "Gengetwidth"
+add
+ident "ScreenWidth"
+greater
+jz label_63
+(
+    static Self
+    str "X"
+    static Self
+    objpath ".Var[maxanchorx].Float"
+    (
+      static Self
+    )
+    call "Gengetwidth"
+    sub
+    static Self
+    objpath ".Finalscale"
+    div
+)
+call "Gensetearlyoverridefloat"
+j label_74
+label_63:
+(
+    static Self
+    str "X"
+    static Self
+    objpath ".Var[minanchorx].Float"
+    static Self
+    objpath ".Finalscale"
+    div
+)
+call "Gensetearlyoverridefloat"
+;
+label_74:
+(
+    static Self
+)
+call "Genwindowraise"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (Self.Var[MaxAnchorY].float + GenGetHeight(Self) &gt; ScreenHeight)
+				GenSetEarlyOverrideFloat(Self, "Y", (Self.Var[MinAnchorY].float - GenGetHeight(Self)) / Self.FinalScale);
+			else
+				GenSetEarlyOverrideFloat(Self, "Y", Self.Var[MaxAnchorY].float / Self.FinalScale);
+			endif
+			
+			if (Self.Var[MinAnchorX].float + GenGetWidth(Self) &gt; ScreenWidth)
+				GenSetEarlyOverrideFloat(Self, "X", (Self.Var[MaxAnchorX].float - GenGetWidth(Self)) / Self.FinalScale);
+			else
+				GenSetEarlyOverrideFloat(Self, "X", Self.Var[MinAnchorX].float / Self.FinalScale);
+			endif
+			GenWindowRaise(Self);
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Hide</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+)
+call "Genremovewindow"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>GenRemoveWindow(Self)</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>next</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    ident "FocusedGen"
+    str "_Next"
+  )
+  call "Gengetsibling"
+  str "Focusnext"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSendMessage(GenGetSibling(FocusedGen,"_next"), "FocusNext") </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Popup</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+)
+call "Genaddwindow"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenAddWindow(Self) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState>
+        <a:string>User</a:string>
+      </EnterState>
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Settomouse</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>StartMenu</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Popupat</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+)
+call "Genaddwindow"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenAddWindow(Self) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState>
+        <a:string>User</a:string>
+      </EnterState>
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Settolocation</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>StartMenu</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Prev</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    ident "FocusedGen"
+    str "_Previous"
+  )
+  call "Gengetsibling"
+  str "Focusprevious"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSendMessage(GenGetSibling(FocusedGen,"_previous"), "FocusPrevious") </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Settolocation</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[gentopopuparound].String"
+str ""
+equals
+not
+jz label_88
+(
+  static Self
+  str "Minanchorx"
+  (
+    (
+      static Self
+      objpath ".Var[gentopopuparound].String"
+    )
+    call "Gen"
+  )
+  call "Gengetleft"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Maxanchorx"
+  (
+    (
+      static Self
+      objpath ".Var[gentopopuparound].String"
+    )
+    call "Gen"
+  )
+  call "Gengetright"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Minanchory"
+  (
+    (
+      static Self
+      objpath ".Var[gentopopuparound].String"
+    )
+    call "Gen"
+  )
+  call "Gengettop"
+  int 1
+  sub
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Maxanchory"
+  (
+    (
+      static Self
+      objpath ".Var[gentopopuparound].String"
+    )
+    call "Gen"
+  )
+  call "Gengetbottom"
+  int 1
+  add
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "X"
+  static Self
+  objpath ".Var[minanchorx].Float"
+  static Self
+  objpath ".Finalscale"
+  div
+)
+call "Gensetearlyoverridefloat"
+;
+(
+  static Self
+  str "Y"
+  static Self
+  objpath ".Var[maxanchory].Float"
+  static Self
+  objpath ".Finalscale"
+  div
+)
+call "Gensetearlyoverridefloat"
+return
+label_88:
+(
+    static Self
+    str "Minanchorx"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Maxanchorx"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Minanchory"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Maxanchory"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "X"
+    int 0
+)
+call "Gensetearlyoverridefloat"
+;
+(
+    static Self
+    str "Y"
+    int 0
+)
+call "Gensetearlyoverridefloat"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (not (Self.Var[GenToPopupAround].String = ""))
+				GenSetValue(Self, "MinAnchorX", GenGetLeft(Gen(Self.Var[GenToPopupAround].string)));
+				GenSetValue(Self, "MaxAnchorX", GenGetRight(Gen(Self.Var[GenToPopupAround].string)));
+				GenSetValue(Self, "MinAnchorY", GenGetTop(Gen(Self.Var[GenToPopupAround].string)) - 1);
+				GenSetValue(Self, "MaxAnchorY", GenGetBottom(Gen(Self.Var[GenToPopupAround].string)) + 1);
+				GenSetEarlyOverrideFloat(Self, "X", Self.Var[MinAnchorX].float / Self.FinalScale);
+				GenSetEarlyOverrideFloat(Self, "Y", Self.Var[MaxAnchorY].float / Self.FinalScale);
+			else
+				GenSetValue(Self, "MinAnchorX", 0);
+				GenSetValue(Self, "MaxAnchorX", 0);
+				GenSetValue(Self, "MinAnchorY", 0);
+				GenSetValue(Self, "MaxAnchorY", 0);
+				GenSetEarlyOverrideFloat(Self, "X", 0);
+				GenSetEarlyOverrideFloat(Self, "Y", 0);
+			endif
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Settomouse</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Minanchorx"
+  static MouseX
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Maxanchorx"
+  static MouseX
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Minanchory"
+  static MouseY
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Maxanchory"
+  static MouseY
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "X"
+  static Self
+  objpath ".Var[minanchorx].Float"
+  static Self
+  objpath ".Finalscale"
+  div
+)
+call "Gensetearlyoverridefloat"
+;
+(
+  static Self
+  str "Y"
+  static Self
+  objpath ".Var[maxanchory].Float"
+  static Self
+  objpath ".Finalscale"
+  div
+)
+call "Gensetearlyoverridefloat"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetValue(Self, "MinAnchorX", MouseX);
+			GenSetValue(Self, "MaxAnchorX", MouseX);
+			GenSetValue(Self, "MinAnchorY", MouseY);
+			GenSetValue(Self, "MaxAnchorY", MouseY);
+
+			GenSetEarlyOverrideFloat(Self, "X", Self.Var[MinAnchorX].float / Self.FinalScale);
+			GenSetEarlyOverrideFloat(Self, "Y", Self.Var[MaxAnchorY].float / Self.FinalScale);
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Widgets/Contextmenu/Behavior_Contextmenu.Uigen</FileName>
+  <Var />
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Gentopopuparound</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Maxanchorx</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Maxanchory</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Minanchorx</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Minanchory</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>1</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

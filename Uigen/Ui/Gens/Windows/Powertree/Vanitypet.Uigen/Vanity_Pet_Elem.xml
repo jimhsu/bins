@@ -1,0 +1,2379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Vanity_Pet_Elem</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Layoutboxinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Mtconfirm</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Layoutboxinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Mtconfirm</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>CaptureMouse</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0.45</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>50</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Vanity_Pet_Icon</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Appearance_Itemstandalone</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Appearance_Itemstandalone</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Sprite</Type>
+        <Base i:type="UIGenSprite">
+          <Type>Sprite</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>CaptureMouse</c:Field>
+            <c:Field>Texture</c:Field>
+            <c:Field>LowerLayer</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Width>
+          <Height>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <Texture>{geninstancedata.Icon}</Texture>
+          <Mask></Mask>
+          <TopLeftColor>-1</TopLeftColor>
+          <TopRightColor>-1</TopRightColor>
+          <BottomLeftColor>-1</BottomLeftColor>
+          <BottomRightColor>-1</BottomRightColor>
+          <Rotation>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotation>
+          <LowerLayer>
+            <UIGenBundleTexture>
+              <Texture>Icon_Power_Primary_Background_Starburst.Wtex</Texture>
+              <Mask></Mask>
+              <TopLeftColor>-1</TopLeftColor>
+              <TopRightColor>-1</TopRightColor>
+              <BottomLeftColor>-1</BottomLeftColor>
+              <BottomRightColor>-1</BottomRightColor>
+              <Rotation>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotation>
+              <LowerLayer />
+              <Layer />
+              <Animation i:nil="true" />
+              <OffsetU>0</OffsetU>
+              <OffsetV>0</OffsetV>
+              <ScaleU>1</ScaleU>
+              <ScaleV>1</ScaleV>
+              <Mode>None</Mode>
+              <Effect>None</Effect>
+              <Alignment>Center</Alignment>
+              <Additive>0</Additive>
+              <ForceBottomLayer>0</ForceBottomLayer>
+            </UIGenBundleTexture>
+          </LowerLayer>
+          <Layer />
+          <Animation i:nil="true" />
+          <OffsetU>0</OffsetU>
+          <OffsetV>0</OffsetV>
+          <ScaleU>1</ScaleU>
+          <ScaleV>1</ScaleV>
+          <Mode>None</Mode>
+          <Effect>None</Effect>
+          <Alignment>Center</Alignment>
+          <Additive>0</Additive>
+          <ForceBottomLayer>0</ForceBottomLayer>
+        </Base>
+        <StateDef>
+          <UIGenStateDef>
+            <State>Disabled</State>
+            <Override i:type="UIGenSprite">
+              <Type>Sprite</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Assembly</c:Field>
+                <c:Field>Alpha</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild>
+                <UIGen>
+                  <Name>Currencyicon</Name>
+                  <BorrowFrom />
+                  <FlatBorrowFrom />
+                  <RequiresBorrow />
+                  <BorrowedInlineChildren />
+                  <Type>Sprite</Type>
+                  <Base i:type="UIGenSprite">
+                    <Type>Sprite</Type>
+                    <bf>
+                      <c:Field>{</c:Field>
+                      <c:Field>Width</c:Field>
+                      <c:Field>Height</c:Field>
+                      <c:Field>OffsetFrom</c:Field>
+                      <c:Field>Texture</c:Field>
+                      <c:Field>}</c:Field>
+                    </bf>
+                    <X>None</X>
+                    <Y>None</Y>
+                    <PercentX>0</PercentX>
+                    <PercentY>0</PercentY>
+                    <Width>
+                      <Magnitude>1</Magnitude>
+                      <Unit>FitToContents</Unit>
+                    </Width>
+                    <Height>
+                      <Magnitude>1</Magnitude>
+                      <Unit>FitToContents</Unit>
+                    </Height>
+                    <MinimumWidth>
+                      <Magnitude>0</Magnitude>
+                      <Unit>Fixed</Unit>
+                    </MinimumWidth>
+                    <MinimumHeight>
+                      <Magnitude>0</Magnitude>
+                      <Unit>Fixed</Unit>
+                    </MinimumHeight>
+                    <MaximumWidth>
+                      <Magnitude>0</Magnitude>
+                      <Unit>Fixed</Unit>
+                    </MaximumWidth>
+                    <MaximumHeight>
+                      <Magnitude>0</Magnitude>
+                      <Unit>Fixed</Unit>
+                    </MaximumHeight>
+                    <LeftMargin>None</LeftMargin>
+                    <RightMargin>None</RightMargin>
+                    <TopMargin>None</TopMargin>
+                    <BottomMargin>None</BottomMargin>
+                    <Scale>1</Scale>
+                    <OffsetFrom>BottomRight</OffsetFrom>
+                    <ScaleNoGrow>0</ScaleNoGrow>
+                    <ScaleNoShrink>0</ScaleNoShrink>
+                    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+                    <ResetScale>0</ResetScale>
+                    <ClipToParent>0</ClipToParent>
+                    <ClipToScreen>0</ClipToScreen>
+                    <PositionOnScreen>0</PositionOnScreen>
+                    <IgnoreParentPadding>0</IgnoreParentPadding>
+                    <ScaleAsIf>
+                      <a:short>0</a:short>
+                      <a:short>0</a:short>
+                    </ScaleAsIf>
+                    <Relative i:nil="true" />
+                    <PostLayoutRelative i:nil="true" />
+                    <Anchor i:nil="true" />
+                    <Child />
+                    <InlineChild />
+                    <HideChild />
+                    <RemoveChild />
+                    <Assembly i:nil="true" />
+                    <Alpha>1</Alpha>
+                    <Tween i:nil="true" />
+                    <BeforeLayout i:nil="true" />
+                    <AfterLayout i:nil="true" />
+                    <BeforeTick i:nil="true" />
+                    <KeyAction />
+                    <DefaultKeyAction i:nil="true" />
+                    <ToolTip i:nil="true" />
+                    <Background i:nil="true" />
+                    <DragDrop />
+                    <DragCancelled i:nil="true" />
+                    <Message />
+                    <CenterX>
+                      <Magnitude>0.5</Magnitude>
+                      <Unit>Percentage</Unit>
+                    </CenterX>
+                    <CenterY>
+                      <Magnitude>0.5</Magnitude>
+                      <Unit>Percentage</Unit>
+                    </CenterY>
+                    <Rotate>
+                      <Angle>0</Angle>
+                      <Unit>Radians</Unit>
+                    </Rotate>
+                    <ShearX>0</ShearX>
+                    <ShearY>0</ShearY>
+                    <ScaleX>1</ScaleX>
+                    <ScaleY>1</ScaleY>
+                    <Cursor></Cursor>
+                    <Priority>0</Priority>
+                    <ResetAlpha>0</ResetAlpha>
+                    <Clip>0</Clip>
+                    <ResetClip>0</ResetClip>
+                    <CaptureMouse>0</CaptureMouse>
+                    <CaptureMouseWheel>0</CaptureMouseWheel>
+                    <FocusOnClick>0</FocusOnClick>
+                    <FocusOnCreate>0</FocusOnCreate>
+                    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+                    <FocusByDefault>0</FocusByDefault>
+                    <FocusEveryFrame>0</FocusEveryFrame>
+                    <ClipInput>0</ClipInput>
+                    <ResetInputClip>0</ResetInputClip>
+                    <CopyChildPriority>0</CopyChildPriority>
+                    <ClipToPadding>0</ClipToPadding>
+                    <Texture>Currency_Icon_Small_Atari.Wtex</Texture>
+                    <Mask></Mask>
+                    <TopLeftColor>-1</TopLeftColor>
+                    <TopRightColor>-1</TopRightColor>
+                    <BottomLeftColor>-1</BottomLeftColor>
+                    <BottomRightColor>-1</BottomRightColor>
+                    <Rotation>
+                      <Angle>0</Angle>
+                      <Unit>Radians</Unit>
+                    </Rotation>
+                    <LowerLayer />
+                    <Layer />
+                    <Animation i:nil="true" />
+                    <OffsetU>0</OffsetU>
+                    <OffsetV>0</OffsetV>
+                    <ScaleU>1</ScaleU>
+                    <ScaleV>1</ScaleV>
+                    <Mode>None</Mode>
+                    <Effect>None</Effect>
+                    <Alignment>Center</Alignment>
+                    <Additive>0</Additive>
+                    <ForceBottomLayer>0</ForceBottomLayer>
+                  </Base>
+                  <StateDef />
+                  <ComplexStateDef />
+                  <uiComplexStates>0</uiComplexStates>
+                  <Last i:nil="true" />
+                  <Timer />
+                  <Message />
+                  <bfStates>
+                    <a:int>0</a:int>
+                    <a:int>0</a:int>
+                    <a:int>0</a:int>
+                    <a:int>0</a:int>
+                    <a:int>0</a:int>
+                    <a:int>0</a:int>
+                  </bfStates>
+                  <BeforeCreate i:nil="true" />
+                  <AfterCreate i:nil="true" />
+                  <PointerUpdate i:nil="true" />
+                  <BeforeUpdate i:nil="true" />
+                  <BeforeResult i:nil="true" />
+                  <BeforeHide i:nil="true" />
+                  <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+                  <Var />
+                  <CopyVar />
+                  <JailCell></JailCell>
+                  <Window></Window>
+                  <SpriteCache i:nil="true" />
+                  <FinalScale>1</FinalScale>
+                  <FinalAlpha>255</FinalAlpha>
+                  <Layer>0</Layer>
+                  <Priority>0</Priority>
+                  <Clone>0</Clone>
+                  <UseEstimatedSize>0</UseEstimatedSize>
+                  <NeedsRebuild>0</NeedsRebuild>
+                  <Popup>0</Popup>
+                  <TopLevelChildren>0</TopLevelChildren>
+                  <IsRoot>0</IsRoot>
+                </UIGen>
+              </InlineChild>
+              <HideChild />
+              <RemoveChild />
+              <Assembly>
+                <Assembly>Itemframe</Assembly>
+                <Colors>
+                  <TopLeftColor>1667458047</TopLeftColor>
+                  <TopRightColor>1667458047</TopRightColor>
+                  <BottomRightColor>1667458047</BottomRightColor>
+                  <BottomLeftColor>1667458047</BottomLeftColor>
+                </Colors>
+                <PaddingTop>0</PaddingTop>
+                <PaddingBottom>0</PaddingBottom>
+                <PaddingLeft>0</PaddingLeft>
+                <PaddingRight>0</PaddingRight>
+              </Assembly>
+              <Alpha>0.8</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <Texture></Texture>
+              <Mask></Mask>
+              <TopLeftColor>-1</TopLeftColor>
+              <TopRightColor>-1</TopRightColor>
+              <BottomLeftColor>-1</BottomLeftColor>
+              <BottomRightColor>-1</BottomRightColor>
+              <Rotation>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotation>
+              <LowerLayer />
+              <Layer />
+              <Animation i:nil="true" />
+              <OffsetU>0</OffsetU>
+              <OffsetV>0</OffsetV>
+              <ScaleU>1</ScaleU>
+              <ScaleV>1</ScaleV>
+              <Mode>None</Mode>
+              <Effect>None</Effect>
+              <Alignment>Center</Alignment>
+              <Additive>0</Additive>
+              <ForceBottomLayer>0</ForceBottomLayer>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenStateDef>
+        </StateDef>
+        <ComplexStateDef>
+          <UIGenComplexStateDef>
+            <ConditionBlock>
+              <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Active"
+(
+  static Self
+  objpath ".Parent"
+  ident "Selected"
+)
+call "Geninstate"
+and
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenInstanceData.Active and GenInState(Self.Parent, Selected) </OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+              <Cost>0</Cost>
+            </ConditionBlock>
+            <IntCondition />
+            <FloatCondition />
+            <StringCondition />
+            <IntCondition2 />
+            <FloatCondition2 />
+            <StringCondition2 />
+            <InState />
+            <NotInState />
+            <Override i:type="UIGenSprite">
+              <Type>Sprite</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>LowerLayer</c:Field>
+                <c:Field>Layer</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <Texture></Texture>
+              <Mask></Mask>
+              <TopLeftColor>-1</TopLeftColor>
+              <TopRightColor>-1</TopRightColor>
+              <BottomLeftColor>-1</BottomLeftColor>
+              <BottomRightColor>-1</BottomRightColor>
+              <Rotation>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotation>
+              <LowerLayer>
+                <UIGenBundleTexture>
+                  <Texture>Icon_Inventory_Special_Item_Background.Wtex</Texture>
+                  <Mask></Mask>
+                  <TopLeftColor>-1</TopLeftColor>
+                  <TopRightColor>-1</TopRightColor>
+                  <BottomLeftColor>-1</BottomLeftColor>
+                  <BottomRightColor>-1</BottomRightColor>
+                  <Rotation>
+                    <Angle>0</Angle>
+                    <Unit>Radians</Unit>
+                  </Rotation>
+                  <LowerLayer />
+                  <Layer />
+                  <Animation i:nil="true" />
+                  <OffsetU>0</OffsetU>
+                  <OffsetV>0</OffsetV>
+                  <ScaleU>1</ScaleU>
+                  <ScaleV>1</ScaleV>
+                  <Mode>None</Mode>
+                  <Effect>None</Effect>
+                  <Alignment>Center</Alignment>
+                  <Additive>0</Additive>
+                  <ForceBottomLayer>0</ForceBottomLayer>
+                </UIGenBundleTexture>
+              </LowerLayer>
+              <Layer>
+                <UIGenBundleTexture>
+                  <Texture>Icon_Inventory_Special_Item_Background.Wtex</Texture>
+                  <Mask></Mask>
+                  <TopLeftColor>-222</TopLeftColor>
+                  <TopRightColor>-1</TopRightColor>
+                  <BottomLeftColor>-1</BottomLeftColor>
+                  <BottomRightColor>-1</BottomRightColor>
+                  <Rotation>
+                    <Angle>0</Angle>
+                    <Unit>Radians</Unit>
+                  </Rotation>
+                  <LowerLayer />
+                  <Layer />
+                  <Animation i:nil="true" />
+                  <OffsetU>0</OffsetU>
+                  <OffsetV>0</OffsetV>
+                  <ScaleU>1</ScaleU>
+                  <ScaleV>1</ScaleV>
+                  <Mode>None</Mode>
+                  <Effect>None</Effect>
+                  <Alignment>Center</Alignment>
+                  <Additive>0</Additive>
+                  <ForceBottomLayer>0</ForceBottomLayer>
+                </UIGenBundleTexture>
+              </Layer>
+              <Animation i:nil="true" />
+              <OffsetU>0</OffsetU>
+              <OffsetV>0</OffsetV>
+              <ScaleU>1</ScaleU>
+              <ScaleV>1</ScaleV>
+              <Mode>None</Mode>
+              <Effect>None</Effect>
+              <Alignment>Center</Alignment>
+              <Additive>0</Additive>
+              <ForceBottomLayer>0</ForceBottomLayer>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenComplexStateDef>
+          <UIGenComplexStateDef>
+            <ConditionBlock>
+              <_><![CDATA[
+(
+  ident "MouseOver"
+)
+call "InState"
+(
+  static Self
+  objpath ".Parent"
+  ident "MouseOver"
+)
+call "Geninstate"
+or
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> InState(MouseOver) or GenInState(Self.Parent, MouseOver) </OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+              <Cost>0</Cost>
+            </ConditionBlock>
+            <IntCondition />
+            <FloatCondition />
+            <StringCondition />
+            <IntCondition2 />
+            <FloatCondition2 />
+            <StringCondition2 />
+            <InState />
+            <NotInState />
+            <Override i:type="UIGenSprite">
+              <Type>Sprite</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Layer</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <Texture></Texture>
+              <Mask></Mask>
+              <TopLeftColor>-1</TopLeftColor>
+              <TopRightColor>-1</TopRightColor>
+              <BottomLeftColor>-1</BottomLeftColor>
+              <BottomRightColor>-1</BottomRightColor>
+              <Rotation>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotation>
+              <LowerLayer />
+              <Layer>
+                <UIGenBundleTexture>
+                  <Texture>Power_Icon_Overlay_Mouseover_State.Wtex</Texture>
+                  <Mask></Mask>
+                  <TopLeftColor>-120</TopLeftColor>
+                  <TopRightColor>-1</TopRightColor>
+                  <BottomLeftColor>-1</BottomLeftColor>
+                  <BottomRightColor>-1</BottomRightColor>
+                  <Rotation>
+                    <Angle>0</Angle>
+                    <Unit>Radians</Unit>
+                  </Rotation>
+                  <LowerLayer />
+                  <Layer />
+                  <Animation i:nil="true" />
+                  <OffsetU>0</OffsetU>
+                  <OffsetV>0</OffsetV>
+                  <ScaleU>1</ScaleU>
+                  <ScaleV>1</ScaleV>
+                  <Mode>Scaled</Mode>
+                  <Effect>None</Effect>
+                  <Alignment>Center</Alignment>
+                  <Additive>1</Additive>
+                  <ForceBottomLayer>0</ForceBottomLayer>
+                </UIGenBundleTexture>
+              </Layer>
+              <Animation i:nil="true" />
+              <OffsetU>0</OffsetU>
+              <OffsetV>0</OffsetV>
+              <ScaleU>1</ScaleU>
+              <ScaleV>1</ScaleV>
+              <Mode>None</Mode>
+              <Effect>None</Effect>
+              <Alignment>Center</Alignment>
+              <Additive>0</Additive>
+              <ForceBottomLayer>0</ForceBottomLayer>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenComplexStateDef>
+          <UIGenComplexStateDef>
+            <ConditionBlock>
+              <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Owned"
+not
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); not GenInstanceData.Owned </OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+              <Cost>0</Cost>
+            </ConditionBlock>
+            <IntCondition />
+            <FloatCondition />
+            <StringCondition />
+            <IntCondition2 />
+            <FloatCondition2 />
+            <StringCondition2 />
+            <InState />
+            <NotInState />
+            <Override i:type="UIGenSprite">
+              <Type>Sprite</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>TopLeftColor</c:Field>
+                <c:Field>Effect</c:Field>
+                <c:Field>ForceBottomLayer</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <Texture></Texture>
+              <Mask></Mask>
+              <TopLeftColor>-2139062017</TopLeftColor>
+              <TopRightColor>-1</TopRightColor>
+              <BottomLeftColor>-1</BottomLeftColor>
+              <BottomRightColor>-1</BottomRightColor>
+              <Rotation>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotation>
+              <LowerLayer />
+              <Layer />
+              <Animation i:nil="true" />
+              <OffsetU>0</OffsetU>
+              <OffsetV>0</OffsetV>
+              <ScaleU>1</ScaleU>
+              <ScaleV>1</ScaleV>
+              <Mode>None</Mode>
+              <Effect>Desaturate</Effect>
+              <Alignment>Center</Alignment>
+              <Additive>0</Additive>
+              <ForceBottomLayer>1</ForceBottomLayer>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenComplexStateDef>
+        </ComplexStateDef>
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+(
+  static Self
+  ident "Disabled"
+  static GenInstanceData
+  objpath ".Microtransactionid"
+  static GenInstanceData
+  objpath ".Owned"
+  not
+  and
+)
+call "Gensetstate"
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenSetState(Self, Disabled, GenInstanceData.MicroTransactionID and not GenInstanceData.Owned); </OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeUpdate>
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>Vanity_Pet_Text</Name>
+        <BorrowFrom />
+        <FlatBorrowFrom />
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>SMF</Type>
+        <Base i:type="UIGenSMF">
+          <Type>SMF</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Width</c:Field>
+            <c:Field>Height</c:Field>
+            <c:Field>LeftMargin</c:Field>
+            <c:Field>TopMargin</c:Field>
+            <c:Field>OffsetFrom</c:Field>
+            <c:Field>TextBlock</c:Field>
+            <c:Field>Font</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>1</Magnitude>
+            <Unit>Percentage</Unit>
+          </Width>
+          <Height>
+            <Magnitude>1</Magnitude>
+            <Unit>FitToContents</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>44</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>-3</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>Left</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <Text></Text>
+          <ScrollbarDef></ScrollbarDef>
+          <DisabledScrollbarDef></DisabledScrollbarDef>
+          <ScrollbarTopMargin>None</ScrollbarTopMargin>
+          <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+          <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+          <ScrollbarRightMargin>None</ScrollbarRightMargin>
+          <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+          <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+          <ScrollbarUseWheel>1</ScrollbarUseWheel>
+          <ScrollbarUseStick>1</ScrollbarUseStick>
+          <TextBlock>
+            <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Displayname"
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenInstanceData.DisplayName </OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+            <Cost>0</Cost>
+          </TextBlock>
+          <Defaults>
+            <Font></Font>
+            <Color>0</Color>
+            <Shadow>0</Shadow>
+          </Defaults>
+          <Font>Vanitypet_Description</Font>
+          <Alignment>TopLeft</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ShrinkToFit>0</ShrinkToFit>
+          <ScaleToFit>0</ScaleToFit>
+          <NoWrap>0</NoWrap>
+          <SafeMode>0</SafeMode>
+        </Base>
+        <StateDef />
+        <ComplexStateDef>
+          <UIGenComplexStateDef>
+            <ConditionBlock>
+              <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Microtransactionid"
+static GenInstanceData
+objpath ".Owned"
+not
+and
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenInstanceData.MicroTransactionID and not GenInstanceData.Owned</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+              <Cost>0</Cost>
+            </ConditionBlock>
+            <IntCondition />
+            <FloatCondition />
+            <StringCondition />
+            <IntCondition2 />
+            <FloatCondition2 />
+            <StringCondition2 />
+            <InState />
+            <NotInState />
+            <Override i:type="UIGenSMF">
+              <Type>SMF</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Font</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <Text></Text>
+              <ScrollbarDef></ScrollbarDef>
+              <DisabledScrollbarDef></DisabledScrollbarDef>
+              <ScrollbarTopMargin>None</ScrollbarTopMargin>
+              <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+              <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+              <ScrollbarRightMargin>None</ScrollbarRightMargin>
+              <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+              <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+              <ScrollbarUseWheel>1</ScrollbarUseWheel>
+              <ScrollbarUseStick>1</ScrollbarUseStick>
+              <TextBlock i:nil="true" />
+              <Defaults>
+                <Font></Font>
+                <Color>0</Color>
+                <Shadow>0</Shadow>
+              </Defaults>
+              <Font>Vanitypet_Description_Disabled</Font>
+              <Alignment>TopLeft</Alignment>
+              <FilterProfanity>0</FilterProfanity>
+              <ShrinkToFit>0</ShrinkToFit>
+              <ScaleToFit>0</ScaleToFit>
+              <NoWrap>0</NoWrap>
+              <SafeMode>0</SafeMode>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenComplexStateDef>
+        </ComplexStateDef>
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>1</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>LeftMouseClick</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Activate</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Active"
+(
+  ident "Selected"
+)
+call "InState"
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenInstanceData.Active and InState(Selected) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Assembly</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly>
+          <Assembly>Listrow_Selected_Outside</Assembly>
+          <Colors>
+            <TopLeftColor>0</TopLeftColor>
+            <TopRightColor>0</TopRightColor>
+            <BottomRightColor>0</BottomRightColor>
+            <BottomLeftColor>0</BottomLeftColor>
+          </Colors>
+          <PaddingTop>0</PaddingTop>
+          <PaddingBottom>0</PaddingBottom>
+          <PaddingLeft>0</PaddingLeft>
+          <PaddingRight>0</PaddingRight>
+        </Assembly>
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Microtransactionid"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo"); GenInstanceData.MicroTransactionID; </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenBox">
+        <Type>Box</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild>
+          <UIGen>
+            <Name>Tooltipbox</Name>
+            <BorrowFrom>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mttooltip</hGen>
+              </UIGenBorrowed>
+            </BorrowFrom>
+            <FlatBorrowFrom>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mttooltip</hGen>
+              </UIGenBorrowed>
+            </FlatBorrowFrom>
+            <RequiresBorrow />
+            <BorrowedInlineChildren />
+            <Type>Box</Type>
+            <Base i:type="UIGenBox">
+              <Type>Box</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Width</c:Field>
+                <c:Field>Height</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>1</Magnitude>
+                <Unit>Percentage</Unit>
+              </Width>
+              <Height>
+                <Magnitude>1</Magnitude>
+                <Unit>Percentage</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+            </Base>
+            <StateDef />
+            <ComplexStateDef />
+            <uiComplexStates>0</uiComplexStates>
+            <Last i:nil="true" />
+            <Timer />
+            <Message />
+            <bfStates>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+            </bfStates>
+            <BeforeCreate>
+              <Command />
+              <ExpressionBlock>
+                <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+(
+  static Self
+  str "ItemID"
+  static GenInstanceData
+  objpath ".Microtransactionid"
+)
+call "Gensetvalue"
+]]></_>
+                <Statement>
+                  <ExprLine>
+                    <DescStr></DescStr>
+                    <OrigStr> DeclareType("GenInstanceData", "VanityPetInfo");GenSetValue(Self, "ItemID", GenInstanceData.MicroTransactionID); </OrigStr>
+                  </ExprLine>
+                </Statement>
+                <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+                <Cost>0</Cost>
+              </ExpressionBlock>
+              <Sound />
+              <EnterState />
+              <ExitState />
+              <ToggleState />
+              <CopyParentState />
+              <Mutate />
+              <Message />
+              <Set />
+              <Focus>0</Focus>
+              <Unfocus>0</Unfocus>
+              <TooltipFocus>0</TooltipFocus>
+              <TooltipUnfocus>0</TooltipUnfocus>
+            </BeforeCreate>
+            <AfterCreate i:nil="true" />
+            <PointerUpdate i:nil="true" />
+            <BeforeUpdate i:nil="true" />
+            <BeforeResult i:nil="true" />
+            <BeforeHide i:nil="true" />
+            <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+            <Var />
+            <CopyVar />
+            <JailCell></JailCell>
+            <Window></Window>
+            <SpriteCache i:nil="true" />
+            <FinalScale>1</FinalScale>
+            <FinalAlpha>255</FinalAlpha>
+            <Layer>0</Layer>
+            <Priority>0</Priority>
+            <Clone>0</Clone>
+            <UseEstimatedSize>0</UseEstimatedSize>
+            <NeedsRebuild>0</NeedsRebuild>
+            <Popup>0</Popup>
+            <TopLevelChildren>0</TopLevelChildren>
+            <IsRoot>0</IsRoot>
+          </UIGen>
+        </InlineChild>
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.5</Time>
+      <Name>Cooldown</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Cooldown"
+  ident "True"
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTimerPause(Self, "Cooldown", True); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>1</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Activate</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Owned"
+jz label_32
+static Self
+objpath ".Timer[cooldown].Paused"
+jz label_31
+(
+  static Player
+  static GenInstanceData
+)
+call "Vanitypet_Activate"
+;
+(
+  static Self
+  str "Cooldown"
+  int 0
+)
+call "Gentimerset"
+;
+(
+  static Self
+  str "Cooldown"
+  ident "False"
+)
+call "Gentimerpause"
+label_31:
+j label_46
+label_32:
+(
+    static Self
+    str "ItemID"
+    static GenInstanceData
+    objpath ".Microtransactionid"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Showconfirm"
+)
+call "Gensendmessage"
+;
+label_46:
+(
+    static Self
+    objpath ".Parent"
+    static GenInstanceNumber
+    ident "False"
+)
+call "Genlayoutboxsetselectedindex"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("GenInstanceData", "VanityPetInfo");
+			if (GenInstanceData.Owned)
+				if (Self.Timer[Cooldown].Paused)
+					VanityPet_Activate(Player, GenInstanceData);
+					GenTimerSet(Self, "Cooldown", 0);
+					GenTimerPause(Self, "Cooldown", False);
+				endif
+			else
+				GenSetValue(Self, "ItemID", GenInstanceData.MicroTransactionID);
+				GenSendMessage(Self, "ShowConfirm");
+			endif
+			GenLayoutBoxSetSelectedIndex(Self.Parent, GenInstanceNumber, False);
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "VanityPetInfo"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Active"
+retifzero
+(
+  static Self
+  objpath ".Parent"
+  static GenInstanceNumber
+  ident "False"
+)
+call "Genlayoutboxsetselectedindex"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType("GenInstanceData", "VanityPetInfo");
+			if (GenInstanceData.Active)
+				GenLayoutBoxSetSelectedIndex(Self.Parent, GenInstanceNumber, False);
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Powertree/Vanitypet.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

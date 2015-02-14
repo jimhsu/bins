@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Chatpopup_Common_Menudelays</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Button_Submenu</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu_Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu_Button</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu_Button_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contextmenu_Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contextmenu_Button</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contextmenu_Button_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Button_Submenu</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Button</Type>
+  <Base i:nil="true" />
+  <StateDef>
+    <UIGenStateDef>
+      <State>MouseInside</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  static Self
+  str "Showsubmenutimer"
+  int 0
+)
+call "Gentimerset"
+;
+(
+  static Self
+  str "Showsubmenutimer"
+  int 0
+)
+call "Gentimerpause"
+;
+(
+  static Self
+  str "Hidesubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				GenTimerSet(Self, "ShowSubmenuTimer", 0);
+				GenTimerPause(Self, "ShowSubmenuTimer", 0);
+				GenTimerPause(Self, "HideSubmenuTimer", 1);
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  static Self
+  str "Hidesubmenutimer"
+  int 0
+)
+call "Gentimerset"
+;
+(
+  static Self
+  str "Hidesubmenutimer"
+  int 0
+)
+call "Gentimerpause"
+;
+(
+  static Self
+  str "Showsubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				GenTimerSet(Self, "HideSubmenuTimer", 0);
+				GenTimerPause(Self, "HideSubmenuTimer", 0);
+				GenTimerPause(Self, "ShowSubmenuTimer", 1);
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.6</Time>
+      <Name>ShowSubmenuTimer</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Showsubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTimerPause(Self, "ShowSubmenuTimer", 1); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Timedshowsubmenu</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+    <UIGenTimer>
+      <Time>0.6</Time>
+      <Name>HideSubmenuTimer</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Hidesubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTimerPause(Self, "HideSubmenuTimer", 1) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Timedhidesubmenu</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Action</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Timedshowsubmenu</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  static Self
+  str "Showsubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+;
+(
+  static Self
+  str "Hidesubmenutimer"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> GenTimerPause(Self, "ShowSubmenuTimer", 1); GenTimerPause(Self, "HideSubmenuTimer", 1) </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Chat/Popup/Chatpopup.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

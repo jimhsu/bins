@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Entitycontextmenu</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Entitycontextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Entitycontextmenu</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Contextmenu_Submenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Entitycontextmenu</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Entitycontextmenu</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:nil="true" />
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Cleanupvars</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "entRef"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Isinteract"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "EntContainerID"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Inchatwindow"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "FullName"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "AtName"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Name"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Gentopopuparound"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Hideoutname"
+  str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetValue(Self, "entref", 0);
+			GenSetValue(Self, "IsInteract", 0);
+			GenSetValue(Self, "EntContainerID", 0);
+			GenSetValue(Self, "InChatWindow", 0);
+			GenSetString(Self, "FullName", "");
+			GenSetString(Self, "AtName", "");
+			GenSetString(Self, "Name", "");
+			GenSetString(Self, "GenToPopupAround", "");
+			GenSetString(Self, "HideoutName", "");
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entitycontextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Hide</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+)
+call "Genremovewindow"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>GenRemoveWindow(Self)</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entitycontextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Cleanupvars</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Setupvars</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Self
+objpath ".Var[entref].Int"
+int 0
+equals
+jz label_96
+static Self
+objpath ".Var[fullname].String"
+str ""
+equals
+not
+jz label_33
+(
+  static Self
+  str "Name"
+  (
+    static Self
+    objpath ".Var[fullname].String"
+  )
+  call "Chat_Getnamepart"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "AtName"
+  (
+    static Self
+    objpath ".Var[fullname].String"
+  )
+  call "Chat_Gethandlepart"
+)
+call "Gensetstring"
+;
+label_33:
+(
+    static Self
+    str "IsPlayer"
+    static Self
+    objpath ".Var[atname].String"
+    str ""
+    equals
+    not
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isme"
+    static Self
+    objpath ".Var[name].String"
+    static Self
+    objpath ".Var[atname].String"
+    add
+    (
+      static Player
+    )
+    call "Entgetname"
+    str "@"
+    add
+    (
+      static Player
+    )
+    call "Entgetdisplayname"
+    add
+    equals
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isnpc"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isfoe"
+    int 0
+)
+call "Gensetvalue"
+;
+static Self
+objpath ".Var[isme].Int"
+int 1
+equals
+jz label_96
+(
+    static Self
+    str "entRef"
+    (
+      static Player
+    )
+    call "Entgetref"
+)
+call "Gensetvalue"
+;
+label_96:
+static Self
+objpath ".Var[entref].Int"
+int 0
+equals
+not
+retifzero
+(
+    static Self
+    str "IsPlayer"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetisplayer"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isme"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+    static Player
+    equals
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isfoe"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetisfoe"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isnpc"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetisplayer"
+    not
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetisfoe"
+    not
+    and
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Isinteract"
+    (
+      static Player
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entispossibleinteracttarget"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Name"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetnamebyref"
+)
+call "Gensetstring"
+;
+(
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetfromref"
+)
+call "Entgetisplayer"
+jz label_223
+(
+    static Self
+    str "AtName"
+    str "@"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "AtName"
+    (
+      static Self
+      objpath ".Var[entref].Int"
+    )
+    call "Entgetdisplaynamebyref"
+)
+call "Genappendstring"
+j label_230
+label_223:
+(
+    static Self
+    str "AtName"
+    str ""
+)
+call "Gensetstring"
+;
+label_230:
+(
+    static Self
+    str "EntContainerID"
+    (
+      (
+        static Self
+        objpath ".Var[entref].Int"
+      )
+      call "Entgetfromref"
+    )
+    call "Entgetcontainerid"
+)
+call "Gensetvalue"
+;
+static Self
+objpath ".Var[isme].Int"
+int 0
+greater
+retifzero
+(
+    static Self
+    str "Hideoutname"
+    (
+    )
+    call "Getcurrentinteriordisplayname"
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (Self.Var[entref].int = 0)
+				if (not (Self.Var[FullName].String = ""))
+					GenSetString(Self, "Name", Chat_GetNamePart(Self.Var[FullName].String));
+					GenSetString(Self, "AtName", Chat_GetHandlePart(Self.Var[FullName].String));
+				endif
+				# No entref given, so we assume Name &amp; AtName were given instead
+				GenSetValue(Self, "IsPlayer", NOT (Self.Var[AtName].String = ""));
+				GenSetValue(Self, "IsMe", Self.Var[Name].String + Self.Var[AtName].String = EntGetName(Player) + "@" + EntGetDisplayName(Player));
+				GenSetValue(Self, "IsNPC", 0);
+				GenSetValue(Self, "IsFoe", 0);
+				if (Self.Var[IsMe].int = 1)
+					GenSetValue(Self, "entref", EntGetRef(Player));
+				endif
+			endif
+
+			if (not (Self.Var[entref].int = 0))
+				GenSetValue(Self, "IsPlayer", EntGetIsPlayer(EntGetFromRef(Self.Var[entref].int)));
+				GenSetValue(Self, "IsMe", EntGetFromRef(Self.Var[entref].int) = Player);
+				GenSetValue(Self, "IsFoe", EntGetIsFoe(Player, EntGetFromRef(Self.Var[entref].Int)));
+				GenSetValue(Self, "IsNPC",
+					    not EntGetIsPlayer(EntGetFromRef(Self.Var[entref].Int))
+					and not EntGetIsFoe(Player, EntGetFromRef(Self.Var[entref].Int)));
+				GenSetValue(Self, "IsInteract", EntIsPossibleInteractTarget(Player, EntGetFromRef(Self.Var[entref].Int)));
+
+				GenSetString(Self, "Name", EntGetNameByRef(Self.Var[entref].int));
+
+				if (EntGetIsPlayer(EntGetFromRef(Self.Var[entref].int)))
+					GenSetString(Self, "AtName", "@");
+					GenAppendString(Self, "AtName", EntGetDisplayNameByRef(Self.Var[entref].int));
+				else
+					GenSetString(Self, "AtName", "");
+				endif
+
+				GenSetValue(Self, "EntContainerID", EntGetContainerID(EntGetFromRef(Self.Var[entref].int)));
+
+				if( Self.Var[IsMe].Int &gt; 0)
+					GenSetString(Self, "HideoutName", GetCurrentInteriorDisplayName());
+				endif
+			endif
+
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Entitycontextmenu.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>StartMenu</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Entities/Entitycontextmenu.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>AtName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>EntContainerID</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>entRef</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>FullName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Gentopopuparound</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Hideoutname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Inchatwindow</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Isfoe</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Isinteract</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Isme</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Isnpc</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>IsPlayer</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Name</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Showdebugentry</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window>Nongameplaywindow</Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>1</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

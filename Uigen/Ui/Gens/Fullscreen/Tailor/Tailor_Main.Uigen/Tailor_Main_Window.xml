@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Tailor_Main_Window</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Charactereditor_Halfscreen_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Appearance_Contentarea</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Charactereditor_Halfscreen_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Tailor_Costumelist_Primary</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Copycostume</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Tailor_Root"
+  )
+  call "Gen"
+  ident "Tailor_Edit"
+)
+call "Geninstate"
+not
+(
+  (
+    str "Tailor_Root"
+  )
+  call "Gen"
+  ident "Tailor_Main"
+)
+call "Geninstate"
+and
+retifzero
+(
+  static Self
+  str "Listnew"
+  static Self
+  objpath ".Var[listindex].Int"
+  (
+    static Self
+    objpath ".Var[listtype].Int"
+    int 0
+    int 0
+  )
+  call "Costumecreator_Getplayercostumelistsize"
+  notless
+)
+call "Gensetvalue"
+;
+static Self
+objpath ".Var[listnew].Int"
+jz label_51
+(
+  static Self
+  str "Listindex"
+  (
+    static Self
+    objpath ".Var[listtype].Int"
+    int 0
+    int 0
+  )
+  call "Costumecreator_Getplayercostumelistsize"
+)
+call "Gensetvalue"
+return
+label_51:
+(
+    static Self
+    objpath ".Var[listtype].Int"
+    int 0
+    static Self
+    objpath ".Var[listindex].Int"
+)
+call "Charactercreation_Copyplayercostume"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			If (not GenInState(Gen("Tailor_Root"), Tailor_Edit) and GenInState(Gen("Tailor_Root"), Tailor_Main))
+				GenSetValue(Self, "ListNew", Self.Var[ListIndex].Int &gt;= CostumeCreator_GetPlayerCostumeListSize(Self.Var[ListType].Int, 0, 0));
+
+				If (Self.Var[ListNew].Int)
+					GenSetValue(Self, "ListIndex", CostumeCreator_GetPlayerCostumeListSize(Self.Var[ListType].Int, 0, 0));
+				Else
+					CharacterCreation_CopyPlayerCostume(Self.Var[ListType].Int, 0, Self.Var[ListIndex].Int);
+				EndIf
+			EndIf
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Tailor/Tailor_Main.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Setactive</Name>
+      <Command>
+        <a:string>SetActiveCostume {Self.Var[ListType].Int} {Self.Var[ListIndex].Int}</a:string>
+      </Command>
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Startedit</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    str "Tailor_Root"
+  )
+  call "Gen"
+  str "Selectedtype"
+  static Self
+  objpath ".Var[listtype].Int"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Tailor_Root"
+  )
+  call "Gen"
+  str "SelectedRow"
+  static Self
+  objpath ".Var[listindex].Int"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Tailor_Main"
+  )
+  call "Gen"
+  str "next"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetValue(Gen("Tailor_Root"), "SelectedType", Self.Var[ListType].Int);
+			GenSetValue(Gen("Tailor_Root"), "SelectedRow", Self.Var[ListIndex].Int);
+			GenSendMessage(Gen("Tailor_Main"), "Next");
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Tailor/Tailor_Main.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Waitingforsave</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Savependingtype"
+  static Self
+  objpath ".Var[listtype].Int"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Savependingindex"
+  static Self
+  objpath ".Var[listindex].Int"
+)
+call "Gensetvalue"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetValue(Self, "SavePendingType", Self.Var[ListType].Int);
+			GenSetValue(Self, "SavePendingIndex", Self.Var[ListIndex].Int);
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Tailor/Tailor_Main.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set>
+        <UIGenVarTypeGlobAndGen>
+          <GlobName>Savepending</GlobName>
+          <State>Visible</State>
+          <Float>0</Float>
+          <String></String>
+          <hTarget></hTarget>
+        </UIGenVarTypeGlobAndGen>
+      </Set>
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message>
+      <UIGenMessagePacket>
+        <MessageName>Copycostume</MessageName>
+        <hGen></hGen>
+      </UIGenMessagePacket>
+    </Message>
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+static Self
+objpath ".Var[savepending].Int"
+int 0
+greater
+(
+)
+call "Costumecreator_Costumesaved"
+and
+retifzero
+(
+  static Self
+  str "Savepending"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Tailor_Root"
+  )
+  call "Gen"
+  str "Selectedredraw"
+  int 1
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Charactercreation.Copyplayercostume {self.Var[savependingtype].Int} 0 {self.Var[savependingindex].Int}"
+)
+call "Genruncommand"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			if ( Self.Var[SavePending].Int &gt; 0 and
+				CostumeCreator_CostumeSaved() )
+				GenSetValue(Self, "SavePending", 0);
+				GenSetValue(Gen("Tailor_Root"), "SelectedRedraw", 1);
+				GenRunCommand(Self, "CharacterCreation.CopyPlayerCostume {Self.Var[SavePendingType].Int} 0 {Self.Var[SavePendingIndex].Int}");
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Tailor/Tailor_Main.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Fullscreen/Tailor/Tailor_Main.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Listindex</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Listnew</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Listtype</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Savepending</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Savependingindex</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Savependingtype</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

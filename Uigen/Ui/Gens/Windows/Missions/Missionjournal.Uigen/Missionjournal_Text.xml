@@ -1,0 +1,1640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Missionjournal_Text</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Smfscrollbar</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Smfscrollbar</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Smfscrollbar</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Smfscrollbar</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>SMF</Type>
+  <Base i:type="UIGenSMF">
+    <Type>SMF</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>RightMargin</c:Field>
+      <c:Field>Text</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>2</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Text>Missionjournal_Description</Text>
+    <ScrollbarDef></ScrollbarDef>
+    <DisabledScrollbarDef></DisabledScrollbarDef>
+    <ScrollbarTopMargin>None</ScrollbarTopMargin>
+    <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+    <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+    <ScrollbarRightMargin>None</ScrollbarRightMargin>
+    <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+    <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+    <ScrollbarUseWheel>1</ScrollbarUseWheel>
+    <ScrollbarUseStick>1</ScrollbarUseStick>
+    <TextBlock i:nil="true" />
+    <Defaults>
+      <Font></Font>
+      <Color>0</Color>
+      <Shadow>0</Shadow>
+    </Defaults>
+    <Font></Font>
+    <Alignment>TopLeft</Alignment>
+    <FilterProfanity>0</FilterProfanity>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <SafeMode>0</SafeMode>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>Gamepad</State>
+      <Override i:type="UIGenSMF">
+        <Type>SMF</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>BeforeLayout</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+(
+  static Self
+  objpath ".State.Scrollbar"
+  ident "RightStickY"
+  neg
+  (
+    static Self
+  )
+  call "Gengetheight"
+  mul
+  int 2
+  div
+  ident "ElapsedTime"
+  mul
+)
+call "Genadjustscrollbar"
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr> GenAdjustScrollbar(Self.State.Scrollbar, -RightStickY * GenGetHeight(Self) / 2 * ElapsedTime) </OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeLayout>
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Text></Text>
+        <ScrollbarDef></ScrollbarDef>
+        <DisabledScrollbarDef></DisabledScrollbarDef>
+        <ScrollbarTopMargin>None</ScrollbarTopMargin>
+        <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+        <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+        <ScrollbarRightMargin>None</ScrollbarRightMargin>
+        <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+        <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+        <ScrollbarUseWheel>1</ScrollbarUseWheel>
+        <ScrollbarUseStick>1</ScrollbarUseStick>
+        <TextBlock i:nil="true" />
+        <Defaults>
+          <Font></Font>
+          <Color>0</Color>
+          <Shadow>0</Shadow>
+        </Defaults>
+        <Font></Font>
+        <Alignment>TopLeft</Alignment>
+        <FilterProfanity>0</FilterProfanity>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <SafeMode>0</SafeMode>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedtab].String"
+str "Active"
+equals
+(
+  (
+    static Player
+    (
+      str "Missionjournal_Root_Contents"
+    )
+    call "Gen"
+    objpath ".Var[selectedmission].String"
+  )
+  call "Missionfromname"
+)
+call "Getmissionstate"
+str "failed"
+equals
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Gen("MissionJournal_Root_Contents").Var[SelectedTab].String = "Active" and not (GetMissionState(MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)) = "Failed") </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSMF">
+        <Type>SMF</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>BeforeLayout</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout>
+          <Command />
+          <ExpressionBlock i:nil="true" />
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message>
+            <UIGenMessagePacket>
+              <MessageName>Buildactivemissiondescription</MessageName>
+              <hGen></hGen>
+            </UIGenMessagePacket>
+          </Message>
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeLayout>
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Text></Text>
+        <ScrollbarDef></ScrollbarDef>
+        <DisabledScrollbarDef></DisabledScrollbarDef>
+        <ScrollbarTopMargin>None</ScrollbarTopMargin>
+        <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+        <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+        <ScrollbarRightMargin>None</ScrollbarRightMargin>
+        <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+        <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+        <ScrollbarUseWheel>1</ScrollbarUseWheel>
+        <ScrollbarUseStick>1</ScrollbarUseStick>
+        <TextBlock i:nil="true" />
+        <Defaults>
+          <Font></Font>
+          <Color>0</Color>
+          <Shadow>0</Shadow>
+        </Defaults>
+        <Font></Font>
+        <Alignment>TopLeft</Alignment>
+        <FilterProfanity>0</FilterProfanity>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <SafeMode>0</SafeMode>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Vars[\"selectedtab\"].String"
+str "Completed"
+equals
+(
+  static Player
+  (
+    str "Missionjournal_Root_Contents"
+  )
+  call "Gen"
+  objpath ".Var[selectedmission].String"
+)
+call "Completedmissionfromname"
+not
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Gen("MissionJournal_Root_Contents").Vars["SelectedTab"].String = "Completed" and not (not CompletedMissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)) </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSMF">
+        <Type>SMF</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>BeforeLayout</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout>
+          <Command />
+          <ExpressionBlock i:nil="true" />
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message>
+            <UIGenMessagePacket>
+              <MessageName>Buildcompletedmissiondescription</MessageName>
+              <hGen></hGen>
+            </UIGenMessagePacket>
+          </Message>
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeLayout>
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Text></Text>
+        <ScrollbarDef></ScrollbarDef>
+        <DisabledScrollbarDef></DisabledScrollbarDef>
+        <ScrollbarTopMargin>None</ScrollbarTopMargin>
+        <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+        <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+        <ScrollbarRightMargin>None</ScrollbarRightMargin>
+        <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+        <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+        <ScrollbarUseWheel>1</ScrollbarUseWheel>
+        <ScrollbarUseStick>1</ScrollbarUseStick>
+        <TextBlock i:nil="true" />
+        <Defaults>
+          <Font></Font>
+          <Color>0</Color>
+          <Shadow>0</Shadow>
+        </Defaults>
+        <Font></Font>
+        <Alignment>TopLeft</Alignment>
+        <FilterProfanity>0</FilterProfanity>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <SafeMode>0</SafeMode>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Vars[\"selectedtab\"].String"
+str "Active"
+equals
+(
+  (
+    static Player
+    (
+      str "Missionjournal_Root_Contents"
+    )
+    call "Gen"
+    objpath ".Var[selectedmission].String"
+  )
+  call "Missionfromname"
+)
+call "Getmissionstate"
+str "failed"
+equals
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Gen("MissionJournal_Root_Contents").Vars["SelectedTab"].String = "Active" and GetMissionState(MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)) = "Failed" </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSMF">
+        <Type>SMF</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>BeforeLayout</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout>
+          <Command />
+          <ExpressionBlock i:nil="true" />
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message>
+            <UIGenMessagePacket>
+              <MessageName>Buildfailedmissiondescription</MessageName>
+              <hGen></hGen>
+            </UIGenMessagePacket>
+          </Message>
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeLayout>
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Text></Text>
+        <ScrollbarDef></ScrollbarDef>
+        <DisabledScrollbarDef></DisabledScrollbarDef>
+        <ScrollbarTopMargin>None</ScrollbarTopMargin>
+        <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+        <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+        <ScrollbarRightMargin>None</ScrollbarRightMargin>
+        <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+        <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+        <ScrollbarUseWheel>1</ScrollbarUseWheel>
+        <ScrollbarUseStick>1</ScrollbarUseStick>
+        <TextBlock i:nil="true" />
+        <Defaults>
+          <Font></Font>
+          <Color>0</Color>
+          <Shadow>0</Shadow>
+        </Defaults>
+        <Font></Font>
+        <Alignment>TopLeft</Alignment>
+        <FilterProfanity>0</FilterProfanity>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <SafeMode>0</SafeMode>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Buildactivemissiondescription</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptionobjectives</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptiondetail</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptionheaderandsummary</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissionwarnings</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildcompletedmissiondescription</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Missionheader"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Completedmissionfromname"
+  )
+  call "Getcompletedmissiondisplayname"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Missiondetail"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Completedmissionfromname"
+  )
+  call "Getcompletedmissiondetailstring"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Missionsummary"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Completedmissionfromname"
+  )
+  call "Getcompletedmissionsummary"
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetString(Self, "MissionHeader", GetCompletedMissionDisplayName(Player, CompletedMissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)));
+			GenSetString(Self, "MissionDetail", GetCompletedMissionDetailString(Player, CompletedMissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)));
+			GenSetString(Self, "MissionSummary", GetCompletedMissionSummary(Player, CompletedMissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)));
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptionobjectives</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissionwarnings</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildfailedmissiondescription</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Missiondetail"
+  (
+    (
+      (
+        static Player
+        (
+          static Player
+          (
+            str "Missionjournal_Root_Contents"
+          )
+          call "Gen"
+          objpath ".Var[selectedmission].String"
+        )
+        call "Missionfromname"
+      )
+      call "Getmissiondetailstring"
+      str "<br><br>"
+    )
+    call "Stringconcat"
+    (
+      static Player
+      (
+        static Player
+        (
+          str "Missionjournal_Root_Contents"
+        )
+        call "Gen"
+        objpath ".Var[selectedmission].String"
+      )
+      call "Missionfromname"
+    )
+    call "Getmissionfailurestring"
+  )
+  call "Stringconcat"
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetString(Self, "MissionDetail",
+				StringConcat(GetMissionDetailString(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)), "&lt;br&gt;&lt;br&gt;").StringConcat(GetMissionFailureString(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String))));
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptionobjectives</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissiondescriptionheaderandsummary</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+        <UIGenMessagePacket>
+          <MessageName>Buildmissionwarnings</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildmissiondescriptiondetail</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedmission].String"
+str ""
+equals
+not
+jz label_34
+(
+  static Self
+  str "Missiondetail"
+  static Self
+  objpath ".Var[quote].String"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Missionfromname"
+  )
+  call "Getmissiondetailstring"
+  add
+  static Self
+  objpath ".Var[quote].String"
+  add
+)
+call "Gensetstring"
+return
+label_34:
+(
+    static Self
+    str "Missiondetail"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (not (Gen("MissionJournal_Root_Contents").Var[SelectedMission].String = ""))
+				GenSetString(Self, "MissionDetail", Self.Var[Quote].String + GetMissionDetailString(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)) + Self.Var[Quote].String);
+			else
+				GenSetString(Self, "MissionDetail", "");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildmissiondescriptionheaderandsummary</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedmission].String"
+str ""
+equals
+not
+jz label_47
+(
+  static Self
+  str "Missionheader"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Missionfromname"
+  )
+  call "Getmissiondisplayname"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Missionsummary"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Missionfromname"
+  )
+  call "Getmissionsummary"
+)
+call "Gensetstring"
+return
+label_47:
+(
+    static Self
+    str "Missionheader"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Missionsummary"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (not (Gen("MissionJournal_Root_Contents").Var[SelectedMission].String = ""))
+				GenSetString(Self, "MissionHeader", GetMissionDisplayName(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)));
+				GenSetString(Self, "MissionSummary", GetMissionSummary(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String)));
+			else
+				GenSetString(Self, "MissionHeader", "");
+				GenSetString(Self, "MissionSummary", "");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildmissiondescriptionobjectives</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedmission].String"
+str ""
+equals
+not
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedtab].String"
+str "Active"
+equals
+and
+jz label_49
+(
+  static Self
+  str "Missionobjectivelist"
+  (
+    static Player
+    (
+      static Player
+      (
+        str "Missionjournal_Root_Contents"
+      )
+      call "Gen"
+      objpath ".Var[selectedmission].String"
+    )
+    call "Missionfromname"
+    str "<table><tr>"
+    str "<td Width=18></Td>"
+    str "<td Valign=center><img Src=tooltip_Check_Box_Bullet_Point Align=left Border=2></Td><td Width=100% Valign=center Border=0><font Style=game_Body>"
+    str "<td Valign=center><img Src=tooltip_Check_Box_Checked Align=left Border=2></Td><td Width=100% Valign=center Border=0><font Style=game_Body Color=success>"
+    str "<td Valign=center><img Src=tooltip_Check_Box_Fail Align=left Border=2></Td><td Width=100% Valign=center Border=0><font Style=game_Body Color=failure>"
+    str "</Font></Td></Tr></Table>"
+  )
+  call "Getmissionobjectivelistsmf"
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Missionobjectivelist"
+  str "<br>"
+)
+call "Genappendstring"
+return
+label_49:
+(
+    static Self
+    str "Missionobjectivelist"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (not (Gen("MissionJournal_Root_Contents").Var[SelectedMission].String = "") AND Gen("MissionJournal_Root_Contents").Var[SelectedTab].String = "Active")
+				GenSetString(Self, "MissionObjectiveList", GetMissionObjectiveListSMF(Player, MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String),
+						"&lt;table&gt;&lt;tr&gt;",
+						"&lt;td width=18&gt;&lt;/td&gt;",
+						"&lt;td valign=center&gt;&lt;img src=Tooltip_Check_Box_Bullet_Point align=left border=2&gt;&lt;/td&gt;&lt;td width=100% valign=center border=0&gt;&lt;font style=Game_Body&gt;",
+						"&lt;td valign=center&gt;&lt;img src=Tooltip_Check_Box_Checked align=left border=2&gt;&lt;/td&gt;&lt;td width=100% valign=center border=0&gt;&lt;font style=Game_Body color=success&gt;",
+						"&lt;td valign=center&gt;&lt;img src=Tooltip_Check_Box_Fail align=left border=2&gt;&lt;/td&gt;&lt;td width=100% valign=center border=0&gt;&lt;font style=Game_Body color=failure&gt;",
+						"&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"));
+				GenAppendString(Self, "MissionObjectiveList", "&lt;br&gt;");
+			else
+				GenSetString(Self, "MissionObjectiveList", "");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Buildmissionwarnings</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Missionwarnings"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  str "Missionjournal_Root_Contents"
+)
+call "Gen"
+objpath ".Var[selectedtab].String"
+str "Active"
+equals
+(
+  static Player
+  (
+    str "Missionjournal_Root_Contents"
+  )
+  call "Gen"
+  objpath ".Var[selectedmission].String"
+)
+call "Missionfromname"
+and
+retifzero
+(
+  static Player
+  (
+    str "Missionjournal_Root_Contents"
+  )
+  call "Gen"
+  objpath ".Var[selectedmission].String"
+)
+call "Missionfromname"
+objpath ".Credittype"
+ident "Missioncredittypeflashback"
+equals
+jz label_62
+(
+  static Self
+  str "Missionwarnings"
+  str "<br><font Style=game_Hud Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "Missionwarnings"
+  (
+    str "Missionjournal.Flashbackmissionwarning"
+  )
+  call "Translate"
+)
+call "Genappendstring"
+;
+(
+  static Self
+  str "Missionwarnings"
+  str "</Font><br>"
+)
+call "Genappendstring"
+return
+label_62:
+(
+    static Player
+    (
+      str "Missionjournal_Root_Contents"
+    )
+    call "Gen"
+    objpath ".Var[selectedmission].String"
+)
+call "Missionfromname"
+objpath ".Credittype"
+ident "Missioncredittypeprimary"
+equals
+not
+retifzero
+(
+    static Self
+    str "Missionwarnings"
+    str "<br><font Style=game_Hud Color=yellow>"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Missionwarnings"
+    (
+      str "Missionjournal.Crossovermissionwarning"
+    )
+    call "Translate"
+)
+call "Genappendstring"
+;
+(
+    static Self
+    str "Missionwarnings"
+    str "</Font><br>"
+)
+call "Genappendstring"
+return
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetString(Self, "MissionWarnings", "");
+			if (Gen("MissionJournal_Root_Contents").Var[SelectedTab].String = "Active" AND MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String))
+				if ((MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String).Credittype = MissionCreditTypeFlashback))
+					GenAppendString(Self, "MissionWarnings", "&lt;br&gt;&lt;font style=Game_HUD color=yellow&gt;");
+					GenAppendString(Self, "MissionWarnings", Translate("MissionJournal.FlashbackMissionWarning"));
+					GenAppendString(Self, "MissionWarnings", "&lt;/font&gt;&lt;br&gt;");
+				elif (NOT(MissionFromName(Player, Gen("MissionJournal_Root_Contents").Var[SelectedMission].String).Credittype = MissionCreditTypePrimary))
+					GenAppendString(Self, "MissionWarnings", "&lt;br&gt;&lt;font style=Game_HUD color=yellow&gt;");
+					GenAppendString(Self, "MissionWarnings", Translate("MissionJournal.CrossoverMissionWarning"));
+					GenAppendString(Self, "MissionWarnings", "&lt;/font&gt;&lt;br&gt;");
+				endif
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock i:nil="true" />
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Missions/Missionjournal.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Missiondetail</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Missionheader</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Missionobjectivelist</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Missionsummary</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Missionwarnings</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Quote</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>"</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Teamsizeinfo</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

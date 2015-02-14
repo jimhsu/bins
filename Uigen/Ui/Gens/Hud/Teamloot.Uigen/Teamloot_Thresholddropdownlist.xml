@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Teamloot_Thresholddropdownlist</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Combolist_Textonly</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_List_Navigation</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Combolist</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Listscrollbar</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Listscrollbar</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Listscrollbar</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_List</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Combolist</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Combolist_Textonly</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Combolist_Textonly</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>List</Type>
+  <Base i:type="UIGenList">
+    <Type>List</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>ModelBlock</c:Field>
+      <c:Field>RowTemplate</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <ModelBlock>
+      <_><![CDATA[
+(
+  static Self
+)
+call "Getlootqualities"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> GetLootQualities(Self) </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Hud/Teamloot.Uigen</FileName>
+      <Cost>0</Cost>
+    </ModelBlock>
+    <FilterBlock i:nil="true" />
+    <ScrollbarDef></ScrollbarDef>
+    <DisabledScrollbarDef></DisabledScrollbarDef>
+    <ScrollbarTopMargin>None</ScrollbarTopMargin>
+    <ScrollbarBottomMargin>None</ScrollbarBottomMargin>
+    <ScrollbarLeftMargin>None</ScrollbarLeftMargin>
+    <ScrollbarRightMargin>None</ScrollbarRightMargin>
+    <ScrollbarOnlyShowWhenNeeded>0</ScrollbarOnlyShowWhenNeeded>
+    <ScrollbarCaptureMouse>0</ScrollbarCaptureMouse>
+    <ScrollbarUseWheel>1</ScrollbarUseWheel>
+    <ScrollbarUseStick>1</ScrollbarUseStick>
+    <SortAscIndicatorTexture></SortAscIndicatorTexture>
+    <SortAscIndicatorMask></SortAscIndicatorMask>
+    <SortAscIndicatorTopLeftColor>-1</SortAscIndicatorTopLeftColor>
+    <SortAscIndicatorTopRightColor>-1</SortAscIndicatorTopRightColor>
+    <SortAscIndicatorBottomLeftColor>-1</SortAscIndicatorBottomLeftColor>
+    <SortAscIndicatorBottomRightColor>-1</SortAscIndicatorBottomRightColor>
+    <SortAscIndicatorRotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </SortAscIndicatorRotation>
+    <SortAscIndicatorLowerLayer />
+    <SortAscIndicatorLayer />
+    <SortAscIndicatorAnimation i:nil="true" />
+    <SortAscIndicatorOffsetU>0</SortAscIndicatorOffsetU>
+    <SortAscIndicatorOffsetV>0</SortAscIndicatorOffsetV>
+    <SortAscIndicatorScaleU>1</SortAscIndicatorScaleU>
+    <SortAscIndicatorScaleV>1</SortAscIndicatorScaleV>
+    <SortAscIndicatorMode>None</SortAscIndicatorMode>
+    <SortAscIndicatorEffect>None</SortAscIndicatorEffect>
+    <SortAscIndicatorAlignment>Center</SortAscIndicatorAlignment>
+    <SortAscIndicatorAdditive>0</SortAscIndicatorAdditive>
+    <SortAscIndicatorForceBottomLayer>0</SortAscIndicatorForceBottomLayer>
+    <SortDesIndicatorTexture></SortDesIndicatorTexture>
+    <SortDesIndicatorMask></SortDesIndicatorMask>
+    <SortDesIndicatorTopLeftColor>-1</SortDesIndicatorTopLeftColor>
+    <SortDesIndicatorTopRightColor>-1</SortDesIndicatorTopRightColor>
+    <SortDesIndicatorBottomLeftColor>-1</SortDesIndicatorBottomLeftColor>
+    <SortDesIndicatorBottomRightColor>-1</SortDesIndicatorBottomRightColor>
+    <SortDesIndicatorRotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </SortDesIndicatorRotation>
+    <SortDesIndicatorLowerLayer />
+    <SortDesIndicatorLayer />
+    <SortDesIndicatorAnimation i:nil="true" />
+    <SortDesIndicatorOffsetU>0</SortDesIndicatorOffsetU>
+    <SortDesIndicatorOffsetV>0</SortDesIndicatorOffsetV>
+    <SortDesIndicatorScaleU>1</SortDesIndicatorScaleU>
+    <SortDesIndicatorScaleV>1</SortDesIndicatorScaleV>
+    <SortDesIndicatorMode>None</SortDesIndicatorMode>
+    <SortDesIndicatorEffect>None</SortDesIndicatorEffect>
+    <SortDesIndicatorAlignment>Center</SortDesIndicatorAlignment>
+    <SortDesIndicatorAdditive>0</SortDesIndicatorAdditive>
+    <SortDesIndicatorForceBottomLayer>0</SortDesIndicatorForceBottomLayer>
+    <MoveColor>-1</MoveColor>
+    <Columns />
+    <RowTemplate>Teamloot_Qualitydropdownlistrow</RowTemplate>
+    <RowTemplateExprBlock i:nil="true" />
+    <SelectionGroup></SelectionGroup>
+    <NextList></NextList>
+    <PreviousList></PreviousList>
+    <RowSpacing>None</RowSpacing>
+    <ListTopMargin>None</ListTopMargin>
+    <ListBottomMargin>None</ListBottomMargin>
+    <DefaultSortCol>-1</DefaultSortCol>
+    <DefaultSortMode>Descending</DefaultSortMode>
+    <AllowSelectBlock i:nil="true" />
+    <SlowSync>0</SlowSync>
+    <PreserveOrder>1</PreserveOrder>
+    <ShowSelectedRow>1</ShowSelectedRow>
+    <UpdateParentScrollBar>0</UpdateParentScrollBar>
+    <MovableColumns>1</MovableColumns>
+    <Version>0</Version>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Teamloot.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>1</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

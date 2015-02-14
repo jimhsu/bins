@@ -1,0 +1,1036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Charactercreation_Framework_Root</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Fullscreenpage</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Slideinout_Template</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Fullscreenpage</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Charactercreation_Framework_Pane</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Charactercreation_Framework_Create_Header</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Charactercreation_Framework_Help</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Charactercreation_Framework_Genderselection</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild>
+      <UIGen>
+        <Name>Back</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Backbutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Button</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Behavior_Backbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Backbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Backbutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Button</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+      <UIGen>
+        <Name>next</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Nextbutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Button</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Behavior_Nextbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Nextbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Nextbutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Button</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+(
+  static Self
+  ident "Disabled"
+  (
+    static Player
+  )
+  call "Entgetcharacterpath"
+  (
+    static Player
+  )
+  call "Gengetnumownedpowers"
+  int 4
+  equals
+  not
+  and
+  static Self
+  objpath ".Parent.Var[canuse].Int"
+  not
+  or
+)
+call "Gensetstate"
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr>
+					GenSetState(Self, Disabled,
+						(
+							EntGetCharacterPath(Player)
+							and not GenGetNumOwnedPowers(Player) = 4
+						)
+						or not Self.Parent.Var[CanUse].Int);
+				</OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeUpdate>
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.4</Time>
+      <Name>EnableButtons</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Enablebuttons</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>0</Paused>
+    </UIGenTimer>
+    <UIGenTimer>
+      <Time>0.4</Time>
+      <Name>SlideOut</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  objpath ".Parent"
+  static Self
+)
+call "Genremoveearlyoverridechild"
+;
+(
+  static Self
+  str "Slideout"
+  int 1
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenRemoveEarlyOverrideChild(Self.Parent, Self);
+			GenTimerPause(Self, "SlideOut", 1)
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Widgets/Slideinout.Uigeninclude</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState>
+        <a:string>111</a:string>
+        <a:string>113</a:string>
+      </ExitState>
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>1</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Archetype</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Archetype</MessageName>
+          <hGen>_Parent</hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Custom</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Custom</MessageName>
+          <hGen>_Parent</hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>reset</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+static Player
+jz label_7
+(
+  static Player
+)
+call "Charactercreation_Clearpowers"
+;
+label_7:
+(
+)
+call "Logingetplayertype"
+ident "Playertypepremium"
+equals
+jz label_34
+(
+    static Self
+    str "Selectedpath"
+    str "Custom"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Displaypath"
+    str "Inferno"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Previousdisplaypath"
+    str ""
+)
+call "Gensetstring"
+return
+label_34:
+(
+    static Self
+    str "Selectedpath"
+    str "Inferno"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Displaypath"
+    str "Inferno"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Previousdisplaypath"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (Player)
+				CharacterCreation_ClearPowers(Player);
+			endif
+			if (LoginGetPlayerType() = PlayerTypePremium)
+				GenSetString(Self, "SelectedPath", "Custom");
+				GenSetString(Self, "DisplayPath", "Inferno");
+				GenSetString(Self, "PreviousDisplayPath", "");
+			else
+				GenSetString(Self, "SelectedPath", "Inferno");
+				GenSetString(Self, "DisplayPath", "Inferno");
+				GenSetString(Self, "PreviousDisplayPath", "");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set>
+        <UIGenVarTypeGlobAndGen>
+          <GlobName>Gender</GlobName>
+          <State>0</State>
+          <Float>0</Float>
+          <String>Male</String>
+          <hTarget></hTarget>
+        </UIGenVarTypeGlobAndGen>
+        <UIGenVarTypeGlobAndGen>
+          <GlobName>Previousgender</GlobName>
+          <State>0</State>
+          <Float>0</Float>
+          <String>Male</String>
+          <hTarget></hTarget>
+        </UIGenVarTypeGlobAndGen>
+      </Set>
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Chambergeneric Chambergeneric2"
+)
+call "Charactercreation_Initdefaultcostumes"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> CharacterCreation_InitDefaultCostumes("Chambergeneric Chambergeneric2"); </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+static Self
+objpath ".Var[mouseoverpath].String"
+str ""
+equals
+not
+jz label_14
+(
+  static Self
+  str "Displaypath"
+  static Self
+  objpath ".Var[mouseoverpath].String"
+)
+call "Gensetstring"
+j label_22
+label_14:
+(
+    static Self
+    str "Displaypath"
+    static Self
+    objpath ".Var[selectedpath].String"
+)
+call "Gensetstring"
+;
+label_22:
+static Self
+objpath ".Var[displaypath].String"
+static Self
+objpath ".Var[previousdisplaypath].String"
+equals
+not
+static Self
+objpath ".Var[gender].String"
+static Self
+objpath ".Var[previousgender].String"
+equals
+not
+or
+retifzero
+(
+    static Self
+    objpath ".Var[gender].String"
+)
+call "Costumecreator_Setskeleton"
+;
+static Self
+objpath ".Var[displaypath].String"
+str "Custom"
+equals
+jz label_67
+(
+)
+call "Charactercreation_Setcostumefromdefaults"
+jz label_66
+(
+    static Self
+    str "Previousdisplaypath"
+    static Self
+    objpath ".Var[displaypath].String"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Previousgender"
+    static Self
+    objpath ".Var[gender].String"
+)
+call "Gensetstring"
+label_66:
+return
+label_67:
+(
+    static Self
+    objpath ".Var[displaypath].String"
+)
+call "Charactercreation_Setcostumefrompathname"
+;
+(
+    static Self
+    str "Previousdisplaypath"
+    static Self
+    objpath ".Var[displaypath].String"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Previousgender"
+    static Self
+    objpath ".Var[gender].String"
+)
+call "Gensetstring"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			if (not Self.Var[MouseOverPath].String = "")
+				GenSetString(Self, "DisplayPath", Self.Var[MouseOverPath].String);
+			else
+				GenSetString(Self, "DisplayPath", Self.Var[SelectedPath].String);
+			endif
+			if (not Self.Var[DisplayPath].String = Self.Var[PreviousDisplayPath].String
+				or not Self.Var[Gender].String = Self.Var[PreviousGender].String)
+
+				CostumeCreator_SetSkeleton(Self.Var[Gender].String);
+				if (Self.Var[DisplayPath].String = "Custom")
+					if (CharacterCreation_SetCostumeFromDefaults())
+						GenSetString(Self, "PreviousDisplayPath", Self.Var[DisplayPath].String);
+						GenSetString(Self, "PreviousGender", Self.Var[Gender].String);
+					endif
+				else
+					CharacterCreation_SetCostumeFromPathName(Self.Var[DisplayPath].String);
+					GenSetString(Self, "PreviousDisplayPath", Self.Var[DisplayPath].String);
+					GenSetString(Self, "PreviousGender", Self.Var[Gender].String);
+				endif
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverpath</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverframeworkname</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseovergroupname</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseovergroupicon</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverdescription1</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverheader2</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverdescription2</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverdescription3</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverflavortext</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoveritemname</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseovercanuse</GlobName>
+        <State>Visible</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+      <UIGenVarTypeGlobAndGen>
+        <GlobName>Mouseoverisreawakened</GlobName>
+        <State>0</State>
+        <Float>0</Float>
+        <String></String>
+        <hTarget></hTarget>
+      </UIGenVarTypeGlobAndGen>
+    </Set>
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Fullscreen/Charactercreation/Charactercreation_Framework.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>CanPurchase</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>CanUse</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Description1</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Description2</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Description3</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Displaypath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>FlavorText</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Frameworkname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Gender</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>Male</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Groupicon</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>GroupName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Header1</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Header2</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Isreawakened</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseovercanpurchase</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseovercanuse</GlobName>
+      <State>Visible</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverdescription1</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverdescription2</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverdescription3</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverflavortext</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverframeworkname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseovergroupicon</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseovergroupname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverheader1</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverheader2</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverisreawakened</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoveritemname</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Mouseoverpath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Previousdisplaypath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Previousgender</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String>Male</String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Selectedpath</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

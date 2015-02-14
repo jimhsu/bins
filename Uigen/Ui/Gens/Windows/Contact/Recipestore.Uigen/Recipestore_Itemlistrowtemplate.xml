@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Recipestore_Itemlistrowtemplate</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Storeiteminforow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Activateondoubleclick</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Storeiteminforow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>ListRow</Type>
+  <Base i:type="UIGenListRow">
+    <Type>ListRow</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>SMF</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <SMF>Listrowbuysell</SMF>
+    <SMFExpr i:nil="true" />
+    <Truncate></Truncate>
+    <Font></Font>
+    <OnActivated i:nil="true" />
+    <OnSelected i:nil="true" />
+    <Alignment>TopLeft</Alignment>
+    <AllowSelect>1</AllowSelect>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <PlainText>0</PlainText>
+    <SafeMode>0</SafeMode>
+    <FilterProfanity>0</FilterProfanity>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Activate</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+(
+  static Self
+  static Player
+  static RowData
+  int 1
+)
+call "Storebuyitem"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("RowData", "StoreItemInfo");
+			StoreBuyItem(Self, Player, RowData, 1);
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Recipestore.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+static RowData
+objpath ".Failsrequirements"
+jz label_15
+(
+  static Self
+  str "RequirementsText"
+  str "<font Color=failure>"
+  static RowData
+  objpath ".Requirementstext"
+  add
+  str "</Font>"
+  add
+)
+call "Gensetstring"
+j label_23
+label_15:
+(
+    static Self
+    str "RequirementsText"
+    static RowData
+    objpath ".Requirementstext"
+)
+call "Gensetstring"
+;
+label_23:
+(
+    static RowData
+    str "Resources"
+)
+call "Storegetitemvalueincurrency"
+int 0
+greater
+jz label_48
+(
+    static Self
+    str "Value"
+    (
+      (
+        static RowData
+        str "Resources"
+      )
+      call "Storegetitemvalueincurrency"
+      str "Inventory_Numeric3_Resources_Right"
+      int 100
+      int 100
+    )
+    call "Inventorygetnumericstring3"
+)
+call "Gensetstring"
+j label_55
+label_48:
+(
+    static Self
+    str "Value"
+    str ""
+)
+call "Gensetstring"
+;
+label_55:
+(
+    static Self
+    str "Value"
+    static Self
+    objpath ".Var[value].String"
+    (
+      static RowData
+      str ""
+      str ""
+      str "<font Color=failure>"
+      str "</Font>"
+      str "Resources"
+    )
+    call "Storegetitemvaluetable"
+    add
+)
+call "Gensetstring"
+;
+(
+    static RowData
+)
+call "Storeitemisenabled"
+not
+static RowData
+objpath ".Failsrequirements"
+or
+jz label_89
+(
+    static Self
+    str "Meetsrequirements"
+    int 0
+)
+call "Gensetvalue"
+j label_96
+label_89:
+(
+    static Self
+    str "Meetsrequirements"
+    int 1
+)
+call "Gensetvalue"
+;
+label_96:
+(
+    str "GenData"
+    str "Item"
+)
+call "Declaretype"
+;
+static GenData
+jz label_138
+(
+    static Self
+    str "Itemtexture"
+    (
+      static GenData
+    )
+    call "Gengetitemicontexname"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemName"
+    (
+      static GenData
+    )
+    call "Gengetitemname"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemQuality"
+    (
+      str "ItemQuality"
+      (
+        static GenData
+      )
+      call "Itemgetquality"
+    )
+    call "Staticdefineintgetkey"
+)
+call "Gensetstring"
+return
+label_138:
+(
+    static Self
+    str "Itemtexture"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemName"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			# I'm not particularly fond of any of the following code. But it works.
+			if (RowData.FailsRequirements)
+				GenSetString(Self, "RequirementsText", "&lt;font color=failure&gt;" + RowData.RequirementsText + "&lt;/font&gt;");
+			else
+				GenSetString(Self, "RequirementsText", RowData.RequirementsText);
+			endif
+
+			# TODO: incorporate StoreGetItemValueTable(RowData, "", "", "&lt;font color=failure&gt;", "&lt;/font&gt;", "Resources")
+			if (StoreGetItemValueInCurrency(RowData, "Resources") &gt; 0)
+				GenSetString(Self, "Value", InventoryGetNumericString3(StoreGetItemValueInCurrency(RowData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100));
+			else
+				GenSetString(Self, "Value", "");
+			endif
+			GenSetString(Self, "Value", Self.Var[Value].String + StoreGetItemValueTable(RowData, "", "", "&lt;font color=failure&gt;", "&lt;/font&gt;", "Resources"));
+
+			if ((not StoreItemIsEnabled(RowData)) or RowData.FailsRequirements)
+				GenSetValue(Self, "MeetsRequirements", 0);
+			else
+				GenSetValue(Self, "MeetsRequirements", 1);
+			endif
+
+			DeclareType("GenData", "Item");
+			if (GenData)
+				GenSetString(Self, "ItemTexture", GenGetItemIconTexName(GenData));
+				GenSetString(Self, "ItemName", GenGetItemName(GenData));
+				GenSetString(Self, "ItemQuality", StaticDefineIntGetKey("ItemQuality", ItemGetQuality(GenData)));
+			else
+				GenSetString(Self, "ItemTexture", "");
+				GenSetString(Self, "ItemName", "");
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Contact/Recipestore.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Contact/Recipestore.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Count</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemQuality</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Itemtexture</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Meetsrequirements</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>RequirementsText</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Value</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

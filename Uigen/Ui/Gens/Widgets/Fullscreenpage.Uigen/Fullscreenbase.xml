@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Fullscreenbase</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Message</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message>
+      <UIGenMessage>
+        <Name>Internal_Nextpage</Name>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "Moving To The Next Page!"
+)
+call "Consoleprint"
+;
+(
+  static Self
+  str "Temp"
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+    static Self
+    objpath ".Var[pagelist].String"
+  )
+  call "Nextstringinlist"
+)
+call "Gensetstring"
+;
+static Self
+objpath ".Var[loop].Int"
+static Self
+objpath ".Var[temp].String"
+str "End"
+equals
+and
+jz label_38
+(
+  static Self
+  str "Temp"
+  (
+    str "End"
+    static Self
+    objpath ".Var[pagelist].String"
+  )
+  call "Nextstringinlist"
+)
+call "Gensetstring"
+;
+label_38:
+static Self
+objpath ".Var[temp].String"
+str "End"
+equals
+jz label_61
+(
+    str "Recursing Up"
+)
+call "Consoleprint"
+;
+(
+    static Self
+    str "Final"
+)
+call "Gensendmessage"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "next"
+)
+call "Gensendmessage"
+return
+label_61:
+(
+    static Self
+    (
+      static Self
+      objpath ".Var[currentpage].String"
+    )
+    call "Gen"
+)
+call "Genremoveearlyoverridechild"
+;
+(
+    (
+      static Self
+      objpath ".Var[currentpage].String"
+    )
+    call "Gen"
+    str "Slideoutleft"
+)
+call "Gensendmessage"
+;
+(
+    (
+      static Self
+      objpath ".Var[temp].String"
+    )
+    call "Gen"
+    str "Slideinright"
+)
+call "Gensendmessage"
+;
+(
+    static Self
+    objpath ".Var[temp].String"
+)
+call "Consoleprint"
+;
+(
+    static Self
+    (
+      static Self
+      objpath ".Var[temp].String"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    str "Currentpage"
+    static Self
+    objpath ".Var[temp].String"
+)
+call "Gensetstring"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				ConsolePrint("Moving to the next page!");
+				GenSetString(Self, "Temp",
+					NextStringInList(Self.Var[CurrentPage].String, Self.Var[PageList].String));
+
+				if (Self.Var[Loop].Int and Self.Var[Temp].String = "End")
+					GenSetString(Self, "Temp", NextStringInList("End", Self.Var[PageList].String));
+				endif
+
+				if (Self.Var[Temp].String = "End")
+					ConsolePrint("Recursing up");
+					GenSendMessage(Self, "Final");
+					GenSendMessage(Self.Parent, "Next");
+				else
+					GenRemoveEarlyOverrideChild(Self, Gen(Self.Var[CurrentPage].String));
+					GenSendMessage(Gen(Self.Var[CurrentPage].String), "SlideOutLeft");
+					GenSendMessage(Gen(Self.Var[Temp].String), "SlideInRight");
+					ConsolePrint(Self.Var[Temp].String);
+					GenAddEarlyOverrideChild(Self, Gen(Self.Var[Temp].String));
+					GenSetString(Self, "CurrentPage", Self.Var[Temp].String);
+				endif
+			</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Widgets/Fullscreenpage.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </UIGenMessage>
+      <UIGenMessage>
+        <Name>Internal_Previouspage</Name>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "Moving To The Previous Page!"
+)
+call "Consoleprint"
+;
+(
+  static Self
+  str "Temp"
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+    static Self
+    objpath ".Var[pagelist].String"
+  )
+  call "Previousstringinlist"
+)
+call "Gensetstring"
+;
+static Self
+objpath ".Var[loop].Int"
+static Self
+objpath ".Var[temp].String"
+str "End"
+equals
+and
+jz label_38
+(
+  static Self
+  str "Temp"
+  (
+    str "End"
+    static Self
+    objpath ".Var[pagelist].String"
+  )
+  call "Previousstringinlist"
+)
+call "Gensetstring"
+;
+label_38:
+static Self
+objpath ".Var[temp].String"
+str "End"
+equals
+jz label_55
+(
+    str "Recursing Up"
+)
+call "Consoleprint"
+;
+(
+    static Self
+    objpath ".Parent"
+    str "Previous"
+)
+call "Gensendmessage"
+return
+label_55:
+(
+    static Self
+    (
+      static Self
+      objpath ".Var[currentpage].String"
+    )
+    call "Gen"
+)
+call "Genremoveearlyoverridechild"
+;
+(
+    (
+      static Self
+      objpath ".Var[currentpage].String"
+    )
+    call "Gen"
+    str "Slideoutright"
+)
+call "Gensendmessage"
+;
+(
+    (
+      static Self
+      objpath ".Var[temp].String"
+    )
+    call "Gen"
+    str "Slideinleft"
+)
+call "Gensendmessage"
+;
+(
+    static Self
+    objpath ".Var[temp].String"
+)
+call "Consoleprint"
+;
+(
+    static Self
+    (
+      static Self
+      objpath ".Var[temp].String"
+    )
+    call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+    static Self
+    str "Currentpage"
+    static Self
+    objpath ".Var[temp].String"
+)
+call "Gensetstring"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				ConsolePrint("Moving to the previous page!");
+				GenSetString(Self, "Temp",
+					PreviousStringInList(Self.Var[CurrentPage].String, Self.Var[PageList].String));
+
+				if (Self.Var[Loop].Int and Self.Var[Temp].String = "End")
+					GenSetString(Self, "Temp", PreviousStringInList("End", Self.Var[PageList].String));
+				endif
+
+				if (Self.Var[Temp].String = "End")
+					ConsolePrint("Recursing up");
+					GenSendMessage(Self.Parent, "Previous");
+				else
+					GenRemoveEarlyOverrideChild(Self, Gen(Self.Var[CurrentPage].String));
+					GenSendMessage(Gen(Self.Var[CurrentPage].String), "SlideOutRight");
+					GenSendMessage(Gen(Self.Var[Temp].String), "SlideInLeft");
+					ConsolePrint(Self.Var[Temp].String);
+					GenAddEarlyOverrideChild(Self, Gen(Self.Var[Temp].String));
+					GenSetString(Self, "CurrentPage", Self.Var[Temp].String);
+				endif
+			</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Widgets/Fullscreenpage.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </UIGenMessage>
+    </Message>
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>next</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Internal_Nextpage</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Previous</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Internal_Previouspage</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  static Self
+  str "Selectlist"
+)
+call "Gensendmessage"
+;
+(
+  (
+    str "Beforecreate: "
+    static Self
+    objpath ".Var[currentpage].String"
+  )
+  call "Stringconcat"
+)
+call "Consoleprint"
+;
+(
+  static Self
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+  )
+  call "Gen"
+)
+call "Genaddearlyoverridechild"
+;
+(
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+  )
+  call "Gen"
+  str "PercentX"
+  int 0
+)
+call "Gensetearlyoverridefloat"
+;
+(
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+  )
+  call "Gen"
+  str "Start"
+)
+call "Gensendmessage"
+;
+(
+  (
+    static Self
+    objpath ".Var[currentpage].String"
+  )
+  call "Gen"
+  str "Fromprevious"
+)
+call "Gensendmessage"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			GenSendMessage(Self, "SelectList");
+			ConsolePrint(StringConcat("BeforeCreate: ", Self.Var[CurrentPage].String));
+			GenAddEarlyOverrideChild(Self, Gen(Self.Var[CurrentPage].String));
+			GenSetEarlyOverrideFloat(Gen(Self.Var[CurrentPage].String), "PercentX", 0);
+			GenSendMessage(Gen(Self.Var[CurrentPage].String), "Start" );
+			GenSendMessage(Gen(Self.Var[CurrentPage].String), "FromPrevious" );
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Widgets/Fullscreenpage.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Widgets/Fullscreenpage.Uigen</FileName>
+  <Var />
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Currentpage</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Forward</GlobName>
+      <State>Visible</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Loop</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Pagelist</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String> End </String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Temp</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

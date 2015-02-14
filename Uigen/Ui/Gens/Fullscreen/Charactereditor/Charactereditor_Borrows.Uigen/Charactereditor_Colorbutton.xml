@@ -1,0 +1,1906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Charactereditor_Colorbutton</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Focusnavigation</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Sprite</Type>
+  <Base i:type="UIGenSprite">
+    <Type>Sprite</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>BeforeLayout</c:Field>
+      <c:Field>KeyAction</c:Field>
+      <c:Field>Texture</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>32</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>32</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Lock</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Charactereditor_Appearance_Lock</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Charactereditor_Appearance_Lock</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>CheckButton</Type>
+        <Base i:type="UIGenCheckButton">
+          <Type>CheckButton</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>X</c:Field>
+            <c:Field>Y</c:Field>
+            <c:Field>OffsetFrom</c:Field>
+            <c:Field>BeforeLayout</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>-16</X>
+          <Y>-8</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Width>
+          <Height>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopRight</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 120
+less
+jz label_29
+(
+  static Self
+  (
+    static Self
+    static Self
+    objpath ".Var[lockid].Int"
+  )
+  call "Costumecreator_Locksharedcolorcheck"
+  ident "Costumelockstate_Checked"
+  equals
+)
+call "Gencheckbuttonsetstate"
+;
+(
+  static Self
+  (
+    static Self
+    static Self
+    objpath ".Var[lockid].Int"
+  )
+  call "Costumecreator_Locksharedcolorcheck"
+)
+call "Gencheckbuttonsetinconsistent"
+j label_55
+label_29:
+(
+    static Self
+    (
+      static Self
+      static Self
+      objpath ".Var[lockid].Int"
+    )
+    call "Costumecreator_Lockstylecheck"
+    ident "Costumelockstate_Checked"
+    equals
+)
+call "Gencheckbuttonsetstate"
+;
+(
+    static Self
+    (
+      static Self
+      static Self
+      objpath ".Var[lockid].Int"
+    )
+    call "Costumecreator_Lockstylecheck"
+    ident "Costumelockstate_Partial"
+    equals
+)
+call "Gencheckbuttonsetinconsistent"
+;
+label_55:
+(
+    static Self
+    ident "User"
+    static Self
+    objpath ".State.Checked"
+    static Self
+    objpath ".State.Inconsistent"
+    or
+)
+call "Gensetstate"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr>
+						if (Self.Parent.Var[ColorID].Int &lt; 120)
+							GenCheckButtonSetState(Self, CostumeCreator_LockSharedColorCheck(Self, Self.Var[LockID].Int) = CostumeLockState_Checked);
+							GenCheckButtonSetInconsistent(Self, CostumeCreator_LockSharedColorCheck(Self, Self.Var[LockID].Int));
+						else
+							GenCheckButtonSetState(Self, CostumeCreator_LockStyleCheck(Self, Self.Var[LockID].Int) = CostumeLockState_Checked);
+							GenCheckButtonSetInconsistent(Self, CostumeCreator_LockStyleCheck(Self, Self.Var[LockID].Int) = CostumeLockState_Partial);
+						endif
+						GenSetState(Self, User, Self.State.Checked or Self.State.Inconsistent);
+						</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </BeforeLayout>
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <OnClicked i:nil="true" />
+          <BorderAssembly></BorderAssembly>
+          <CheckAssembly></CheckAssembly>
+          <InconsistentAssembly></InconsistentAssembly>
+          <ButtonWidth>16</ButtonWidth>
+          <ButtonHeight>16</ButtonHeight>
+          <Font></Font>
+          <Text></Text>
+          <TextBlock i:nil="true" />
+          <Alignment>Center</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ScaleToFit>0</ScaleToFit>
+          <ShrinkToFit>0</ShrinkToFit>
+          <NoWrap>0</NoWrap>
+          <Truncate></Truncate>
+          <Spacing>0</Spacing>
+        </Base>
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message>
+          <UIGenMessage>
+            <Name>Toggle</Name>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 120
+less
+jz label_12
+(
+  static Self
+  static Self
+  objpath ".Var[lockid].Int"
+)
+call "Costumecreator_Locksharedcolortoggle"
+return
+label_12:
+(
+    ident "Costumecolorlink_None"
+)
+call "Costumecreator_Setcolorlink"
+;
+(
+    static Self
+    static Self
+    objpath ".Var[lockid].Int"
+)
+call "Costumecreator_Lockstyletoggle"
+;
+(
+    static Self
+    static Self
+    objpath ".Var[lockid].Int"
+)
+call "Costumecreator_Lockstylecheck"
+ident "Costumelockstate_Unchecked"
+equals
+(
+    ident "Charactereditor_Weapons"
+)
+call "Geninglobalstate"
+not
+and
+retifzero
+(
+    static Self
+    static Self
+    objpath ".Parent.Var[colorid].Int"
+    int 0
+    int 0
+    int 0
+    int 0
+    int 0
+    int 0
+)
+call "Costumecreator_Setpartcolorlinkifcommon"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr>
+					if (Self.Parent.Var[ColorID].Int &lt; 120)
+						CostumeCreator_LockSharedColorToggle(Self, Self.Var[LockID].Int);
+					else
+						CostumeCreator_SetColorLink(CostumeColorLink_None);
+						CostumeCreator_LockStyleToggle(Self, Self.Var[LockID].Int);
+
+						if (CostumeCreator_LockStyleCheck(Self, Self.Var[LockID].Int) = CostumeLockState_Unchecked and not GenInGlobalState(CharacterEditor_Weapons))
+							CostumeCreator_SetPartColorLinkIfCommon(Self, Self.Parent.Var[ColorID].Int, 0, 0, 0, 0, 0, 0);
+						endif
+					endif
+					</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenMessage>
+        </Message>
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 100
+equals
+jz label_12
+(
+  static Self
+  str "Lockid"
+  ident "Costumelock_Skincolor"
+)
+call "Gensetvalue"
+return
+label_12:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 110
+equals
+jz label_24
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Sharedcolor0"
+)
+call "Gensetvalue"
+return
+label_24:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 111
+equals
+jz label_36
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Sharedcolor1"
+)
+call "Gensetvalue"
+return
+label_36:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 112
+equals
+jz label_48
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Sharedcolor2"
+)
+call "Gensetvalue"
+return
+label_48:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 113
+equals
+jz label_60
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Sharedcolor3"
+)
+call "Gensetvalue"
+return
+label_60:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 120
+equals
+jz label_72
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Color0"
+)
+call "Gensetvalue"
+return
+label_72:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 121
+equals
+jz label_84
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Color1"
+)
+call "Gensetvalue"
+return
+label_84:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 122
+equals
+jz label_96
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Color2"
+)
+call "Gensetvalue"
+return
+label_96:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 123
+equals
+retifzero
+(
+    static Self
+    str "Lockid"
+    ident "Costumelock_Color3"
+)
+call "Gensetvalue"
+return
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr>
+					if (Self.Parent.Var[ColorID].Int = 100)
+						GenSetValue(Self, "LockID", CostumeLock_SkinColor);
+					elif (Self.Parent.Var[ColorID].Int = 110)
+						GenSetValue(Self, "LockID", CostumeLock_SharedColor0);
+					elif (Self.Parent.Var[ColorID].Int = 111)
+						GenSetValue(Self, "LockID", CostumeLock_SharedColor1);
+					elif (Self.Parent.Var[ColorID].Int = 112)
+						GenSetValue(Self, "LockID", CostumeLock_SharedColor2);
+					elif (Self.Parent.Var[ColorID].Int = 113)
+						GenSetValue(Self, "LockID", CostumeLock_SharedColor3);
+					elif (Self.Parent.Var[ColorID].Int = 120)
+						GenSetValue(Self, "LockID", CostumeLock_Color0);
+					elif (Self.Parent.Var[ColorID].Int = 121)
+						GenSetValue(Self, "LockID", CostumeLock_Color1);
+					elif (Self.Parent.Var[ColorID].Int = 122)
+						GenSetValue(Self, "LockID", CostumeLock_Color2);
+					elif (Self.Parent.Var[ColorID].Int = 123)
+						GenSetValue(Self, "LockID", CostumeLock_Color3);
+					endif
+					</OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeCreate>
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+(
+  static Self
+  str "Option"
+  (
+    str "Charactereditor.Lock.Color"
+  )
+  call "Translate"
+)
+call "Gensetstring"
+;
+(
+)
+call "Costumecreator_Getlayerlistsize"
+int 0
+equals
+(
+)
+call "Costumecreator_Getcurrentlayer"
+not
+or
+jz label_28
+(
+  static Self
+  str "Inconsistent"
+  str ""
+)
+call "Gensetstring"
+j label_50
+label_28:
+(
+)
+call "Costumecreator_Getcurrentlayer"
+objpath ".Layertype"
+jz label_40
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+j label_50
+label_40:
+(
+    static Self
+    str "Inconsistent"
+    (
+      str "Charactereditor.Lock.Colorinconsistent"
+    )
+    call "Translate"
+)
+call "Gensetstring"
+;
+label_50:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 100
+equals
+jz label_62
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+return
+label_62:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 110
+equals
+jz label_74
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+return
+label_74:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 111
+equals
+jz label_86
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+return
+label_86:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 112
+equals
+jz label_98
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+return
+label_98:
+static Self
+objpath ".Parent.Var[colorid].Int"
+int 113
+equals
+retifzero
+(
+    static Self
+    str "Inconsistent"
+    str ""
+)
+call "Gensetstring"
+return
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr>
+					GenSetString(Self, "Option", Translate("CharacterEditor.Lock.Color"));
+					if (CostumeCreator_GetLayerListSize() = 0 or not CostumeCreator_GetCurrentLayer())
+						GenSetString(Self, "Inconsistent", "");
+					elif (CostumeCreator_GetCurrentLayer().LayerType)
+						GenSetString(Self, "Inconsistent", "");
+					else
+						GenSetString(Self, "Inconsistent", Translate("CharacterEditor.Lock.ColorInconsistent"));
+					endif
+					if (Self.Parent.Var[ColorID].Int = 100)
+						GenSetString(Self, "Inconsistent", "");
+					elif (Self.Parent.Var[ColorID].Int = 110)
+						GenSetString(Self, "Inconsistent", "");
+					elif (Self.Parent.Var[ColorID].Int = 111)
+						GenSetString(Self, "Inconsistent", "");
+					elif (Self.Parent.Var[ColorID].Int = 112)
+						GenSetString(Self, "Inconsistent", "");
+					elif (Self.Parent.Var[ColorID].Int = 113)
+						GenSetString(Self, "Inconsistent", "");
+					endif
+					</OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeUpdate>
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+        <Var>
+          <UIGenVarTypeGlob>
+            <GlobName>Lockid</GlobName>
+            <State>0</State>
+            <Float>0</Float>
+            <String></String>
+          </UIGenVarTypeGlob>
+        </Var>
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Color"
+  (
+    static Self
+    objpath ".Var[colorid].Int"
+  )
+  call "Costumecreator_Geteditcolorvalue"
+)
+call "Gensetearlyoverrideint"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSetEarlyOverrideInt(Self, "Color", CostumeCreator_GetEditColorValue(Self.Var[ColorID].Int)); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </BeforeLayout>
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction>
+      <UIGenKeyAction>
+        <Key>Ab</Key>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Open</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+        <AttribInclude>0</AttribInclude>
+        <AttribExclude>0</AttribExclude>
+        <PassThrough>0</PassThrough>
+        <Ignore>0</Ignore>
+      </UIGenKeyAction>
+    </KeyAction>
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Texture>Cc_Button_Color_Idle.Wtex</Texture>
+    <Mask></Mask>
+    <TopLeftColor>-1</TopLeftColor>
+    <TopRightColor>-1</TopRightColor>
+    <BottomLeftColor>-1</BottomLeftColor>
+    <BottomRightColor>-1</BottomRightColor>
+    <Rotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotation>
+    <LowerLayer />
+    <Layer />
+    <Animation i:nil="true" />
+    <OffsetU>0</OffsetU>
+    <OffsetV>0</OffsetV>
+    <ScaleU>1</ScaleU>
+    <ScaleV>1</ScaleV>
+    <Mode>None</Mode>
+    <Effect>None</Effect>
+    <Alignment>Center</Alignment>
+    <Additive>0</Additive>
+    <ForceBottomLayer>0</ForceBottomLayer>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>Focused</State>
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Texture</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture>Cc_Button_Color_Pushed.Wtex</Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>MouseInside</State>
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Texture</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture>Cc_Button_Color_Mouseover.Wtex</Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  ident "Disabled"
+)
+call "InState"
+not
+retifzero
+(
+  static Self
+  objpath ".Result.Inlinechild[lock]"
+  ident "User1"
+  int 1
+)
+call "Gensetstate"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				if (not InState(Disabled))
+					GenSetState(Self.Result.InlineChild[Lock], User1, 1);
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  ident "Disabled"
+)
+call "InState"
+not
+retifzero
+(
+  static Self
+  objpath ".Result.Inlinechild[lock]"
+  ident "User1"
+  int 0
+)
+call "Gensetstate"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				if (not InState(Disabled))
+					GenSetState(Self.Result.InlineChild[Lock], User1, 0);
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>MouseDown</State>
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Texture</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture>Cc_Button_Color_Pushed.Wtex</Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>LeftMouseClick</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message>
+          <UIGenMessagePacket>
+            <MessageName>Open</MessageName>
+            <hGen></hGen>
+          </UIGenMessagePacket>
+        </Message>
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+    <UIGenStateDef>
+      <State>Disabled</State>
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>RemoveChild</c:Field>
+          <c:Field>Message</c:Field>
+          <c:Field>Texture</c:Field>
+          <c:Field>Layer</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild>
+          <a:string>Lock</a:string>
+        </RemoveChild>
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message>
+          <UIGenMessage>
+            <Name>Open</Name>
+            <Command />
+            <ExpressionBlock i:nil="true" />
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenMessage>
+        </Message>
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture>Cc_Button_Color_Idle.Wtex</Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer>
+          <UIGenBundleTexture>
+            <Texture>Cc_Button_Lock_Idle.Wtex</Texture>
+            <Mask></Mask>
+            <TopLeftColor>-1</TopLeftColor>
+            <TopRightColor>-1</TopRightColor>
+            <BottomLeftColor>-1</BottomLeftColor>
+            <BottomRightColor>-1</BottomRightColor>
+            <Rotation>
+              <Angle>0</Angle>
+              <Unit>Radians</Unit>
+            </Rotation>
+            <LowerLayer />
+            <Layer />
+            <Animation i:nil="true" />
+            <OffsetU>0</OffsetU>
+            <OffsetV>0</OffsetV>
+            <ScaleU>1</ScaleU>
+            <ScaleV>1</ScaleV>
+            <Mode>Centered</Mode>
+            <Effect>None</Effect>
+            <Alignment>Center</Alignment>
+            <Additive>0</Additive>
+            <ForceBottomLayer>0</ForceBottomLayer>
+          </UIGenBundleTexture>
+        </Layer>
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Closed</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  ident "User"
+)
+call "Geninstate"
+retifzero
+static Self
+objpath ".Var[oldcolorvalue].Int"
+(
+  static Self
+  objpath ".Var[colorid].Int"
+)
+call "Costumecreator_Geteditcolorvalue"
+equals
+not
+(
+  static Self
+  objpath ".Var[colorid].Int"
+)
+call "Costumecreator_Materialhasglow"
+static Self
+objpath ".Var[oldglowvalue].Int"
+(
+  static Self
+  objpath ".Var[colorid].Int"
+)
+call "Costumecreator_Getglow"
+equals
+not
+and
+or
+jz label_41
+(
+  (
+    str "Charactereditor_Root"
+  )
+  call "Gen"
+  str "Checkpoint"
+)
+call "Gensendmessage"
+;
+label_41:
+(
+    static Self
+    ident "User"
+    int 0
+)
+call "Gensetstate"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (GenInState(Self, User))
+				if ((not Self.Var[OldColorValue].Int = CostumeCreator_GetEditColorValue(Self.Var[ColorID].Int)) or
+						(CostumeCreator_MaterialHasGlow(Self.Var[ColorID].Int) and
+							not Self.Var[OldGlowValue].Int = CostumeCreator_GetGlow(Self.Var[ColorID].Int))
+				   )
+					GenSendMessage(Gen("CharacterEditor_Root"), "Checkpoint");
+				endif
+
+				GenSetState(Self, User, 0);
+			endif
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Open</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Oldcolorvalue"
+  (
+    static Self
+    objpath ".Var[colorid].Int"
+  )
+  call "Costumecreator_Geteditcolorvalue"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Oldglowvalue"
+  (
+    static Self
+    objpath ".Var[colorid].Int"
+  )
+  call "Costumecreator_Getglow"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  ident "User"
+  int 1
+)
+call "Gensetstate"
+;
+static Self
+objpath ".Var[colorid].Int"
+int 100
+equals
+jz label_67
+(
+  (
+    str "Charactereditor_Costumeeditor_Skincolorchooser"
+  )
+  call "Gen"
+  str "Gentopopuparound"
+  (
+    static Self
+  )
+  call "Gengetname"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Charactereditor_Costumeeditor_Skincolorchooser"
+  )
+  call "Gen"
+  str "Colorid"
+  static Self
+  objpath ".Var[colorid].Int"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Charactereditor_Costumeeditor_Skincolorchooser"
+  )
+  call "Gen"
+  str "Popupat"
+)
+call "Gensendmessage"
+return
+label_67:
+(
+    (
+      str "Charactereditor_Costumeeditor_Colorchooser"
+    )
+    call "Gen"
+    str "Gentopopuparound"
+    (
+      static Self
+    )
+    call "Gengetname"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Charactereditor_Costumeeditor_Colorchooser"
+    )
+    call "Gen"
+    str "Colorid"
+    static Self
+    objpath ".Var[colorid].Int"
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Charactereditor_Costumeeditor_Colorchooser"
+    )
+    call "Gen"
+    str "Popupat"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			GenSetValue(Self, "OldColorValue", CostumeCreator_GetEditColorValue(Self.Var[ColorID].Int));
+			GenSetValue(Self, "OldGlowValue", CostumeCreator_GetGlow(Self.Var[ColorID].Int));
+			GenSetState(Self, User, 1);
+
+			if (Self.Var[ColorID].Int = 100)
+				GenSetString(Gen("CharacterEditor_CostumeEditor_SkinColorChooser"), "GenToPopupAround", GenGetName(Self));
+				GenSetValue(Gen("CharacterEditor_CostumeEditor_SkinColorChooser"), "ColorID", Self.Var[ColorID].Int);
+				GenSendMessage(Gen("CharacterEditor_CostumeEditor_SkinColorChooser"), "PopupAt");
+			else
+				GenSetString(Gen("CharacterEditor_CostumeEditor_ColorChooser"), "GenToPopupAround", GenGetName(Self));
+				GenSetValue(Gen("CharacterEditor_CostumeEditor_ColorChooser"), "ColorID", Self.Var[ColorID].Int);
+				GenSendMessage(Gen("CharacterEditor_CostumeEditor_ColorChooser"), "PopupAt");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Fullscreen/Charactereditor/Charactereditor_Borrows.Uigen</FileName>
+  <Var />
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Colorid</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Oldcolorvalue</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Oldglowvalue</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

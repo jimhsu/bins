@@ -1,0 +1,1888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Store_Itemlistrowtemplate</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Storeiteminforow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Activateondoubleclick</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Listrow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Storeiteminforow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>ListRow</Type>
+  <Base i:type="UIGenListRow">
+    <Type>ListRow</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>SMFExpr</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>Percentage</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Count</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Itemcount_Storeiteminforow</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Itemcount</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Itemcount_Storeiteminforow</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Text</Type>
+        <Base i:type="UIGenText">
+          <Type>Text</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Width</c:Field>
+            <c:Field>Height</c:Field>
+            <c:Field>LeftMargin</c:Field>
+            <c:Field>RightMargin</c:Field>
+            <c:Field>TopMargin</c:Field>
+            <c:Field>Scale</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>22</Magnitude>
+            <Unit>Fixed</Unit>
+          </Width>
+          <Height>
+            <Magnitude>26</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>2</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>2</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>0.75</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative i:nil="true" />
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <Font></Font>
+          <Text></Text>
+          <TextBlock i:nil="true" />
+          <Alignment>Center</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ScaleToFit>0</ScaleToFit>
+          <ShrinkToFit>0</ShrinkToFit>
+          <NoWrap>0</NoWrap>
+          <Truncate></Truncate>
+        </Base>
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <SMF></SMF>
+    <SMFExpr>
+      <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Requiredmicrotransaction"
+str ""
+equals
+not
+static Self
+objpath ".Var[meetsrequirements].Int"
+ident "False"
+equals
+and
+jz label_135
+static RowData
+objpath ".Requiredmicrotransactionid"
+int 0
+equals
+jz label_54
+str "<table><tr>\r\n\t\t\t\t\t<td Valign=center>"
+static Self
+objpath ".Var[count].String"
+add
+str "</Td>\r\n\t\t\t\t\t<td Valign=center><img Width=18 Height=23 Src="
+add
+static Self
+objpath ".Var[itemtexture].String"
+add
+str "></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Width=100% Valign=center><font Style=item_"
+add
+static Self
+objpath ".Var[itemquality].String"
+add
+str ">"
+add
+static Self
+objpath ".Var[itemname].String"
+add
+str "</Font></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Align=right Valign=center>"
+add
+static Self
+objpath ".Var[value].String"
+add
+str "</Td>\r\n\t\t\t\t\t</Tr>\r\n\t\t\t\t\t</Table>\r\n\t\t\t\t\t<table><tr><td Align=right>"
+add
+static Self
+objpath ".Var[requirementstext].String"
+add
+str "<font Style=game_Hud_Failure>&nbsp;<img Src=currency_Icon_Small_Atari></Font></Td></Tr></Table>"
+add
+return
+label_54:
+(
+    static RowData
+    objpath ".Requiredmicrotransactionid"
+)
+call "Microtransproduct"
+objpath ".Cannotpurchasetype"
+ident "Mtpurchaseerrortype_Cannotpurchaseagain"
+equals
+jz label_95
+str "<table><tr>\r\n\t\t\t\t\t<td Valign=center>"
+static Self
+objpath ".Var[count].String"
+add
+str "</Td>\r\n\t\t\t\t\t<td Valign=center><img Width=18 Height=23 Src="
+add
+static Self
+objpath ".Var[itemtexture].String"
+add
+str "></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Width=100% Valign=center><font Style=item_"
+add
+static Self
+objpath ".Var[itemquality].String"
+add
+str ">"
+add
+static Self
+objpath ".Var[itemname].String"
+add
+str "</Font></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Align=right Valign=center>"
+add
+static Self
+objpath ".Var[value].String"
+add
+str "</Td>\r\n\t\t\t\t\t</Tr>\r\n\t\t\t\t\t</Table>\r\n\t\t\t\t\t<table><tr><td Align=right>"
+add
+static Self
+objpath ".Var[requirementstext].String"
+add
+str "</Td></Tr></Table>"
+add
+return
+label_95:
+str "<table><tr>\r\n\t\t\t\t\t<td Valign=center>"
+static Self
+objpath ".Var[count].String"
+add
+str "</Td>\r\n\t\t\t\t\t<td Valign=center><img Width=18 Height=23 Src="
+add
+static Self
+objpath ".Var[itemtexture].String"
+add
+str "></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Width=100% Valign=center><font Style=item_"
+add
+static Self
+objpath ".Var[itemquality].String"
+add
+str ">"
+add
+static Self
+objpath ".Var[itemname].String"
+add
+str "</Font></Td>\r\n\t\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t\t<td Align=right Valign=center>"
+add
+static Self
+objpath ".Var[value].String"
+add
+str "</Td>\r\n\t\t\t\t\t</Tr>\r\n\t\t\t\t\t</Table>\r\n\t\t\t\t\t<table><tr><td Align=right><a Href=mt:"
+add
+(
+    static RowData
+    objpath ".Requiredmicrotransactionid"
+)
+call "Inttostring"
+add
+str ">"
+add
+static Self
+objpath ".Var[requirementstext].String"
+add
+str "<font Style=game_Hud_Failure>&nbsp;<img Src=currency_Icon_Small_Atari></Font></A></Td></Tr></Table>"
+add
+return
+label_135:
+str "<table><tr>\r\n\t\t\t\t<td Valign=center>"
+static Self
+objpath ".Var[count].String"
+add
+str "</Td>\r\n\t\t\t\t<td Valign=center><img Width=18 Height=23 Src="
+add
+static Self
+objpath ".Var[itemtexture].String"
+add
+str "></Td>\r\n\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t<td Width=100% Valign=center><font Style=item_"
+add
+static Self
+objpath ".Var[itemquality].String"
+add
+str ">"
+add
+static Self
+objpath ".Var[itemname].String"
+add
+str "</Font></Td>\r\n\t\t\t\t<td Width=4></Td>\r\n\t\t\t\t<td Align=right Valign=center>"
+add
+static Self
+objpath ".Var[value].String"
+add
+str "</Td>\r\n\t\t\t\t</Tr>\r\n\t\t\t\t</Table>\r\n\t\t\t\t<table><tr><td Align=right>"
+add
+static Self
+objpath ".Var[requirementstext].String"
+add
+str "</Td></Tr></Table>"
+add
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType("RowData", "StoreItemInfo");
+			if (not RowData.RequiredMicroTransaction = "" and Self.Var[MeetsRequirements].Int = False)
+				if (RowData.RequiredMicroTransactionID = 0)
+					"&lt;table&gt;&lt;tr&gt;
+					&lt;td valign=center&gt;" + Self.Var[Count].String + "&lt;/td&gt;
+					&lt;td valign=center&gt;&lt;img width=18 height=23 src=" + Self.Var[ItemTexture].String + "&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td width=100% valign=center&gt;&lt;font style=Item_" + Self.Var[ItemQuality].String + "&gt;" + Self.Var[ItemName].String + "&lt;/font&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td align=right valign=center&gt;" + Self.Var[Value].String + "&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/table&gt;
+					&lt;table&gt;&lt;tr&gt;&lt;td align=right&gt;" + Self.Var[RequirementsText].String + "&lt;font style=Game_HUD_Failure&gt;&amp;nbsp;&lt;img src=Currency_Icon_Small_Atari&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+				elif (MicroTransProduct(RowData.RequiredMicroTransactionID).CannotPurchaseType = MTPurchaseErrorType_CannotPurchaseAgain)
+					"&lt;table&gt;&lt;tr&gt;
+					&lt;td valign=center&gt;" + Self.Var[Count].String + "&lt;/td&gt;
+					&lt;td valign=center&gt;&lt;img width=18 height=23 src=" + Self.Var[ItemTexture].String + "&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td width=100% valign=center&gt;&lt;font style=Item_" + Self.Var[ItemQuality].String + "&gt;" + Self.Var[ItemName].String + "&lt;/font&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td align=right valign=center&gt;" + Self.Var[Value].String + "&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/table&gt;
+					&lt;table&gt;&lt;tr&gt;&lt;td align=right&gt;" + Self.Var[RequirementsText].String + "&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+				else
+					"&lt;table&gt;&lt;tr&gt;
+					&lt;td valign=center&gt;" + Self.Var[Count].String + "&lt;/td&gt;
+					&lt;td valign=center&gt;&lt;img width=18 height=23 src=" + Self.Var[ItemTexture].String + "&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td width=100% valign=center&gt;&lt;font style=Item_" + Self.Var[ItemQuality].String + "&gt;" + Self.Var[ItemName].String + "&lt;/font&gt;&lt;/td&gt;
+					&lt;td width=4&gt;&lt;/td&gt;
+					&lt;td align=right valign=center&gt;" + Self.Var[Value].String + "&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/table&gt;
+					&lt;table&gt;&lt;tr&gt;&lt;td align=right&gt;&lt;a href=mt:" + IntToString(RowData.RequiredMicroTransactionID) + "&gt;" + Self.Var[RequirementsText].String + "&lt;font style=Game_HUD_Failure&gt;&amp;nbsp;&lt;img src=Currency_Icon_Small_Atari&gt;&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+				endif
+			else
+				"&lt;table&gt;&lt;tr&gt;
+				&lt;td valign=center&gt;" + Self.Var[Count].String + "&lt;/td&gt;
+				&lt;td valign=center&gt;&lt;img width=18 height=23 src=" + Self.Var[ItemTexture].String + "&gt;&lt;/td&gt;
+				&lt;td width=4&gt;&lt;/td&gt;
+				&lt;td width=100% valign=center&gt;&lt;font style=Item_" + Self.Var[ItemQuality].String + "&gt;" + Self.Var[ItemName].String + "&lt;/font&gt;&lt;/td&gt;
+				&lt;td width=4&gt;&lt;/td&gt;
+				&lt;td align=right valign=center&gt;" + Self.Var[Value].String + "&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;/table&gt;
+				&lt;table&gt;&lt;tr&gt;&lt;td align=right&gt;" + Self.Var[RequirementsText].String + "&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+			endif
+			</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+      <Cost>0</Cost>
+    </SMFExpr>
+    <Truncate></Truncate>
+    <Font></Font>
+    <OnActivated i:nil="true" />
+    <OnSelected i:nil="true" />
+    <Alignment>TopLeft</Alignment>
+    <AllowSelect>1</AllowSelect>
+    <ShrinkToFit>0</ShrinkToFit>
+    <ScaleToFit>0</ScaleToFit>
+    <NoWrap>0</NoWrap>
+    <PlainText>0</PlainText>
+    <SafeMode>0</SafeMode>
+    <FilterProfanity>0</FilterProfanity>
+  </Base>
+  <StateDef />
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Microtransactionid"
+int 0
+equals
+not
+;
+static RowData
+objpath ".Microtransaction"
+str ""
+equals
+not
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> 
+				DeclareType("RowData", "StoreItemInfo");
+				not RowData.MicroTransactionID = 0;
+				not RowData.MicroTransaction = "";
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenListRow">
+        <Type>ListRow</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>ToolTip</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip>
+          <hTooltip></hTooltip>
+          <TooltipBlock>
+            <_><![CDATA[
+str "<font Style=game_Header> "
+(
+  static RowData
+  objpath ".Microtransactionid"
+)
+call "Microtransproduct"
+objpath ".Name"
+add
+str "</Font><br>"
+add
+(
+  static RowData
+  objpath ".Microtransactionid"
+)
+call "Microtransproduct"
+objpath ".Longdescription"
+add
+str "<br><span Align=right>"
+add
+(
+  (
+    static RowData
+    objpath ".Microtransactionid"
+  )
+  call "Microtransproduct"
+  objpath ".Price"
+)
+call "Formatint"
+add
+str "<img Width=18 Height=18 Src=currency_Icon_Small_Atari></Span>"
+add
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr>
+
+					"&lt;font style=game_header&gt; "
+					+ MicroTransProduct(RowData.MicroTransactionID).Name
+					+ "&lt;/font&gt;&lt;br&gt;"
+					+ MicroTransProduct(RowData.MicroTransactionID).LongDescription
+					+ "&lt;br&gt;&lt;span align=right&gt;"
+					+ FormatInt(MicroTransProduct(RowData.MicroTransactionID).Price)
+					+ "&lt;img width=18 height=18 src=Currency_Icon_Small_Atari&gt;&lt;/span&gt;"
+
+				</OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+            <Cost>0</Cost>
+          </TooltipBlock>
+          <Delay>0</Delay>
+          <Assembly>ToolTip</Assembly>
+          <Relative i:nil="true" />
+          <SecondaryToolTip />
+          <Orientation>CenterHorizontal</Orientation>
+          <StackDirection>CenterVertical</StackDirection>
+          <Alignment>Center</Alignment>
+          <StackAlignment>Center</StackAlignment>
+          <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+          <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+          <MaxWidth>350</MaxWidth>
+          <InheritAlpha>0</InheritAlpha>
+          <InheritScale>0</InheritScale>
+          <IgnoreParent>0</IgnoreParent>
+          <MouseAnchor>0</MouseAnchor>
+          <SafeMode>0</SafeMode>
+          <FilterProfanity>0</FilterProfanity>
+          <ForceTooltipOwnership>0</ForceTooltipOwnership>
+        </ToolTip>
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <SMF></SMF>
+        <SMFExpr i:nil="true" />
+        <Truncate></Truncate>
+        <Font></Font>
+        <OnActivated i:nil="true" />
+        <OnSelected i:nil="true" />
+        <Alignment>TopLeft</Alignment>
+        <AllowSelect>1</AllowSelect>
+        <ShrinkToFit>0</ShrinkToFit>
+        <ScaleToFit>0</ScaleToFit>
+        <NoWrap>0</NoWrap>
+        <PlainText>0</PlainText>
+        <SafeMode>0</SafeMode>
+        <FilterProfanity>0</FilterProfanity>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer>
+    <UIGenTimer>
+      <Time>0.5</Time>
+      <Name>Cooldown</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Cooldown"
+  ident "True"
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenTimerPause(Self, "Cooldown", True); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+      <Current>0</Current>
+      <Paused>1</Paused>
+    </UIGenTimer>
+  </Timer>
+  <Message>
+    <UIGenMessage>
+      <Name>Activate</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+static Self
+objpath ".Timer[cooldown].Paused"
+retifzero
+(
+  ident "Microtransacted"
+)
+call "InState"
+jz label_101
+static RowData
+objpath ".Microtransactionid"
+int 0
+equals
+not
+jz label_100
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "ID"
+  static RowData
+  objpath ".Microtransactionid"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "Category"
+  (
+    static RowData
+    objpath ".Microtransactionid"
+  )
+  call "Microtransproduct"
+  objpath ".Category"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "Name"
+  (
+    static RowData
+    objpath ".Microtransactionid"
+  )
+  call "Microtransproduct"
+  objpath ".Name"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "Cost"
+  (
+    (
+      static RowData
+      objpath ".Microtransactionid"
+    )
+    call "Microtransproduct"
+    objpath ".Price"
+  )
+  call "Formatint"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "Abbrev"
+  (
+    str "Transactions.Cp_Abbrev"
+  )
+  call "Translate"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Mtconfirm"
+  )
+  call "Gen"
+  str "Show"
+)
+call "Gensendmessage"
+label_100:
+j label_246
+label_101:
+(
+    str "Store"
+)
+call "Gen"
+objpath ".Vars[storestate].String"
+str "Buy"
+equals
+jz label_166
+(
+    (
+      str "Store"
+    )
+    call "Gen"
+    str "Buycount"
+    int 1
+)
+call "Gensetvalue"
+;
+static RowData
+objpath ".Maybuyinbulk"
+int 1
+greater
+jz label_158
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "ItemName"
+    (
+      static RowData
+      objpath ".Item"
+    )
+    call "Gengetitemname"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Count"
+    static RowData
+    objpath ".Maybuyinbulk"
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Buy"
+)
+call "Gensendmessage"
+j label_165
+label_158:
+(
+    static Self
+    static Player
+    static RowData
+    int 1
+)
+call "Storebuyitem"
+label_165:
+j label_246
+label_166:
+(
+    str "Store"
+)
+call "Gen"
+objpath ".Vars[storestate].String"
+str "Sell"
+equals
+jz label_230
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "ItemName"
+    (
+      static RowData
+      objpath ".Item"
+    )
+    call "Gengetitemname"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "BagID"
+    static RowData
+    objpath ".Bagid"
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "SlotID"
+    static RowData
+    objpath ".Slot"
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Count"
+    static RowData
+    objpath ".Item.Count"
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Sell"
+)
+call "Gensendmessage"
+j label_246
+label_230:
+(
+    str "Store"
+)
+call "Gen"
+objpath ".Vars[storestate].String"
+str "Buyback"
+equals
+jz label_246
+(
+    static Self
+    static Player
+    static RowData
+    int 1
+)
+call "Storebuybackitem"
+j label_246
+label_246:
+(
+    static Self
+    str "Cooldown"
+    int 0
+)
+call "Gentimerset"
+;
+(
+    static Self
+    str "Cooldown"
+    ident "False"
+)
+call "Gentimerpause"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("RowData", "StoreItemInfo");
+			if (Self.Timer[Cooldown].Paused)
+				if (InState(MicroTransacted))
+					if (not RowData.MicroTransactionID = 0)
+						GenSetValue(Gen("MTConfirm"), "ID", RowData.MicroTransactionID);
+						GenSetString(Gen("MTConfirm"), "Category", MicroTransProduct(RowData.MicroTransactionID).Category);
+						GenSetString(Gen("MTConfirm"), "Name", MicroTransProduct(RowData.MicroTransactionID).Name);
+						GenSetString(Gen("MTConfirm"), "Cost", FormatInt(MicroTransProduct(RowData.MicroTransactionID).Price));
+						GenSetString(Gen("MTConfirm"), "Abbrev", Translate("Transactions.CP_Abbrev"));
+						GenSendMessage(Gen("MTConfirm"), "Show");
+					endif
+				elif (Gen("Store").Vars[StoreState].String = "Buy")
+					GenSetValue(Gen("Store"), "BuyCount", 1);
+					if (RowData.MayBuyInBulk &gt; 1)
+						GenSetString(Gen("CountSlider"), "ItemName", GenGetItemName(RowData.Item));
+						GenSetValue(Gen("CountSlider"), "Count", RowData.MayBuyInBulk);
+						GenSendMessage(Gen("CountSlider"), "Buy");
+					else
+						StoreBuyItem(Self, Player, RowData, 1)
+					endif
+				elif (Gen("Store").Vars[StoreState].String = "Sell")
+					GenSetString(Gen("CountSlider"), "ItemName", GenGetItemName(RowData.Item));
+					GenSetValue(Gen("CountSlider"), "BagID", RowData.BagID);
+					GenSetValue(Gen("CountSlider"), "SlotID", RowData.Slot);
+					GenSetValue(Gen("CountSlider"), "Count", RowData.Item.Count);
+					GenSendMessage(Gen("CountSlider"), "Sell");
+				elif (Gen("Store").Vars[StoreState].String = "Buyback")
+					StoreBuybackItem(Self, Player, RowData, 1)
+				endif
+				GenTimerSet(Self, "Cooldown", 0);
+				GenTimerPause(Self, "Cooldown", False);
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Bulkbuy</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+(
+  static Self
+  static Player
+  static RowData
+  (
+    str "Store"
+  )
+  call "Gen"
+  objpath ".Var[\"buycount\"].Int"
+)
+call "Storebuyitem"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			DeclareType("RowData", "StoreItemInfo");
+			StoreBuyItem(Self, Player, RowData, Gen("Store").Var["BuyCount"].Int);
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  str "Rowdata"
+  str "StoreItemInfo"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Requiredmicrotransaction"
+str ""
+equals
+not
+jz label_24
+static RowData
+objpath ".Requiredmicrotransactionid"
+int 0
+equals
+jz label_24
+(
+  static Self
+  objpath ".Parent"
+  str "Microtransactionsrequest"
+)
+call "Gensendmessage"
+;
+label_24:
+static RowData
+objpath ".Failsrequirements"
+ident "Storecanbuyerror_Costrequirement"
+equals
+jz label_48
+(
+    static Self
+    str "Prependtext"
+    str "<span Align=center><font Style=game_Hud_Failure>"
+    static RowData
+    objpath ".Requirementstext"
+    add
+    str "</Font></Span><br>"
+    add
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "RequirementsText"
+    str ""
+)
+call "Gensetstring"
+j label_85
+label_48:
+static RowData
+objpath ".Failsrequirements"
+jz label_70
+(
+    static Self
+    str "Prependtext"
+    str "<span Align=center><font Style=game_Hud_Failure>"
+    static RowData
+    objpath ".Requirementstext"
+    add
+    str "</Font></Span><br>"
+    add
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "RequirementsText"
+    str ""
+)
+call "Gensetstring"
+j label_85
+label_70:
+(
+    static Self
+    str "Prependtext"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "RequirementsText"
+    static RowData
+    objpath ".Requirementstext"
+)
+call "Gensetstring"
+;
+label_85:
+static RowData
+objpath ".Microtransaction"
+str ""
+equals
+not
+jz label_273
+(
+    static Self
+    ident "Microtransacted"
+    ident "True"
+)
+call "Gensetstate"
+;
+(
+    static Self
+    str "Value"
+    (
+      str "Transactions.Pricecp"
+    )
+    call "Translate"
+)
+call "Gensetstring"
+;
+static RowData
+objpath ".Microtransactionid"
+int 0
+equals
+jz label_141
+(
+    static Self
+    objpath ".Parent"
+    str "Microtransactionsrequest"
+)
+call "Gensendmessage"
+;
+(
+    static Self
+    str "Points"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Meetsrequirements"
+    ident "False"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    ident "Disabled"
+    ident "True"
+)
+call "Gensetstate"
+j label_272
+label_141:
+(
+    static Self
+    str "Points"
+    (
+      (
+        static RowData
+        objpath ".Microtransactionid"
+      )
+      call "Microtransproduct"
+      objpath ".Price"
+    )
+    call "Formatint"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemName"
+    (
+      static RowData
+      objpath ".Microtransactionid"
+    )
+    call "Microtransproduct"
+    objpath ".Name"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Itemtexture"
+    (
+      static RowData
+      objpath ".Microtransactionid"
+    )
+    call "Microtransproduct"
+    objpath ".Icon"
+)
+call "Gensetstring"
+;
+(
+    static RowData
+    objpath ".Microtransactionid"
+)
+call "Microtransproduct"
+objpath ".Cannotpurchasetype"
+ident "Mtpurchaseerrortype_None"
+equals
+jz label_203
+(
+    static Self
+    str "Meetsrequirements"
+    ident "True"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    ident "Disabled"
+    ident "False"
+)
+call "Gensetstate"
+j label_272
+label_203:
+(
+    static Self
+    str "Meetsrequirements"
+    ident "False"
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    ident "Disabled"
+    ident "True"
+)
+call "Gensetstate"
+;
+(
+    static Self
+    str "Value"
+    str "<font Style=game_Hud_Failure>"
+    (
+      str "Transactions.Pricecp"
+    )
+    call "Translate"
+    add
+    str "</Font>"
+    add
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "Prependtext"
+    str "<span Align=center><font Style=game_Hud_Failure>"
+    (
+      static RowData
+      objpath ".Microtransactionid"
+    )
+    call "Microtransproduct"
+    objpath ".Cannotpurchasereason"
+    add
+    str "</Font></Span><br>"
+    add
+)
+call "Gensetstring"
+;
+(
+    static RowData
+    objpath ".Microtransactionid"
+)
+call "Microtransproduct"
+objpath ".Cannotpurchasetype"
+ident "Mtpurchaseerrortype_Notenoughcurrency"
+equals
+not
+jz label_272
+(
+    static Self
+    str "RequirementsText"
+    str "<font Style=game_Hud_Failure Scale=.8>"
+    (
+      static RowData
+      objpath ".Microtransactionid"
+    )
+    call "Microtransproduct"
+    objpath ".Cannotpurchasereason"
+    add
+    str "</Font>"
+    add
+)
+call "Gensetstring"
+label_272:
+j label_367
+label_273:
+(
+    static Self
+    ident "Microtransacted"
+    ident "False"
+)
+call "Gensetstate"
+;
+(
+    static RowData
+    str "Resources"
+)
+call "Storegetitemvalueincurrency"
+int 0
+greater
+jz label_305
+(
+    static Self
+    str "Value"
+    (
+      (
+        static RowData
+        str "Resources"
+      )
+      call "Storegetitemvalueincurrency"
+      str "Inventory_Numeric3_Resources_Right"
+      int 100
+      int 100
+    )
+    call "Inventorygetnumericstring3"
+)
+call "Gensetstring"
+j label_312
+label_305:
+(
+    static Self
+    str "Value"
+    str ""
+)
+call "Gensetstring"
+;
+label_312:
+(
+    static Self
+    str "Value"
+    static Self
+    objpath ".Var[value].String"
+    (
+      static RowData
+      str ""
+      str ""
+      str "<font Style=game_Hud_Failure>"
+      str "</Font>"
+      str "Resources"
+    )
+    call "Storegetitemvaluetable"
+    add
+)
+call "Gensetstring"
+;
+(
+    static RowData
+)
+call "Storeitemisenabled"
+not
+static RowData
+objpath ".Failsrequirements"
+or
+jz label_353
+(
+    static Self
+    str "Meetsrequirements"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    ident "Disabled"
+    ident "True"
+)
+call "Gensetstate"
+j label_367
+label_353:
+(
+    static Self
+    str "Meetsrequirements"
+    int 1
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    ident "Disabled"
+    ident "False"
+)
+call "Gensetstate"
+;
+label_367:
+(
+    str "GenData"
+    str "Item"
+)
+call "Declaretype"
+;
+static RowData
+objpath ".Microtransaction"
+str ""
+equals
+not
+jz label_393
+(
+    static Self
+    str "ItemQuality"
+    (
+      str "ItemQuality"
+      (
+        static GenData
+      )
+      call "Itemgetquality"
+    )
+    call "Staticdefineintgetkey"
+)
+call "Gensetstring"
+return
+label_393:
+static GenData
+jz label_429
+(
+    static Self
+    str "Itemtexture"
+    (
+      static GenData
+    )
+    call "Gengetitemicontexname"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemName"
+    (
+      static GenData
+    )
+    call "Gengetitemname"
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemQuality"
+    (
+      str "ItemQuality"
+      (
+        static GenData
+      )
+      call "Itemgetquality"
+    )
+    call "Staticdefineintgetkey"
+)
+call "Gensetstring"
+return
+label_429:
+(
+    static Self
+    str "Itemtexture"
+    str ""
+)
+call "Gensetstring"
+;
+(
+    static Self
+    str "ItemName"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr>
+			DeclareType("RowData", "StoreItemInfo");
+
+			if (not RowData.RequiredMicroTransaction = "")
+				if (RowData.RequiredMicroTransactionID = 0)
+					# We don't have the micro transaction information for this product yet
+					GenSendMessage(Self.Parent, "MicroTransactionsRequest");
+				endif
+			endif
+
+			if (RowData.FailsRequirements = StoreCanBuyError_CostRequirement)
+				GenSetString(Self, "PrependText", "&lt;span align=center&gt;&lt;font style=Game_HUD_Failure&gt;" + RowData.RequirementsText + "&lt;/font&gt;&lt;/span&gt;&lt;br&gt;");
+				GenSetString(Self, "RequirementsText", "");
+			elif (RowData.FailsRequirements)
+				GenSetString(Self, "PrependText", "&lt;span align=center&gt;&lt;font style=Game_HUD_Failure&gt;" + RowData.RequirementsText + "&lt;/font&gt;&lt;/span&gt;&lt;br&gt;");
+				GenSetString(Self, "RequirementsText", "");
+#				GenSetString(Self, "RequirementsText", "&lt;font style=Game_HUD_Failure scale=.8&gt;" + RowData.RequirementsText + "&lt;/font&gt;");
+			else
+				GenSetString(Self, "PrependText", "");
+				GenSetString(Self, "RequirementsText", RowData.RequirementsText);
+			endif
+
+			if (not RowData.MicroTransaction = "")
+				# This item is available through the C-Store
+				GenSetState(Self, MicroTransacted, True);
+
+				# Fill in standard CP string
+				GenSetString(Self, "Value", Translate("Transactions.PriceCP"));
+
+				if (RowData.MicroTransactionID = 0)
+					# We don't have the micro transaction information for this product yet
+					GenSendMessage(Self.Parent, "MicroTransactionsRequest");
+					GenSetString(Self, "Points", "");
+					GenSetValue(Self, "MeetsRequirements", False);
+					GenSetState(Self, Disabled, True);
+				else
+					# Fill in the details
+					GenSetString(Self, "Points", FormatInt(MicroTransProduct(RowData.MicroTransactionID).Price));
+					GenSetString(Self, "ItemName", MicroTransProduct(RowData.MicroTransactionID).Name);
+					GenSetString(Self, "ItemTexture", MicroTransProduct(RowData.MicroTransactionID).Icon);
+
+					# Check to see if the player can purchase it
+					if (MicroTransProduct(RowData.MicroTransactionID).CannotPurchaseType = MTPurchaseErrorType_None)
+						# All is good in the world, and the player can share their wealth
+						GenSetValue(Self, "MeetsRequirements", True);
+						GenSetState(Self, Disabled, False);
+
+					else
+						# Sadly the player can't get this, explain way
+						GenSetValue(Self, "MeetsRequirements", False);
+						GenSetState(Self, Disabled, True);
+
+						GenSetString(Self, "Value", "&lt;font style=Game_HUD_Failure&gt;" + Translate("Transactions.PriceCP") + "&lt;/font&gt;");
+
+						GenSetString(Self, "PrependText", "&lt;span align=center&gt;&lt;font style=Game_HUD_Failure&gt;" + MicroTransProduct(RowData.MicroTransactionID).CannotPurchaseReason + "&lt;/font&gt;&lt;/span&gt;&lt;br&gt;");
+						if (not MicroTransProduct(RowData.MicroTransactionID).CannotPurchaseType = MTPurchaseErrorType_NotEnoughCurrency)
+							GenSetString(Self, "RequirementsText", "&lt;font style=Game_HUD_Failure scale=.8&gt;" + MicroTransProduct(RowData.MicroTransactionID).CannotPurchaseReason + "&lt;/font&gt;");
+						endif
+					endif
+				endif
+
+			else
+				# This is not an item that may be purchased through a micro transaction
+				GenSetState(Self, MicroTransacted, False);
+
+				# TODO: incorporate StoreGetItemValueTable(RowData, "", "", "&lt;font color=failure&gt;", "&lt;/font&gt;", "Resources")
+				if (StoreGetItemValueInCurrency(RowData, "Resources") &gt; 0)
+					GenSetString(Self, "Value", InventoryGetNumericString3(StoreGetItemValueInCurrency(RowData, "Resources"), "Inventory_Numeric3_Resources_Right", 100, 100));
+				else
+					GenSetString(Self, "Value", "");
+				endif
+				GenSetString(Self, "Value", Self.Var[Value].String + StoreGetItemValueTable(RowData, "", "", "&lt;font style=Game_HUD_Failure&gt;", "&lt;/font&gt;", "Resources"));
+
+				if ((not StoreItemIsEnabled(RowData)) or RowData.FailsRequirements)
+					GenSetValue(Self, "MeetsRequirements", 0);
+					GenSetState(Self, Disabled, True);
+				else
+					GenSetValue(Self, "MeetsRequirements", 1);
+					GenSetState(Self, Disabled, False);
+				endif
+			endif
+
+			DeclareType("GenData", "Item");
+
+			if (not RowData.MicroTransaction = "")
+				GenSetString(Self, "ItemQuality", StaticDefineIntGetKey("ItemQuality", ItemGetQuality(GenData)));
+			elif (GenData)
+				GenSetString(Self, "ItemTexture", GenGetItemIconTexName(GenData));
+				GenSetString(Self, "ItemName", GenGetItemName(GenData));
+				GenSetString(Self, "ItemQuality", StaticDefineIntGetKey("ItemQuality", ItemGetQuality(GenData)));
+			else
+				GenSetString(Self, "ItemTexture", "");
+				GenSetString(Self, "ItemName", "");
+			endif
+		</OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeUpdate>
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Contact/Store.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Count</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemName</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>ItemQuality</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Itemtexture</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Meetsrequirements</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Points</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Requiredcmd</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>RequirementsText</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Value</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

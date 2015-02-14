@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Ownedpowers_Pointstospendprompt</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Text</Type>
+  <Base i:type="UIGenText">
+    <Type>Text</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>ToolTip</c:Field>
+      <c:Field>Font</c:Field>
+      <c:Field>Text</c:Field>
+      <c:Field>Alignment</c:Field>
+      <c:Field>ShrinkToFit</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>Center</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip>
+      <hTooltip>Ownedpowers_Pointbreakdown</hTooltip>
+      <TooltipBlock>
+        <_><![CDATA[
+(
+  static Self
+  str "Treepoints"
+  (
+    static Player
+    str "Treepoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Endbuildpoints"
+  (
+    static Player
+    str "Endbuildpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Travelpoints"
+  (
+    static Player
+    str "Travelpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Enhpoints"
+  (
+    static Player
+    str "Enhpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Superstatpoints"
+  (
+    static Player
+    str "Superstatpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Talentpoints"
+  (
+    static Player
+    str "Talentpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Originpoints"
+  (
+    static Player
+    str "Originpoints"
+  )
+  call "Entitygetpowertablepoints"
+)
+call "Gensetvalue"
+;
+(
+  static Self
+  str "Tooltiptext"
+  str ""
+)
+call "Gensetstring"
+;
+(
+  static Self
+  str "Firstline"
+  int 1
+)
+call "Gensetvalue"
+;
+static Self
+objpath ".Var[originpoints].Int"
+jz label_106
+(
+  static Self
+  str "Tooltiptext"
+  (
+    str "Ownedpowers_Pointbreakdown_Originpoints"
+  )
+  call "Translate"
+  str "<br>"
+  add
+)
+call "Genappendstring"
+;
+label_106:
+static Self
+objpath ".Var[endbuildpoints].Int"
+jz label_121
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Endbuildpoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_121:
+static Self
+objpath ".Var[treepoints].Int"
+jz label_136
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Treepoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_136:
+static Self
+objpath ".Var[enhpoints].Int"
+jz label_151
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Enhpoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_151:
+static Self
+objpath ".Var[talentpoints].Int"
+jz label_166
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Talentpoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_166:
+static Self
+objpath ".Var[superstatpoints].Int"
+jz label_181
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Superstatpoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_181:
+static Self
+objpath ".Var[travelpoints].Int"
+jz label_196
+(
+    static Self
+    str "Tooltiptext"
+    (
+      str "Ownedpowers_Pointbreakdown_Travelpoints"
+    )
+    call "Translate"
+    str "<br>"
+    add
+)
+call "Genappendstring"
+;
+label_196:
+static Self
+objpath ".Var[tooltiptext].String"
+str "<br>"
+add
+(
+    str "Ownedpowers_Powerhouse_Notice"
+)
+call "Translate"
+add
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+				GenSetValue(Self, "TreePoints", EntityGetPowerTablePoints(Player, "TreePoints"));
+				GenSetValue(Self, "EndBuildPoints", EntityGetPowerTablePoints(Player, "EndBuildPoints"));
+				GenSetValue(Self, "TravelPoints", EntityGetPowerTablePoints(Player, "TravelPoints"));
+				GenSetValue(Self, "EnhPoints", EntityGetPowerTablePoints(Player, "EnhPoints"));
+				GenSetValue(Self, "SuperStatPoints", EntityGetPowerTablePoints(Player, "SuperStatPoints"));
+				GenSetValue(Self, "TalentPoints", EntityGetPowerTablePoints(Player, "TalentPoints"));
+				GenSetValue(Self, "OriginPoints", EntityGetPowerTablePoints(Player, "OriginPoints"));
+
+				GenSetString(Self, "TooltipText", "");
+				GenSetValue(Self, "FirstLine", 1);
+				if (Self.Var[OriginPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_OriginPoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[EndBuildPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_EndBuildPoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[TreePoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_TreePoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[EnhPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_EnhPoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[TalentPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_TalentPoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[SuperStatPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_SuperStatPoints") + "&lt;br&gt;");
+				endif
+				if (Self.Var[TravelPoints].Int)
+					GenAppendString(Self, "TooltipText", Translate("OwnedPowers_PointBreakdown_TravelPoints") + "&lt;br&gt;");
+				endif
+
+				Self.Var[TooltipText].String + "&lt;br&gt;" + Translate("OwnedPowers_Powerhouse_Notice");
+			</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+        <Cost>0</Cost>
+      </TooltipBlock>
+      <Delay>0</Delay>
+      <Assembly>ToolTip</Assembly>
+      <Relative>
+        <TopFrom>
+          <Name>_Parent</Name>
+          <Offset>Bottom</Offset>
+          <Spacing>12</Spacing>
+        </TopFrom>
+        <BottomFrom>
+          <Name></Name>
+          <Offset>Center</Offset>
+          <Spacing>CodeHalfStep</Spacing>
+        </BottomFrom>
+        <LeftFrom>
+          <Name>_Parent</Name>
+          <Offset>Left</Offset>
+          <Spacing>-3</Spacing>
+        </LeftFrom>
+        <RightFrom>
+          <Name></Name>
+          <Offset>Center</Offset>
+          <Spacing>CodeHalfStep</Spacing>
+        </RightFrom>
+      </Relative>
+      <SecondaryToolTip />
+      <Orientation>CenterHorizontal</Orientation>
+      <StackDirection>CenterVertical</StackDirection>
+      <Alignment>Center</Alignment>
+      <StackAlignment>Center</StackAlignment>
+      <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+      <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+      <MaxWidth>350</MaxWidth>
+      <InheritAlpha>0</InheritAlpha>
+      <InheritScale>0</InheritScale>
+      <IgnoreParent>0</IgnoreParent>
+      <MouseAnchor>0</MouseAnchor>
+      <SafeMode>0</SafeMode>
+      <FilterProfanity>0</FilterProfanity>
+      <ForceTooltipOwnership>0</ForceTooltipOwnership>
+    </ToolTip>
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Font>Game_Header</Font>
+    <Text>Ownedpowers_Pointstospendprompt</Text>
+    <TextBlock i:nil="true" />
+    <Alignment>Left</Alignment>
+    <FilterProfanity>0</FilterProfanity>
+    <ScaleToFit>0</ScaleToFit>
+    <ShrinkToFit>1</ShrinkToFit>
+    <NoWrap>0</NoWrap>
+    <Truncate></Truncate>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Endbuildpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Enhpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Firstline</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Originpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Superstatpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Talentpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Tooltiptext</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Travelpoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Treepoints</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

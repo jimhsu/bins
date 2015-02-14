@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Costumepreview_Base</Name>
+  <BorrowFrom />
+  <FlatBorrowFrom />
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Box</Type>
+  <Base i:type="UIGenBox">
+    <Type>Box</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>Assembly</c:Field>
+      <c:Field>BeforeLayout</c:Field>
+      <c:Field>CaptureMouse</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Width>
+    <Height>
+      <Magnitude>1</Magnitude>
+      <Unit>FitToContents</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild>
+      <UIGen>
+        <Name>Gender</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Checkbutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Checkbutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Checkbutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>CheckButton</Type>
+        <Base i:type="UIGenCheckButton">
+          <Type>CheckButton</Type>
+          <bf>
+            <c:Field>{</c:Field>
+            <c:Field>Width</c:Field>
+            <c:Field>Relative</c:Field>
+            <c:Field>Text</c:Field>
+            <c:Field>}</c:Field>
+          </bf>
+          <X>None</X>
+          <Y>None</Y>
+          <PercentX>0</PercentX>
+          <PercentY>0</PercentY>
+          <Width>
+            <Magnitude>1</Magnitude>
+            <Unit>Percentage</Unit>
+          </Width>
+          <Height>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </Height>
+          <MinimumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumWidth>
+          <MinimumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MinimumHeight>
+          <MaximumWidth>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumWidth>
+          <MaximumHeight>
+            <Magnitude>0</Magnitude>
+            <Unit>Fixed</Unit>
+          </MaximumHeight>
+          <LeftMargin>None</LeftMargin>
+          <RightMargin>None</RightMargin>
+          <TopMargin>None</TopMargin>
+          <BottomMargin>None</BottomMargin>
+          <Scale>1</Scale>
+          <OffsetFrom>TopLeft</OffsetFrom>
+          <ScaleNoGrow>0</ScaleNoGrow>
+          <ScaleNoShrink>0</ScaleNoShrink>
+          <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+          <ResetScale>0</ResetScale>
+          <ClipToParent>0</ClipToParent>
+          <ClipToScreen>0</ClipToScreen>
+          <PositionOnScreen>0</PositionOnScreen>
+          <IgnoreParentPadding>0</IgnoreParentPadding>
+          <ScaleAsIf>
+            <a:short>0</a:short>
+            <a:short>0</a:short>
+          </ScaleAsIf>
+          <Relative>
+            <TopFrom>
+              <Name>_Previous</Name>
+              <Offset>Bottom</Offset>
+              <Spacing>None</Spacing>
+            </TopFrom>
+            <BottomFrom>
+              <Name></Name>
+              <Offset>Center</Offset>
+              <Spacing>CodeHalfStep</Spacing>
+            </BottomFrom>
+            <LeftFrom>
+              <Name></Name>
+              <Offset>Center</Offset>
+              <Spacing>CodeHalfStep</Spacing>
+            </LeftFrom>
+            <RightFrom>
+              <Name></Name>
+              <Offset>Center</Offset>
+              <Spacing>CodeHalfStep</Spacing>
+            </RightFrom>
+          </Relative>
+          <PostLayoutRelative i:nil="true" />
+          <Anchor i:nil="true" />
+          <Child />
+          <InlineChild />
+          <HideChild />
+          <RemoveChild />
+          <Assembly i:nil="true" />
+          <Alpha>1</Alpha>
+          <Tween i:nil="true" />
+          <BeforeLayout i:nil="true" />
+          <AfterLayout i:nil="true" />
+          <BeforeTick i:nil="true" />
+          <KeyAction />
+          <DefaultKeyAction i:nil="true" />
+          <ToolTip i:nil="true" />
+          <Background i:nil="true" />
+          <DragDrop />
+          <DragCancelled i:nil="true" />
+          <Message />
+          <CenterX>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterX>
+          <CenterY>
+            <Magnitude>0.5</Magnitude>
+            <Unit>Percentage</Unit>
+          </CenterY>
+          <Rotate>
+            <Angle>0</Angle>
+            <Unit>Radians</Unit>
+          </Rotate>
+          <ShearX>0</ShearX>
+          <ShearY>0</ShearY>
+          <ScaleX>1</ScaleX>
+          <ScaleY>1</ScaleY>
+          <Cursor></Cursor>
+          <Priority>0</Priority>
+          <ResetAlpha>0</ResetAlpha>
+          <Clip>0</Clip>
+          <ResetClip>0</ResetClip>
+          <CaptureMouse>0</CaptureMouse>
+          <CaptureMouseWheel>0</CaptureMouseWheel>
+          <FocusOnClick>0</FocusOnClick>
+          <FocusOnCreate>0</FocusOnCreate>
+          <KeepFocusOnCreate>0</KeepFocusOnCreate>
+          <FocusByDefault>0</FocusByDefault>
+          <FocusEveryFrame>0</FocusEveryFrame>
+          <ClipInput>0</ClipInput>
+          <ResetInputClip>0</ResetInputClip>
+          <CopyChildPriority>0</CopyChildPriority>
+          <ClipToPadding>0</ClipToPadding>
+          <OnClicked i:nil="true" />
+          <BorderAssembly></BorderAssembly>
+          <CheckAssembly></CheckAssembly>
+          <InconsistentAssembly></InconsistentAssembly>
+          <ButtonWidth>16</ButtonWidth>
+          <ButtonHeight>16</ButtonHeight>
+          <Font></Font>
+          <Text>Charactereditor.Gender.Male</Text>
+          <TextBlock i:nil="true" />
+          <Alignment>Center</Alignment>
+          <FilterProfanity>0</FilterProfanity>
+          <ScaleToFit>0</ScaleToFit>
+          <ShrinkToFit>0</ShrinkToFit>
+          <NoWrap>0</NoWrap>
+          <Truncate></Truncate>
+          <Spacing>0</Spacing>
+        </Base>
+        <StateDef />
+        <ComplexStateDef>
+          <UIGenComplexStateDef>
+            <ConditionBlock>
+              <_><![CDATA[
+(
+  ident "Gameplay"
+)
+call "InState"
+jz label_12
+(
+  static Player
+)
+call "Entgetgender"
+str "Male"
+equals
+return
+label_12:
+ident "Costumestate"
+objpath ".Skeleton"
+str "Male"
+equals
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr>
+					if (InState(Gameplay))
+						EntGetGender(Player) = "Male"
+					else
+						CostumeState.Skeleton = "Male"
+					endif
+					</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+              <Cost>0</Cost>
+            </ConditionBlock>
+            <IntCondition />
+            <FloatCondition />
+            <StringCondition />
+            <IntCondition2 />
+            <FloatCondition2 />
+            <StringCondition2 />
+            <InState />
+            <NotInState />
+            <Override i:type="UIGenCheckButton">
+              <Type>CheckButton</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Text</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Width>
+              <Height>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>0</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+              <OnClicked i:nil="true" />
+              <BorderAssembly></BorderAssembly>
+              <CheckAssembly></CheckAssembly>
+              <InconsistentAssembly></InconsistentAssembly>
+              <ButtonWidth>16</ButtonWidth>
+              <ButtonHeight>16</ButtonHeight>
+              <Font></Font>
+              <Text>Charactereditor.Gender.Female</Text>
+              <TextBlock i:nil="true" />
+              <Alignment>Center</Alignment>
+              <FilterProfanity>0</FilterProfanity>
+              <ScaleToFit>0</ScaleToFit>
+              <ShrinkToFit>0</ShrinkToFit>
+              <NoWrap>0</NoWrap>
+              <Truncate></Truncate>
+              <Spacing>0</Spacing>
+            </Override>
+            <OnEnter i:nil="true" />
+            <OnExit i:nil="true" />
+          </UIGenComplexStateDef>
+        </ComplexStateDef>
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message>
+          <UIGenMessage>
+            <Name>Clicked</Name>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+static Self
+objpath ".State.Checked"
+jz label_60
+static Player
+jz label_32
+(
+  static Player
+)
+call "Entgetgender"
+str "Male"
+equals
+jz label_22
+(
+  (
+    str "Costumepreview_Base"
+  )
+  call "Gen"
+  str "Skeleton"
+  str "Female"
+)
+call "Gensetstring"
+return
+label_22:
+(
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    str "Skeleton"
+    str "Male"
+)
+call "Gensetstring"
+return
+label_32:
+ident "Costumestate"
+jz label_59
+ident "Costumestate"
+objpath ".Skeleton"
+str "Male"
+equals
+jz label_49
+(
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    str "Skeleton"
+    str "Female"
+)
+call "Gensetstring"
+return
+label_49:
+(
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    str "Skeleton"
+    str "Male"
+)
+call "Gensetstring"
+return
+label_59:
+return
+label_60:
+(
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    str "Skeleton"
+    str ""
+)
+call "Gensetstring"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr>
+					if (Self.State.Checked)
+						if (Player)
+							if (EntGetGender(Player) = "Male")
+								GenSetString(Gen("CostumePreview_Base"), "Skeleton", "Female");
+							else
+								GenSetString(Gen("CostumePreview_Base"), "Skeleton", "Male");
+							endif
+						elif (CostumeState)
+							if (CostumeState.Skeleton = "Male")
+								GenSetString(Gen("CostumePreview_Base"), "Skeleton", "Female");
+							else
+								GenSetString(Gen("CostumePreview_Base"), "Skeleton", "Male");
+							endif
+						endif
+					else
+						GenSetString(Gen("CostumePreview_Base"), "Skeleton", "");
+					endif
+					</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenMessage>
+        </Message>
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate>
+          <Command />
+          <ExpressionBlock>
+            <_><![CDATA[
+(
+  str "Costumepreview_Base"
+)
+call "Gen"
+objpath ".Var[skeleton].String"
+str ""
+equals
+jz label_14
+(
+  static Self
+  ident "False"
+)
+call "Gencheckbuttonsetstate"
+return
+label_14:
+(
+    ident "Gameplay"
+)
+call "InState"
+jz label_35
+(
+    static Self
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    objpath ".Var[skeleton].String"
+    (
+      static Player
+    )
+    call "Entgetgender"
+    equals
+    not
+)
+call "Gencheckbuttonsetstate"
+return
+label_35:
+ident "Costumestate"
+retifzero
+(
+    static Self
+    (
+      str "Costumepreview_Base"
+    )
+    call "Gen"
+    objpath ".Var[skeleton].String"
+    ident "Costumestate"
+    objpath ".Skeleton"
+    equals
+    not
+)
+call "Gencheckbuttonsetstate"
+return
+]]></_>
+            <Statement>
+              <ExprLine>
+                <DescStr></DescStr>
+                <OrigStr>
+					if (Gen("CostumePreview_Base").Var[Skeleton].String = "")
+						GenCheckButtonSetState(Self, False);
+					elif (InState(Gameplay))
+						GenCheckButtonSetState(Self, not Gen("CostumePreview_Base").Var[Skeleton].String = EntGetGender(Player));
+					elif (CostumeState)
+						GenCheckButtonSetState(Self, not Gen("CostumePreview_Base").Var[Skeleton].String = CostumeState.Skeleton);
+					endif
+					</OrigStr>
+              </ExprLine>
+            </Statement>
+            <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+            <Cost>0</Cost>
+          </ExpressionBlock>
+          <Sound />
+          <EnterState />
+          <ExitState />
+          <ToggleState />
+          <CopyParentState />
+          <Mutate />
+          <Message />
+          <Set />
+          <Focus>0</Focus>
+          <Unfocus>0</Unfocus>
+          <TooltipFocus>0</TooltipFocus>
+          <TooltipUnfocus>0</TooltipUnfocus>
+        </BeforeUpdate>
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly>
+      <Assembly>Large_Paddle_Button_Idle</Assembly>
+      <Colors>
+        <TopLeftColor>0</TopLeftColor>
+        <TopRightColor>0</TopRightColor>
+        <BottomRightColor>0</BottomRightColor>
+        <BottomLeftColor>0</BottomLeftColor>
+      </Colors>
+      <PaddingTop>0</PaddingTop>
+      <PaddingBottom>0</PaddingBottom>
+      <PaddingLeft>0</PaddingLeft>
+      <PaddingRight>0</PaddingRight>
+    </Assembly>
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  ident "Mousedown"
+)
+call "InState"
+jz label_88
+static MouseX
+static Self
+objpath ".Var[oldmousex].Int"
+equals
+not
+jz label_25
+static Self
+objpath ".Var[oldmousex].Int"
+int 1
+neg
+equals
+not
+jz label_18
+label_18:
+(
+    static Self
+    str "Oldmousex"
+    static MouseX
+)
+call "Gensetvalue"
+;
+label_25:
+static MouseY
+static Self
+objpath ".Var[oldmousey].Int"
+equals
+not
+jz label_87
+static Self
+objpath ".Var[oldmousey].Int"
+int 1
+neg
+equals
+not
+jz label_81
+(
+    static Self
+    str "Pitch"
+    static Self
+    objpath ".Var[pitch].Float"
+    int 60
+    static MouseY
+    static Self
+    objpath ".Var[oldmousey].Float"
+    sub
+    mul
+    ident "ElapsedTime"
+    mul
+    add
+)
+call "Gensetvalue"
+;
+static Self
+objpath ".Var[pitch].Float"
+int 10
+neg
+less
+jz label_69
+(
+    static Self
+    str "Pitch"
+    int 10
+    neg
+)
+call "Gensetvalue"
+j label_81
+label_69:
+static Self
+objpath ".Var[pitch].Float"
+int 45
+greater
+jz label_81
+(
+    static Self
+    str "Pitch"
+    int 45
+)
+call "Gensetvalue"
+j label_81
+label_81:
+(
+    static Self
+    str "Oldmousey"
+    static MouseY
+)
+call "Gensetvalue"
+label_87:
+return
+label_88:
+(
+    static Self
+    str "Oldmousex"
+    int 1
+    neg
+)
+call "Gensetvalue"
+;
+(
+    static Self
+    str "Oldmousey"
+    int 1
+    neg
+)
+call "Gensetvalue"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+				if (InState(MouseDown))
+					if (not MouseX = Self.Var[OldMouseX].Int)
+						if (not Self.Var[OldMouseX].Int = -1)
+							#PaperdollRotateSimple(180 * (MouseX - Self.Var[OldMouseX].Float) * ElapsedTime, 0);
+						endif
+						GenSetValue(Self, "OldMouseX", MouseX);
+					endif
+					if (not MouseY = Self.Var[OldMouseY].Int)
+						if (not Self.Var[OldMouseY].Int = -1)
+							GenSetValue(Self, "Pitch", Self.Var[Pitch].Float + 60 * (MouseY - Self.Var[OldMouseY].Float) * ElapsedTime);
+							if (Self.Var[Pitch].Float &lt; -10)
+								GenSetValue(Self, "Pitch", -10);
+							elif (Self.Var[Pitch].Float &gt; 45)
+								GenSetValue(Self, "Pitch", 45);
+							endif
+							#PaperdollSetPitchSimple(Self.Var[Pitch].Float);
+						endif
+						GenSetValue(Self, "OldMouseY", MouseY);
+					endif
+				else
+					GenSetValue(Self, "OldMouseX", -1);
+					GenSetValue(Self, "OldMouseY", -1);
+				endif
+				</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </BeforeLayout>
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>1</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Costumepreview.Uigen</FileName>
+  <Var>
+    <UIGenVarTypeGlob>
+      <GlobName>Skeleton</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </Var>
+  <CopyVar>
+    <UIGenVarTypeGlob>
+      <GlobName>Oldmousex</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Oldmousey</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+    <UIGenVarTypeGlob>
+      <GlobName>Pitch</GlobName>
+      <State>0</State>
+      <Float>0</Float>
+      <String></String>
+    </UIGenVarTypeGlob>
+  </CopyVar>
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

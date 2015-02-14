@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Ownedpowers</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Windowcontainer</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Movablewindow</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Window</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Audiowindow</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Windowcontainer</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Windowcontainer</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Movablewindow</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>MovableBox</Type>
+  <Base i:type="UIGenMovableBox">
+    <Type>MovableBox</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>X</c:Field>
+      <c:Field>Width</c:Field>
+      <c:Field>Height</c:Field>
+      <c:Field>OffsetFrom</c:Field>
+      <c:Field>Child</c:Field>
+      <c:Field>FocusOnCreate</c:Field>
+      <c:Field>FocusByDefault</c:Field>
+      <c:Field>Version</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>-380</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>750</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>500</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>Center</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child>
+      <UIGenChild>
+        <hChild>Ownedpowers_Window</hChild>
+      </UIGenChild>
+      <UIGenChild>
+        <hChild>Ownedpowers_Buttonbar</hChild>
+      </UIGenChild>
+    </Child>
+    <InlineChild>
+      <UIGen>
+        <Name>X</Name>
+        <BorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </BorrowFrom>
+        <FlatBorrowFrom>
+          <UIGenBorrowed>
+            <hGen>Behavior_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Appearance_Closebutton</hGen>
+          </UIGenBorrowed>
+          <UIGenBorrowed>
+            <hGen>Closebutton</hGen>
+          </UIGenBorrowed>
+        </FlatBorrowFrom>
+        <RequiresBorrow />
+        <BorrowedInlineChildren />
+        <Type>Box</Type>
+        <Base i:nil="true" />
+        <StateDef />
+        <ComplexStateDef />
+        <uiComplexStates>0</uiComplexStates>
+        <Last i:nil="true" />
+        <Timer />
+        <Message />
+        <bfStates>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+          <a:int>0</a:int>
+        </bfStates>
+        <BeforeCreate i:nil="true" />
+        <AfterCreate i:nil="true" />
+        <PointerUpdate i:nil="true" />
+        <BeforeUpdate i:nil="true" />
+        <BeforeResult i:nil="true" />
+        <BeforeHide i:nil="true" />
+        <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+        <Var />
+        <CopyVar />
+        <JailCell></JailCell>
+        <Window></Window>
+        <SpriteCache i:nil="true" />
+        <FinalScale>1</FinalScale>
+        <FinalAlpha>255</FinalAlpha>
+        <Layer>0</Layer>
+        <Priority>0</Priority>
+        <Clone>0</Clone>
+        <UseEstimatedSize>0</UseEstimatedSize>
+        <NeedsRebuild>0</NeedsRebuild>
+        <Popup>0</Popup>
+        <TopLevelChildren>0</TopLevelChildren>
+        <IsRoot>0</IsRoot>
+      </UIGen>
+    </InlineChild>
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>1</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>1</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Movable>MouseNone</Movable>
+    <ResizableHorizontal>MouseNone</ResizableHorizontal>
+    <ResizableVertical>MouseNone</ResizableVertical>
+    <MovableWidth i:nil="true" />
+    <MovableHeight i:nil="true" />
+    <Raise>0</Raise>
+    <ResizeBorder>0</ResizeBorder>
+    <Version>2</Version>
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Back</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Close</MessageName>
+          <hGen></hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Togglewithspectree</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Player
+)
+call "Entgetlevelexp"
+int 10
+less
+(
+  static Player
+  str "Superstatpoints"
+)
+call "Gengetpointsspent"
+int 1
+equals
+not
+or
+jz label_22
+(
+  static Self
+  str "Toggle"
+)
+call "Gensendmessage"
+return
+label_22:
+(
+    ident "Visible"
+)
+call "InState"
+(
+    (
+      str "Spectree_Window_Root"
+    )
+    call "Gen"
+    ident "Visible"
+)
+call "Geninstate"
+and
+jz label_57
+(
+    str "Spectreeattached"
+    int 1
+)
+call "Gensetpersistedint"
+;
+(
+    static Self
+    str "Toggle"
+)
+call "Gensendmessage"
+;
+(
+    (
+      str "Spectree_Window_Root"
+    )
+    call "Gen"
+    str "Toggle"
+)
+call "Gensendmessage"
+return
+label_57:
+(
+    ident "Visible"
+)
+call "InState"
+(
+    (
+      str "Spectree_Window_Root"
+    )
+    call "Gen"
+    ident "Visible"
+)
+call "Geninstate"
+not
+and
+jz label_84
+(
+    str "Spectreeattached"
+    int 0
+)
+call "Gensetpersistedint"
+;
+(
+    static Self
+    str "Toggle"
+)
+call "Gensendmessage"
+return
+label_84:
+(
+    ident "Visible"
+)
+call "InState"
+not
+(
+    (
+      str "Spectree_Window_Root"
+    )
+    call "Gen"
+    ident "Visible"
+)
+call "Geninstate"
+and
+jz label_111
+(
+    str "Spectreeattached"
+    int 1
+)
+call "Gensetpersistedint"
+;
+(
+    static Self
+    str "Toggle"
+)
+call "Gensendmessage"
+return
+label_111:
+(
+    str "Spectreeattached"
+    int 1
+)
+call "Gengetpersistedint"
+jz label_132
+(
+    static Self
+    str "Toggle"
+)
+call "Gensendmessage"
+;
+(
+    (
+      str "Spectree_Window_Root"
+    )
+    call "Gen"
+    str "Toggle"
+)
+call "Gensendmessage"
+return
+label_132:
+(
+    static Self
+    str "Toggle"
+)
+call "Gensendmessage"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr>
+			if (EntGetLevelExp(Player) &lt; 10 or not GenGetPointsSpent(Player, "Superstatpoints") = 1)
+				GenSendMessage(Self, "Toggle");
+			else if (InState(Visible) and GenInState(Gen("SpecTree_Window_Root"), Visible))
+				GenSetPersistedInt("SpecTreeAttached", 1);
+				GenSendMessage(Self, "Toggle");
+				GenSendMessage(Gen("SpecTree_Window_Root"), "Toggle");
+			else if (InState(Visible) and not GenInState(Gen("SpecTree_Window_Root"), Visible))
+				GenSetPersistedInt("SpecTreeAttached", 0);
+				GenSendMessage(Self, "Toggle");
+			else if (not InState(Visible) and GenInState(Gen("SpecTree_Window_Root"), Visible))
+				GenSetPersistedInt("SpecTreeAttached", 1);
+				GenSendMessage(Self, "Toggle");
+			else if (GenGetPersistedInt("SpecTreeAttached", 1))
+				GenSendMessage(Self, "Toggle");
+				GenSendMessage(Gen("SpecTree_Window_Root"), "Toggle");
+			else
+				GenSendMessage(Self, "Toggle");
+			endif
+		</OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate>
+    <Command />
+    <ExpressionBlock>
+      <_><![CDATA[
+(
+  (
+    str "Hud_Minimap_Powersbutton"
+  )
+  call "Gen"
+  str "Powersuiopened"
+)
+call "Gensendmessage"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> GenSendMessage(Gen("HUD_MiniMap_PowersButton"), "PowersUIOpened"); </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+      <Cost>0</Cost>
+    </ExpressionBlock>
+    <Sound />
+    <EnterState />
+    <ExitState />
+    <ToggleState />
+    <CopyParentState />
+    <Mutate />
+    <Message />
+    <Set />
+    <Focus>0</Focus>
+    <Unfocus>0</Unfocus>
+    <TooltipFocus>0</TooltipFocus>
+    <TooltipUnfocus>0</TooltipUnfocus>
+  </BeforeCreate>
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Powertree/Ownedpowers.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

@@ -1,0 +1,1959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Hud_Bag_Slot</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Layoutboxinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Inventoryslotinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemicon</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Hud_Bag_Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Behavior_Layoutboxinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Activateondoubleclick</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Item_Inventoryslotinstance</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemicon</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Appearance_Hud_Bag_Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Hud_Bag_Item</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Itemtooltip</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>Sprite</Type>
+  <Base i:type="UIGenSprite">
+    <Type>Sprite</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>Tween</c:Field>
+      <c:Field>DragDrop</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween>
+      <Type>Linear</Type>
+      <TotalTime>0.1</TotalTime>
+      <TimeBetweenCycles>0</TimeBetweenCycles>
+    </Tween>
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop>
+      <UIGenDragDropAction>
+        <TypeMatch>InventorySlot</TypeMatch>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "InventorySlot"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Pitem"
+not
+(
+  (
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+  )
+  call "Inventorykeygetitem"
+)
+call "Itemgetflags"
+ident "Itemflagbound"
+binary and
+int 0
+equals
+and
+(
+  (
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+  )
+  call "Inventorykeygetitem"
+)
+call "Itemgetdefflags"
+ident "Itemdefflagbindonequip"
+binary and
+and
+(
+  (
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+  )
+  call "Inventorykeygetitem"
+)
+call "Itemgetdeftype"
+str "bag"
+equals
+and
+jz label_86
+(
+  (
+    str "Inventory_Bindconfirmdialog"
+  )
+  call "Gen"
+  str "Sourceinventorykey"
+  ident "Dragdropdata"
+  objpath ".Textpayload"
+)
+call "Gensetstring"
+;
+(
+  (
+    str "Inventory_Bindconfirmdialog"
+  )
+  call "Gen"
+  str "Destinventorybag"
+  static Self
+  objpath ".Parent.Var[bagid].Int"
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Inventory_Bindconfirmdialog"
+  )
+  call "Gen"
+  str "Destinventoryslot"
+  static GenInstanceNumber
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Inventory_Bindconfirmdialog"
+  )
+  call "Gen"
+  str "Show"
+)
+call "Gensendmessage"
+return
+label_86:
+(
+    ident "K_Shift"
+)
+call "Inputkeystate"
+(
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+)
+call "Inventorykeycount"
+int 1
+greater
+and
+jz label_153
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "ItemName"
+    (
+      (
+        ident "Dragdropdata"
+        objpath ".Textpayload"
+      )
+      call "Inventorykeygetitem"
+    )
+    call "Gengetitemname"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Inventorysourcekey"
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Inventorydestkey"
+    (
+      static Player
+      static Self
+      objpath ".Parent.Var[bagid].Int"
+      int 1
+      neg
+    )
+    call "Inventoryindexgetkey"
+)
+call "Gensetstring"
+;
+(
+    (
+      str "Countslider"
+    )
+    call "Gen"
+    str "Move"
+)
+call "Gensendmessage"
+return
+label_153:
+(
+    ident "Dragdropdata"
+    objpath ".Textpayload"
+    static Self
+    objpath ".Parent.Var[bagid].Int"
+    (
+      static GenInstanceData
+      objpath ".Pchname"
+    )
+    call "Stringtoint"
+    int 1
+    neg
+)
+call "Inventorykeymove"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				DeclareType("GenInstanceData", "InventorySlot");
+				if ((not GenInstanceData.pItem) and
+					(ItemGetFlags(InventoryKeyGetItem(DragDropData.TextPayload)) &amp; ItemFlagBound) = 0 and
+					(ItemGetDefFlags(InventoryKeyGetItem(DragDropData.TextPayload)) &amp; ItemDefFlagBindOnEquip) and
+					(ItemGetDefType(InventoryKeyGetItem(DragDropData.TextPayload))) = "Bag")
+					GenSetString(Gen("Inventory_BindConfirmDialog"), "SourceInventoryKey", DragDropData.TextPayload);
+					GenSetValue(Gen("Inventory_BindConfirmDialog"), "DestInventoryBag", Self.Parent.Var[BagID].Int);
+					GenSetValue(Gen("Inventory_BindConfirmDialog"), "DestInventorySlot", GenInstanceNumber);
+					GenSendMessage(Gen("Inventory_BindConfirmDialog"), "Show");
+				elif (InputKeyState(K_SHIFT) and InventoryKeyCount(DragDropData.TextPayload) &gt; 1)
+					GenSetString(Gen("CountSlider"), "ItemName", GenGetItemName(InventoryKeyGetItem(DragDropData.TextPayload)));
+					GenSetString(Gen("CountSlider"), "InventorySourceKey", DragDropData.TextPayload);
+					GenSetString(Gen("CountSlider"), "InventoryDestKey", InventoryIndexGetKey(Player, Self.Parent.Var[BagID].Int, -1));
+					GenSendMessage(Gen("CountSlider"), "Move");
+				else
+					InventoryKeyMove(DragDropData.TextPayload, Self.Parent.Var[BagID].Int, StringToInt(GenInstanceData.pchName), -1);
+				endif
+				</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound>
+          <a:string>UI/Inventory</a:string>
+        </Sound>
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </UIGenDragDropAction>
+    </DragDrop>
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <Texture></Texture>
+    <Mask></Mask>
+    <TopLeftColor>-1</TopLeftColor>
+    <TopRightColor>-1</TopRightColor>
+    <BottomLeftColor>-1</BottomLeftColor>
+    <BottomRightColor>-1</BottomRightColor>
+    <Rotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotation>
+    <LowerLayer />
+    <Layer />
+    <Animation i:nil="true" />
+    <OffsetU>0</OffsetU>
+    <OffsetV>0</OffsetV>
+    <ScaleU>1</ScaleU>
+    <ScaleV>1</ScaleV>
+    <Mode>None</Mode>
+    <Effect>None</Effect>
+    <Alignment>Center</Alignment>
+    <Additive>0</Additive>
+    <ForceBottomLayer>0</ForceBottomLayer>
+  </Base>
+  <StateDef>
+    <UIGenStateDef>
+      <State>LeftMouseDrag</State>
+      <Override i:nil="true" />
+      <OnEnter>
+        <Command />
+        <ExpressionBlock>
+          <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "InventorySlot"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Pitem"
+retifzero
+(
+  static Self
+  str "InventorySlot"
+  (
+    static Player
+    static Self
+    objpath ".Parent.Var[bagid].Int"
+    static GenInstanceData
+  )
+  call "Inventoryslotgetkey"
+  (
+    static GenInstanceData
+  )
+  call "Inventoryslotgeticon"
+  ident "Mouseleft"
+)
+call "Gendragstringstart"
+]]></_>
+          <Statement>
+            <ExprLine>
+              <DescStr></DescStr>
+              <OrigStr>
+				DeclareType("GenInstanceData", "InventorySlot");
+				if (GenInstanceData.pItem)
+					GenDragStringStart(
+						Self,
+						"InventorySlot",
+						InventorySlotGetKey(Player, Self.Parent.Var[BagID].Int, GenInstanceData),
+						InventorySlotGetIcon(GenInstanceData),
+						MouseLeft);
+				endif
+			</OrigStr>
+            </ExprLine>
+          </Statement>
+          <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+          <Cost>0</Cost>
+        </ExpressionBlock>
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit i:nil="true" />
+    </UIGenStateDef>
+  </StateDef>
+  <ComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "GenData"
+  str "Item"
+)
+call "Declaretype"
+;
+static GenData
+not
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> DeclareType("GenData", "Item"); not GenData </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>ToolTip</c:Field>
+          <c:Field>Texture</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip>
+          <hTooltip>Inventory_Playerbagequip</hTooltip>
+          <TooltipBlock i:nil="true" />
+          <Delay>-1</Delay>
+          <Assembly>ToolTip</Assembly>
+          <Relative i:nil="true" />
+          <SecondaryToolTip />
+          <Orientation>CenterHorizontal</Orientation>
+          <StackDirection>CenterVertical</StackDirection>
+          <Alignment>Center</Alignment>
+          <StackAlignment>Center</StackAlignment>
+          <PrimarySpacing>CodeHalfStep</PrimarySpacing>
+          <SecondarySpacing>CodeHalfStep</SecondarySpacing>
+          <MaxWidth>350</MaxWidth>
+          <InheritAlpha>0</InheritAlpha>
+          <InheritScale>0</InheritScale>
+          <IgnoreParent>0</IgnoreParent>
+          <MouseAnchor>0</MouseAnchor>
+          <SafeMode>0</SafeMode>
+          <FilterProfanity>0</FilterProfanity>
+          <ForceTooltipOwnership>0</ForceTooltipOwnership>
+        </ToolTip>
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture>Inventory_Icon_Background.Wtex</Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  str "GenInstanceData"
+  str "InventorySlot"
+)
+call "Declaretype"
+;
+static GenInstanceData
+objpath ".Pitem"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> DeclareType("GenInstanceData", "InventorySlot"); GenInstanceData.pItem </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Message</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message>
+          <UIGenMessage>
+            <Name>Select</Name>
+            <Command />
+            <ExpressionBlock>
+              <_><![CDATA[
+(
+  (
+    str "Inventory_Playerbag_Root"
+  )
+  call "Gen"
+  str "BagID"
+  ident "Bagidplayerbag1"
+  (
+    static GenInstanceData
+    objpath ".Pchname"
+  )
+  call "Stringtoint"
+  add
+)
+call "Gensetvalue"
+;
+(
+  str "Inventory_Playerbag_Root"
+  int 0
+)
+call "Genwindow"
+(
+  str "Inventory_Playerbag_Root"
+)
+call "Gen"
+equals
+not
+jz label_59
+(
+  str "Bagwindow_0"
+  int 0
+)
+call "Gengetpersistedint"
+(
+  str "Inventory_Playerbag_Root"
+)
+call "Gen"
+objpath ".Var[bagid].Int"
+equals
+jz label_59
+(
+  (
+    str "Inventory_Playerbag_Root"
+  )
+  call "Gen"
+  str "BagID"
+  int 0
+)
+call "Gensetvalue"
+;
+(
+  (
+    str "Inventory_Playerbag_Root"
+    int 0
+  )
+  call "Genwindow"
+  str "Toggle"
+)
+call "Gensendmessage"
+label_59:
+(
+    str "Inventory_Playerbag_Root"
+    int 1
+)
+call "Genwindow"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+equals
+not
+jz label_102
+(
+    str "Bagwindow_1"
+    int 0
+)
+call "Gengetpersistedint"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+objpath ".Var[bagid].Int"
+equals
+jz label_102
+(
+    (
+      str "Inventory_Playerbag_Root"
+    )
+    call "Gen"
+    str "BagID"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Inventory_Playerbag_Root"
+      int 1
+    )
+    call "Genwindow"
+    str "Toggle"
+)
+call "Gensendmessage"
+label_102:
+(
+    str "Inventory_Playerbag_Root"
+    int 2
+)
+call "Genwindow"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+equals
+not
+jz label_145
+(
+    str "Bagwindow_2"
+    int 0
+)
+call "Gengetpersistedint"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+objpath ".Var[bagid].Int"
+equals
+jz label_145
+(
+    (
+      str "Inventory_Playerbag_Root"
+    )
+    call "Gen"
+    str "BagID"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Inventory_Playerbag_Root"
+      int 2
+    )
+    call "Genwindow"
+    str "Toggle"
+)
+call "Gensendmessage"
+label_145:
+(
+    str "Inventory_Playerbag_Root"
+    int 3
+)
+call "Genwindow"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+equals
+not
+jz label_188
+(
+    str "Bagwindow_3"
+    int 0
+)
+call "Gengetpersistedint"
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+objpath ".Var[bagid].Int"
+equals
+jz label_188
+(
+    (
+      str "Inventory_Playerbag_Root"
+    )
+    call "Gen"
+    str "BagID"
+    int 0
+)
+call "Gensetvalue"
+;
+(
+    (
+      str "Inventory_Playerbag_Root"
+      int 3
+    )
+    call "Genwindow"
+    str "Toggle"
+)
+call "Gensendmessage"
+label_188:
+(
+    str "Inventory_Playerbag_Root"
+)
+call "Gen"
+objpath ".Var[bagid].Int"
+retifzero
+(
+    (
+      str "Inventory_Playerbag_Root"
+    )
+    call "Gen"
+    str "Show"
+)
+call "Gensendmessage"
+]]></_>
+              <Statement>
+                <ExprLine>
+                  <DescStr></DescStr>
+                  <OrigStr>
+					GenSetValue(Gen("Inventory_PlayerBag_Root"), "BagID", BagIDPlayerBag1 + StringToInt(GenInstanceData.pchName));
+
+					if (not GenWindow("Inventory_PlayerBag_Root", 0) = Gen("Inventory_PlayerBag_Root"))
+						if (GenGetPersistedInt("BagWindow_0", 0) = Gen("Inventory_PlayerBag_Root").Var[BagID].Int)
+							GenSetValue(Gen("Inventory_PlayerBag_Root"), "BagID", 0);
+							GenSendMessage(GenWindow("Inventory_PlayerBag_Root", 0), "Toggle")
+						endif
+					endif
+
+					if (not GenWindow("Inventory_PlayerBag_Root", 1) = Gen("Inventory_PlayerBag_Root"))
+						if (GenGetPersistedInt("BagWindow_1", 0) = Gen("Inventory_PlayerBag_Root").Var[BagID].Int)
+							GenSetValue(Gen("Inventory_PlayerBag_Root"), "BagID", 0);
+							GenSendMessage(GenWindow("Inventory_PlayerBag_Root", 1), "Toggle")
+						endif
+					endif
+
+					if (not GenWindow("Inventory_PlayerBag_Root", 2) = Gen("Inventory_PlayerBag_Root"))
+						if (GenGetPersistedInt("BagWindow_2", 0) = Gen("Inventory_PlayerBag_Root").Var[BagID].Int)
+							GenSetValue(Gen("Inventory_PlayerBag_Root"), "BagID", 0);
+							GenSendMessage(GenWindow("Inventory_PlayerBag_Root", 2), "Toggle")
+						endif
+					endif
+
+					if (not GenWindow("Inventory_PlayerBag_Root", 3) = Gen("Inventory_PlayerBag_Root"))
+						if (GenGetPersistedInt("BagWindow_3", 0) = Gen("Inventory_PlayerBag_Root").Var[BagID].Int)
+							GenSetValue(Gen("Inventory_PlayerBag_Root"), "BagID", 0);
+							GenSendMessage(GenWindow("Inventory_PlayerBag_Root", 3), "Toggle")
+						endif
+					endif
+
+					if (Gen("Inventory_PlayerBag_Root").Var[BagID].Int)
+						GenSendMessage(Gen("Inventory_PlayerBag_Root"), "Show");
+					endif
+					</OrigStr>
+                </ExprLine>
+              </Statement>
+              <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+              <Cost>0</Cost>
+            </ExpressionBlock>
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenMessage>
+        </Message>
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture></Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canaccessbag"
+not
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canbuybag"
+not
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> not GamePermissions_CanAccessBag(Player, BagIDPlayerBag1 + GenInstanceNumber) and not GamePermissions_CanBuyBag(Player, BagIDPlayerBag1 + GenInstanceNumber); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Alpha</c:Field>
+          <c:Field>Effect</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>0</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture></Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>Desaturate</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState>
+          <a:string>Disabled</a:string>
+        </EnterState>
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState>
+          <a:string>Disabled</a:string>
+        </ExitState>
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canaccessbag"
+not
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canbuybag"
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> not GamePermissions_CanAccessBag(Player, BagIDPlayerBag1 + GenInstanceNumber) and GamePermissions_CanBuyBag(Player, BagIDPlayerBag1 + GenInstanceNumber); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Alpha</c:Field>
+          <c:Field>DragDrop</c:Field>
+          <c:Field>Effect</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild>
+          <UIGen>
+            <Name>Purchaseproduct</Name>
+            <BorrowFrom>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mttooltip</hGen>
+              </UIGenBorrowed>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mtconfirm</hGen>
+              </UIGenBorrowed>
+            </BorrowFrom>
+            <FlatBorrowFrom>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mttooltip</hGen>
+              </UIGenBorrowed>
+              <UIGenBorrowed>
+                <hGen>Behavior_Mtconfirm</hGen>
+              </UIGenBorrowed>
+            </FlatBorrowFrom>
+            <RequiresBorrow />
+            <BorrowedInlineChildren />
+            <Type>Box</Type>
+            <Base i:type="UIGenBox">
+              <Type>Box</Type>
+              <bf>
+                <c:Field>{</c:Field>
+                <c:Field>Width</c:Field>
+                <c:Field>Height</c:Field>
+                <c:Field>CaptureMouse</c:Field>
+                <c:Field>}</c:Field>
+              </bf>
+              <X>None</X>
+              <Y>None</Y>
+              <PercentX>0</PercentX>
+              <PercentY>0</PercentY>
+              <Width>
+                <Magnitude>1</Magnitude>
+                <Unit>Percentage</Unit>
+              </Width>
+              <Height>
+                <Magnitude>1</Magnitude>
+                <Unit>Percentage</Unit>
+              </Height>
+              <MinimumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumWidth>
+              <MinimumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MinimumHeight>
+              <MaximumWidth>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumWidth>
+              <MaximumHeight>
+                <Magnitude>0</Magnitude>
+                <Unit>Fixed</Unit>
+              </MaximumHeight>
+              <LeftMargin>None</LeftMargin>
+              <RightMargin>None</RightMargin>
+              <TopMargin>None</TopMargin>
+              <BottomMargin>None</BottomMargin>
+              <Scale>1</Scale>
+              <OffsetFrom>TopLeft</OffsetFrom>
+              <ScaleNoGrow>0</ScaleNoGrow>
+              <ScaleNoShrink>0</ScaleNoShrink>
+              <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+              <ResetScale>0</ResetScale>
+              <ClipToParent>0</ClipToParent>
+              <ClipToScreen>0</ClipToScreen>
+              <PositionOnScreen>0</PositionOnScreen>
+              <IgnoreParentPadding>0</IgnoreParentPadding>
+              <ScaleAsIf>
+                <a:short>0</a:short>
+                <a:short>0</a:short>
+              </ScaleAsIf>
+              <Relative i:nil="true" />
+              <PostLayoutRelative i:nil="true" />
+              <Anchor i:nil="true" />
+              <Child />
+              <InlineChild />
+              <HideChild />
+              <RemoveChild />
+              <Assembly i:nil="true" />
+              <Alpha>1</Alpha>
+              <Tween i:nil="true" />
+              <BeforeLayout i:nil="true" />
+              <AfterLayout i:nil="true" />
+              <BeforeTick i:nil="true" />
+              <KeyAction />
+              <DefaultKeyAction i:nil="true" />
+              <ToolTip i:nil="true" />
+              <Background i:nil="true" />
+              <DragDrop />
+              <DragCancelled i:nil="true" />
+              <Message />
+              <CenterX>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterX>
+              <CenterY>
+                <Magnitude>0.5</Magnitude>
+                <Unit>Percentage</Unit>
+              </CenterY>
+              <Rotate>
+                <Angle>0</Angle>
+                <Unit>Radians</Unit>
+              </Rotate>
+              <ShearX>0</ShearX>
+              <ShearY>0</ShearY>
+              <ScaleX>1</ScaleX>
+              <ScaleY>1</ScaleY>
+              <Cursor></Cursor>
+              <Priority>0</Priority>
+              <ResetAlpha>0</ResetAlpha>
+              <Clip>0</Clip>
+              <ResetClip>0</ResetClip>
+              <CaptureMouse>1</CaptureMouse>
+              <CaptureMouseWheel>0</CaptureMouseWheel>
+              <FocusOnClick>0</FocusOnClick>
+              <FocusOnCreate>0</FocusOnCreate>
+              <KeepFocusOnCreate>0</KeepFocusOnCreate>
+              <FocusByDefault>0</FocusByDefault>
+              <FocusEveryFrame>0</FocusEveryFrame>
+              <ClipInput>0</ClipInput>
+              <ResetInputClip>0</ResetInputClip>
+              <CopyChildPriority>0</CopyChildPriority>
+              <ClipToPadding>0</ClipToPadding>
+            </Base>
+            <StateDef>
+              <UIGenStateDef>
+                <State>LeftMouseDown</State>
+                <Override i:nil="true" />
+                <OnEnter>
+                  <Command />
+                  <ExpressionBlock i:nil="true" />
+                  <Sound />
+                  <EnterState />
+                  <ExitState />
+                  <ToggleState />
+                  <CopyParentState />
+                  <Mutate />
+                  <Message>
+                    <UIGenMessagePacket>
+                      <MessageName>Showconfirm</MessageName>
+                      <hGen></hGen>
+                    </UIGenMessagePacket>
+                  </Message>
+                  <Set />
+                  <Focus>0</Focus>
+                  <Unfocus>0</Unfocus>
+                  <TooltipFocus>0</TooltipFocus>
+                  <TooltipUnfocus>0</TooltipUnfocus>
+                </OnEnter>
+                <OnExit i:nil="true" />
+              </UIGenStateDef>
+            </StateDef>
+            <ComplexStateDef />
+            <uiComplexStates>0</uiComplexStates>
+            <Last i:nil="true" />
+            <Timer />
+            <Message />
+            <bfStates>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+              <a:int>0</a:int>
+            </bfStates>
+            <BeforeCreate i:nil="true" />
+            <AfterCreate i:nil="true" />
+            <PointerUpdate i:nil="true" />
+            <BeforeUpdate i:nil="true" />
+            <BeforeResult i:nil="true" />
+            <BeforeHide i:nil="true" />
+            <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+            <Var>
+              <UIGenVarTypeGlob>
+                <GlobName>ItemName</GlobName>
+                <State>0</State>
+                <Float>0</Float>
+                <String>Service_Inventory_Slot</String>
+              </UIGenVarTypeGlob>
+            </Var>
+            <CopyVar />
+            <JailCell></JailCell>
+            <Window></Window>
+            <SpriteCache i:nil="true" />
+            <FinalScale>1</FinalScale>
+            <FinalAlpha>255</FinalAlpha>
+            <Layer>0</Layer>
+            <Priority>0</Priority>
+            <Clone>0</Clone>
+            <UseEstimatedSize>0</UseEstimatedSize>
+            <NeedsRebuild>0</NeedsRebuild>
+            <Popup>0</Popup>
+            <TopLevelChildren>0</TopLevelChildren>
+            <IsRoot>0</IsRoot>
+          </UIGen>
+        </InlineChild>
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>0.5</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop>
+          <UIGenDragDropAction>
+            <TypeMatch>InventorySlot</TypeMatch>
+            <Command />
+            <ExpressionBlock i:nil="true" />
+            <Sound />
+            <EnterState />
+            <ExitState />
+            <ToggleState />
+            <CopyParentState />
+            <Mutate />
+            <Message />
+            <Set />
+            <Focus>0</Focus>
+            <Unfocus>0</Unfocus>
+            <TooltipFocus>0</TooltipFocus>
+            <TooltipUnfocus>0</TooltipUnfocus>
+          </UIGenDragDropAction>
+        </DragDrop>
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture></Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer />
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>Desaturate</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState>
+          <a:string>Disabled</a:string>
+        </EnterState>
+        <ExitState />
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnEnter>
+      <OnExit>
+        <Command />
+        <ExpressionBlock i:nil="true" />
+        <Sound />
+        <EnterState />
+        <ExitState>
+          <a:string>Disabled</a:string>
+        </ExitState>
+        <ToggleState />
+        <CopyParentState />
+        <Mutate />
+        <Message />
+        <Set />
+        <Focus>0</Focus>
+        <Unfocus>0</Unfocus>
+        <TooltipFocus>0</TooltipFocus>
+        <TooltipUnfocus>0</TooltipUnfocus>
+      </OnExit>
+    </UIGenComplexStateDef>
+    <UIGenComplexStateDef>
+      <ConditionBlock>
+        <_><![CDATA[
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canaccessbag"
+not
+(
+  static Player
+  ident "Bagidplayerbag1"
+  static GenInstanceNumber
+  add
+)
+call "Gamepermissions_Canbuybag"
+and
+(
+  ident "Mouseinside"
+)
+call "InState"
+and
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> not GamePermissions_CanAccessBag(Player, BagIDPlayerBag1 + GenInstanceNumber) and GamePermissions_CanBuyBag(Player, BagIDPlayerBag1 + GenInstanceNumber) and InState(MouseInside); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+        <Cost>0</Cost>
+      </ConditionBlock>
+      <IntCondition />
+      <FloatCondition />
+      <StringCondition />
+      <IntCondition2 />
+      <FloatCondition2 />
+      <StringCondition2 />
+      <InState />
+      <NotInState />
+      <Override i:type="UIGenSprite">
+        <Type>Sprite</Type>
+        <bf>
+          <c:Field>{</c:Field>
+          <c:Field>Alpha</c:Field>
+          <c:Field>Layer</c:Field>
+          <c:Field>}</c:Field>
+        </bf>
+        <X>None</X>
+        <Y>None</Y>
+        <PercentX>0</PercentX>
+        <PercentY>0</PercentY>
+        <Width>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Width>
+        <Height>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </Height>
+        <MinimumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumWidth>
+        <MinimumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MinimumHeight>
+        <MaximumWidth>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumWidth>
+        <MaximumHeight>
+          <Magnitude>0</Magnitude>
+          <Unit>Fixed</Unit>
+        </MaximumHeight>
+        <LeftMargin>None</LeftMargin>
+        <RightMargin>None</RightMargin>
+        <TopMargin>None</TopMargin>
+        <BottomMargin>None</BottomMargin>
+        <Scale>1</Scale>
+        <OffsetFrom>TopLeft</OffsetFrom>
+        <ScaleNoGrow>0</ScaleNoGrow>
+        <ScaleNoShrink>0</ScaleNoShrink>
+        <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+        <ResetScale>0</ResetScale>
+        <ClipToParent>0</ClipToParent>
+        <ClipToScreen>0</ClipToScreen>
+        <PositionOnScreen>0</PositionOnScreen>
+        <IgnoreParentPadding>0</IgnoreParentPadding>
+        <ScaleAsIf>
+          <a:short>0</a:short>
+          <a:short>0</a:short>
+        </ScaleAsIf>
+        <Relative i:nil="true" />
+        <PostLayoutRelative i:nil="true" />
+        <Anchor i:nil="true" />
+        <Child />
+        <InlineChild />
+        <HideChild />
+        <RemoveChild />
+        <Assembly i:nil="true" />
+        <Alpha>1</Alpha>
+        <Tween i:nil="true" />
+        <BeforeLayout i:nil="true" />
+        <AfterLayout i:nil="true" />
+        <BeforeTick i:nil="true" />
+        <KeyAction />
+        <DefaultKeyAction i:nil="true" />
+        <ToolTip i:nil="true" />
+        <Background i:nil="true" />
+        <DragDrop />
+        <DragCancelled i:nil="true" />
+        <Message />
+        <CenterX>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterX>
+        <CenterY>
+          <Magnitude>0.5</Magnitude>
+          <Unit>Percentage</Unit>
+        </CenterY>
+        <Rotate>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotate>
+        <ShearX>0</ShearX>
+        <ShearY>0</ShearY>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <Cursor></Cursor>
+        <Priority>0</Priority>
+        <ResetAlpha>0</ResetAlpha>
+        <Clip>0</Clip>
+        <ResetClip>0</ResetClip>
+        <CaptureMouse>0</CaptureMouse>
+        <CaptureMouseWheel>0</CaptureMouseWheel>
+        <FocusOnClick>0</FocusOnClick>
+        <FocusOnCreate>0</FocusOnCreate>
+        <KeepFocusOnCreate>0</KeepFocusOnCreate>
+        <FocusByDefault>0</FocusByDefault>
+        <FocusEveryFrame>0</FocusEveryFrame>
+        <ClipInput>0</ClipInput>
+        <ResetInputClip>0</ResetInputClip>
+        <CopyChildPriority>0</CopyChildPriority>
+        <ClipToPadding>0</ClipToPadding>
+        <Texture></Texture>
+        <Mask></Mask>
+        <TopLeftColor>-1</TopLeftColor>
+        <TopRightColor>-1</TopRightColor>
+        <BottomLeftColor>-1</BottomLeftColor>
+        <BottomRightColor>-1</BottomRightColor>
+        <Rotation>
+          <Angle>0</Angle>
+          <Unit>Radians</Unit>
+        </Rotation>
+        <LowerLayer />
+        <Layer>
+          <UIGenBundleTexture>
+            <Texture>Currency_Icon_Small_Atari.Wtex</Texture>
+            <Mask></Mask>
+            <TopLeftColor>-1</TopLeftColor>
+            <TopRightColor>-1</TopRightColor>
+            <BottomLeftColor>-1</BottomLeftColor>
+            <BottomRightColor>-1</BottomRightColor>
+            <Rotation>
+              <Angle>0</Angle>
+              <Unit>Radians</Unit>
+            </Rotation>
+            <LowerLayer />
+            <Layer />
+            <Animation i:nil="true" />
+            <OffsetU>0</OffsetU>
+            <OffsetV>0</OffsetV>
+            <ScaleU>1</ScaleU>
+            <ScaleV>1</ScaleV>
+            <Mode>Centered</Mode>
+            <Effect>None</Effect>
+            <Alignment>Center</Alignment>
+            <Additive>0</Additive>
+            <ForceBottomLayer>0</ForceBottomLayer>
+          </UIGenBundleTexture>
+        </Layer>
+        <Animation i:nil="true" />
+        <OffsetU>0</OffsetU>
+        <OffsetV>0</OffsetV>
+        <ScaleU>1</ScaleU>
+        <ScaleV>1</ScaleV>
+        <Mode>None</Mode>
+        <Effect>None</Effect>
+        <Alignment>Center</Alignment>
+        <Additive>0</Additive>
+        <ForceBottomLayer>0</ForceBottomLayer>
+      </Override>
+      <OnEnter i:nil="true" />
+      <OnExit i:nil="true" />
+    </UIGenComplexStateDef>
+  </ComplexStateDef>
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message />
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Hud/Entities/Traybags.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>

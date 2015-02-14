@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIGen xmlns:c="http://datacontract.gib.me/cryptic" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacontract.gib.me/championsonline">
+  <Name>Guildsettings_Maincolorpalette</Name>
+  <BorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Colorchooser</hGen>
+    </UIGenBorrowed>
+  </BorrowFrom>
+  <FlatBorrowFrom>
+    <UIGenBorrowed>
+      <hGen>Appearance_Colorchooser</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Behavior_Colorchooser</hGen>
+    </UIGenBorrowed>
+    <UIGenBorrowed>
+      <hGen>Colorchooser</hGen>
+    </UIGenBorrowed>
+  </FlatBorrowFrom>
+  <RequiresBorrow />
+  <BorrowedInlineChildren />
+  <Type>ColorChooser</Type>
+  <Base i:type="UIGenColorChooser">
+    <Type>ColorChooser</Type>
+    <bf>
+      <c:Field>{</c:Field>
+      <c:Field>RecentColors</c:Field>
+      <c:Field>ColorModelBlock</c:Field>
+      <c:Field>}</c:Field>
+    </bf>
+    <X>None</X>
+    <Y>None</Y>
+    <PercentX>0</PercentX>
+    <PercentY>0</PercentY>
+    <Width>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Width>
+    <Height>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </Height>
+    <MinimumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumWidth>
+    <MinimumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MinimumHeight>
+    <MaximumWidth>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumWidth>
+    <MaximumHeight>
+      <Magnitude>0</Magnitude>
+      <Unit>Fixed</Unit>
+    </MaximumHeight>
+    <LeftMargin>None</LeftMargin>
+    <RightMargin>None</RightMargin>
+    <TopMargin>None</TopMargin>
+    <BottomMargin>None</BottomMargin>
+    <Scale>1</Scale>
+    <OffsetFrom>TopLeft</OffsetFrom>
+    <ScaleNoGrow>0</ScaleNoGrow>
+    <ScaleNoShrink>0</ScaleNoShrink>
+    <ScaleAsIfWithGlobal>0</ScaleAsIfWithGlobal>
+    <ResetScale>0</ResetScale>
+    <ClipToParent>0</ClipToParent>
+    <ClipToScreen>0</ClipToScreen>
+    <PositionOnScreen>0</PositionOnScreen>
+    <IgnoreParentPadding>0</IgnoreParentPadding>
+    <ScaleAsIf>
+      <a:short>0</a:short>
+      <a:short>0</a:short>
+    </ScaleAsIf>
+    <Relative i:nil="true" />
+    <PostLayoutRelative i:nil="true" />
+    <Anchor i:nil="true" />
+    <Child />
+    <InlineChild />
+    <HideChild />
+    <RemoveChild />
+    <Assembly i:nil="true" />
+    <Alpha>1</Alpha>
+    <Tween i:nil="true" />
+    <BeforeLayout i:nil="true" />
+    <AfterLayout i:nil="true" />
+    <BeforeTick i:nil="true" />
+    <KeyAction />
+    <DefaultKeyAction i:nil="true" />
+    <ToolTip i:nil="true" />
+    <Background i:nil="true" />
+    <DragDrop />
+    <DragCancelled i:nil="true" />
+    <Message />
+    <CenterX>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterX>
+    <CenterY>
+      <Magnitude>0.5</Magnitude>
+      <Unit>Percentage</Unit>
+    </CenterY>
+    <Rotate>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </Rotate>
+    <ShearX>0</ShearX>
+    <ShearY>0</ShearY>
+    <ScaleX>1</ScaleX>
+    <ScaleY>1</ScaleY>
+    <Cursor></Cursor>
+    <Priority>0</Priority>
+    <ResetAlpha>0</ResetAlpha>
+    <Clip>0</Clip>
+    <ResetClip>0</ResetClip>
+    <CaptureMouse>0</CaptureMouse>
+    <CaptureMouseWheel>0</CaptureMouseWheel>
+    <FocusOnClick>0</FocusOnClick>
+    <FocusOnCreate>0</FocusOnCreate>
+    <KeepFocusOnCreate>0</KeepFocusOnCreate>
+    <FocusByDefault>0</FocusByDefault>
+    <FocusEveryFrame>0</FocusEveryFrame>
+    <ClipInput>0</ClipInput>
+    <ResetInputClip>0</ResetInputClip>
+    <CopyChildPriority>0</CopyChildPriority>
+    <ClipToPadding>0</ClipToPadding>
+    <TileTexture></TileTexture>
+    <TileMask></TileMask>
+    <TileTopLeftColor>-1</TileTopLeftColor>
+    <TileTopRightColor>-1</TileTopRightColor>
+    <TileBottomLeftColor>-1</TileBottomLeftColor>
+    <TileBottomRightColor>-1</TileBottomRightColor>
+    <TileRotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </TileRotation>
+    <TileLowerLayer />
+    <TileLayer />
+    <TileAnimation i:nil="true" />
+    <TileOffsetU>0</TileOffsetU>
+    <TileOffsetV>0</TileOffsetV>
+    <TileScaleU>1</TileScaleU>
+    <TileScaleV>1</TileScaleV>
+    <TileMode>None</TileMode>
+    <TileEffect>None</TileEffect>
+    <TileAlignment>Center</TileAlignment>
+    <TileAdditive>0</TileAdditive>
+    <TileForceBottomLayer>0</TileForceBottomLayer>
+    <HoveredOverlayTexture></HoveredOverlayTexture>
+    <HoveredOverlayMask></HoveredOverlayMask>
+    <HoveredOverlayTopLeftColor>-1</HoveredOverlayTopLeftColor>
+    <HoveredOverlayTopRightColor>-1</HoveredOverlayTopRightColor>
+    <HoveredOverlayBottomLeftColor>-1</HoveredOverlayBottomLeftColor>
+    <HoveredOverlayBottomRightColor>-1</HoveredOverlayBottomRightColor>
+    <HoveredOverlayRotation>
+      <Angle>0</Angle>
+      <Unit>Radians</Unit>
+    </HoveredOverlayRotation>
+    <HoveredOverlayLowerLayer />
+    <HoveredOverlayLayer />
+    <HoveredOverlayAnimation i:nil="true" />
+    <HoveredOverlayOffsetU>0</HoveredOverlayOffsetU>
+    <HoveredOverlayOffsetV>0</HoveredOverlayOffsetV>
+    <HoveredOverlayScaleU>1</HoveredOverlayScaleU>
+    <HoveredOverlayScaleV>1</HoveredOverlayScaleV>
+    <HoveredOverlayMode>None</HoveredOverlayMode>
+    <HoveredOverlayEffect>None</HoveredOverlayEffect>
+    <HoveredOverlayAlignment>Center</HoveredOverlayAlignment>
+    <HoveredOverlayAdditive>0</HoveredOverlayAdditive>
+    <HoveredOverlayForceBottomLayer>0</HoveredOverlayForceBottomLayer>
+    <HoveredOverlayWidth>None</HoveredOverlayWidth>
+    <HoveredOverlayHeight>None</HoveredOverlayHeight>
+    <RecentColors>0</RecentColors>
+    <RecentColorsBottomMargin>None</RecentColorsBottomMargin>
+    <Columns>0</Columns>
+    <Rows>0</Rows>
+    <TileWidth>CodeDoubleStep</TileWidth>
+    <TileHeight>CodeDoubleStep</TileHeight>
+    <TileLeftMargin>None</TileLeftMargin>
+    <TileRightMargin>None</TileRightMargin>
+    <TileTopMargin>None</TileTopMargin>
+    <TileBottomMargin>None</TileBottomMargin>
+    <HoveredAssembly i:nil="true" />
+    <HoveredOverlayAutoColor>0</HoveredOverlayAutoColor>
+    <DrawHoveredAssemblyAbove>0</DrawHoveredAssemblyAbove>
+    <ColorModelBlock>
+      <_><![CDATA[
+(
+  static Self
+)
+call "Guild_Getcolormodel"
+]]></_>
+      <Statement>
+        <ExprLine>
+          <DescStr></DescStr>
+          <OrigStr> Guild_GetColorModel(Self) </OrigStr>
+        </ExprLine>
+      </Statement>
+      <FileName>Ui/Gens/Windows/Social/Guildsettings.Uigen</FileName>
+      <Cost>0</Cost>
+    </ColorModelBlock>
+    <OnHovered i:nil="true" />
+    <OnClicked i:nil="true" />
+  </Base>
+  <StateDef />
+  <ComplexStateDef />
+  <uiComplexStates>0</uiComplexStates>
+  <Last i:nil="true" />
+  <Timer />
+  <Message>
+    <UIGenMessage>
+      <Name>Close</Name>
+      <Command />
+      <ExpressionBlock i:nil="true" />
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message>
+        <UIGenMessagePacket>
+          <MessageName>Close</MessageName>
+          <hGen>_Parent</hGen>
+        </UIGenMessagePacket>
+      </Message>
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Preview</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Self
+  objpath ".Parent.Parent"
+  str "Color"
+  ident "ColorRed"
+  ident "ColorGreen"
+  ident "ColorBlue"
+  ident "ColorAlpha"
+)
+call "Gensetearlyoverridefieldcolor"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> GenSetEarlyOverrideFieldColor(Self.Parent.Parent, "Color", ColorRed, ColorGreen, ColorBlue, ColorAlpha); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Social/Guildsettings.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Selectcolor</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  (
+    static Player
+    static Self
+    objpath ".Parent.Parent.Var[colorid].Int"
+  )
+  call "Guild_Getcolorindex"
+  objpath ".Colorindex"
+)
+call "Colorchooserselect"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> ColorChooserSelect(Guild_GetColorIndex(Player, Self.Parent.Parent.Var[ColorID].Int).ColorIndex); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Social/Guildsettings.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+    <UIGenMessage>
+      <Name>Setcolor</Name>
+      <Command />
+      <ExpressionBlock>
+        <_><![CDATA[
+(
+  static Player
+  static Self
+  objpath ".Parent.Parent.Var[colorid].Int"
+  static Self
+  objpath ".State.Selectedindex"
+)
+call "Guild_Setcolor"
+]]></_>
+        <Statement>
+          <ExprLine>
+            <DescStr></DescStr>
+            <OrigStr> Guild_SetColor(Player, Self.Parent.Parent.Var[ColorID].Int, Self.State.SelectedIndex); </OrigStr>
+          </ExprLine>
+        </Statement>
+        <FileName>Ui/Gens/Windows/Social/Guildsettings.Uigen</FileName>
+        <Cost>0</Cost>
+      </ExpressionBlock>
+      <Sound />
+      <EnterState />
+      <ExitState />
+      <ToggleState />
+      <CopyParentState />
+      <Mutate />
+      <Message />
+      <Set />
+      <Focus>0</Focus>
+      <Unfocus>0</Unfocus>
+      <TooltipFocus>0</TooltipFocus>
+      <TooltipUnfocus>0</TooltipUnfocus>
+    </UIGenMessage>
+  </Message>
+  <bfStates>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+    <a:int>0</a:int>
+  </bfStates>
+  <BeforeCreate i:nil="true" />
+  <AfterCreate i:nil="true" />
+  <PointerUpdate i:nil="true" />
+  <BeforeUpdate i:nil="true" />
+  <BeforeResult i:nil="true" />
+  <BeforeHide i:nil="true" />
+  <FileName>Ui/Gens/Windows/Social/Guildsettings.Uigen</FileName>
+  <Var />
+  <CopyVar />
+  <JailCell></JailCell>
+  <Window></Window>
+  <SpriteCache i:nil="true" />
+  <FinalScale>1</FinalScale>
+  <FinalAlpha>255</FinalAlpha>
+  <Layer>0</Layer>
+  <Priority>0</Priority>
+  <Clone>0</Clone>
+  <UseEstimatedSize>0</UseEstimatedSize>
+  <NeedsRebuild>0</NeedsRebuild>
+  <Popup>0</Popup>
+  <TopLevelChildren>0</TopLevelChildren>
+  <IsRoot>0</IsRoot>
+</UIGen>
